@@ -38,15 +38,13 @@
             android:layout_width="wrap_content"
             android:layout_height="400dp"
             android:layout_gravity="center"
-            android:scaleType="fitStart"
             android:translationY="-140dp"
-            app:srcCompat="@drawable/marca_gr_fica_principal" />
+            app:srcCompat="@drawable/marca_grafica_principal" />
 
         <TextView
-            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_gravity="center_horizontal"
             android:textSize="25sp"
             android:textAlignment="center"
             android:layout_marginLeft="30dp"
@@ -54,26 +52,25 @@
             android:textColor="@color/gris_oscuro"
             android:text="@string/mensaje_bienvenida"
             android:translationY="-220dp" />
-
-        <Button
-            android:id="@+id/boton_inicia_sesion"
-            android:layout_width="250dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/azul"
-            android:text="@string/inicia_sesion"
-            android:translationY="-140dp"
-            app:cornerRadius="50dp" />
-
-        <Button
-            android:id="@+id/boton_crea_cuenta"
-            android:layout_width="250dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/azul_claro"
-            app:cornerRadius="50dp"
-            android:translationY="-140dp"
-            android:text="@string/crea_cuenta" />
     </LinearLayout>
+    <Button
+        android:id="@+id/boton_inicia_sesion"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/azul"
+        android:text="@string/inicia_sesion"
+        android:translationY="-180dp"
+        app:cornerRadius="50dp" />
+
+    <Button
+        android:id="@+id/boton_crea_cuenta"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/azul_claro"
+        app:cornerRadius="50dp"
+        android:translationY="-180dp"
+        android:text="@string/crea_cuenta"/>
 
 </LinearLayout>
