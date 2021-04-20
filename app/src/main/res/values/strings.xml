@@ -1,3 +1,8 @@
 <resources>
+
     <string name="app_name">ProyectoFinal_TheDot</string>
+    <string name="mensaje_bienvenida">"The art to survive is to believe you can always start over"</string>
+    <string name="inicia_sesion">Inicia sesión</string>
+    <string name="crea_cuenta">Crea tu cuenta</string>
+
 </resources>
