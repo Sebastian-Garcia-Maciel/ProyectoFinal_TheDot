@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="220dp"
+        android:layout_height="250dp"
         android:orientation="horizontal">
 
         <ImageView
@@ -23,12 +23,11 @@
             app:srcCompat="@drawable/icono" />
 
         <ImageView
-            android:layout_width="300dp"
-            android:layout_height="270dp"
+            android:layout_width="330dp"
+            android:layout_height="260dp"
             android:layout_weight="1"
-            android:scaleType="fitXY"
-            android:translationX="54dp"
-            app:srcCompat="@drawable/trazado_139" />
+            android:translationX="61dp"
+            app:srcCompat="@drawable/trazado2_xxxdpi_06" />
     </LinearLayout>
 
     <ImageView
@@ -36,7 +35,7 @@
         android:layout_height="100dp"
         android:layout_gravity="center"
         android:layout_marginBottom="60dp"
-        app:srcCompat="@drawable/marca_grafica_principal" />
+        app:srcCompat="@drawable/logo_xxxdpi_06" />
 
     <TextView
         android:layout_width="match_parent"
@@ -49,12 +48,16 @@
         android:textColor="@color/gris_oscuro"
         android:textSize="20sp"
         android:layout_marginBottom="60dp"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
     <Button
         android:id="@+id/boton_inicia_sesion"
+        android:layout_alignParentTop="true"
         android:layout_width="250dp"
         android:layout_height="80dp"
-        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
         android:backgroundTint="@color/azul"
         android:text="@string/inicia_sesion"
         app:cornerRadius="50dp" />
@@ -63,9 +66,18 @@
         android:id="@+id/boton_crea_cuenta"
         android:layout_width="250dp"
         android:layout_height="80dp"
-        android:layout_gravity="center"
+        android:layout_below="@id/boton_inicia_sesion"
+        android:layout_centerHorizontal="true"
         android:backgroundTint="@color/azul_claro"
         android:text="@string/crea_cuenta"
         app:cornerRadius="50dp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        app:srcCompat="@drawable/trazado1_xxxdpi_06" />
+
+
+</RelativeLayout>
 
 </LinearLayout>
