@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity_configuracion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="52dp"
+            android:background="@drawable/regresar_xxxdpi_06" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="100dp"
+            android:text="@string/configuracion"
+            android:textAlignment="center"
+            android:textColor="@color/gris_oscuro"
+            android:textSize="23sp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="310dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:backgroundTint="@color/azul_claro"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="30dp"
+            android:text="/ nombre" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/azul_claro"
+            android:text="/ / fecha de nacimiento" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/azul_claro"
+            android:text="/ ubicación" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+            android:backgroundTint="@color/azul_claro"
+            android:layout_marginBottom="30dp"
+            android:text="/ ocupación" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+            android:backgroundTint="@color/azul_claro"
+            android:layout_marginBottom="40dp"
+            android:text="/ cambiar contraseña" />
+    </LinearLayout>
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/azul"
+        android:text="@string/cerrar_sesion"
+        android:textColor="@color/white"
+        android:layout_marginBottom="60dp"
+        app:cornerRadius="50dp" />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/simbolo_xxxdpi_06" />
+
+
+
+</LinearLayout>

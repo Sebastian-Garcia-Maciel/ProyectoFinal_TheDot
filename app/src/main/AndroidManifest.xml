@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinal_TheDot">
-        <activity android:name=".activity_metodos_favoritos"></activity>
+        <activity android:name=".activity_configuracion"></activity>
+        <activity android:name=".activity_meditacion_lidia" />
+        <activity android:name=".activity_metodos_favoritos" />
         <activity android:name=".activity_meditacion_alcanza" />
         <activity android:name=".activity_meditacion_atras" />
         <activity android:name=".meditacion_comienza" />

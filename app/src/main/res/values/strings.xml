@@ -8,7 +8,10 @@
     <string name="descripcion_meditacion">¿Qué es la meditación? Embárcate en un viaje que te dara\n mayor calma y claridad mental mediante técnicas\n básicas y una meditación guiada centrada en la\n respiración.</string>
     <string name="meditacion_atras_texto">Sacate ese peso de encima. Despreocupate del enojo, la\nfrustación y las nostalgia. Esta sencilla meditación guiada\naborda en forma amena la visualización.</string>
     <string name="meditacion_alcanza_texto">Abre tu mente. La práctica constante del mindfulnes\nhace ilimitadas nuestras posibilidades, y dirige una meditación de consciencia plena.</string>
+    <string name="meditacion_lidia_texto">¿Sientes que todo es demasaido y la vida te abruma?\nCambia tu relación con la ansiedad y maneja el estrés\ncon una poderosa pero sencilla técnica de meditación.</string>
     <string name="favoritos">Favoritos</string>
+    <string name="configuracion">Configuración</string>
+    <string name="cerrar_sesion">Cerror sesión</string>
 
 
 </resources>
