@@ -7,5 +7,6 @@ class ActivityIntencionesSemana : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intenciones_semana)
+        supportActionBar?.hide()
     }
 }

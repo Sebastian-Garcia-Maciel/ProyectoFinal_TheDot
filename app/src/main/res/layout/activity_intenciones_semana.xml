@@ -51,7 +51,7 @@
         android:layout_marginLeft="35dp"
         android:layout_marginTop="35dp"
         android:layout_marginRight="35dp"
-        android:background="@drawable/borde">
+        android:background="@drawable/borde_azul">
     </LinearLayout>
 
     <TextView

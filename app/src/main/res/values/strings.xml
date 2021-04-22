@@ -22,6 +22,13 @@
     <string name="metodos_respiracion">Métodos de respiración</string>
     <string name="intenciones_dia">*Intenciones del dia</string>
     <string name="intenciones_semana">*Intenciones de la semana</string>
+    <string name="activo">/ ACTIVO</string>
+    <string name="comienza">Comienza</string>
+    <string name="estatico">/ ESTÁTICO</string>
+    <string name="estiramiento">Estiramiento</string>
+    <string name="deja_atras_estres">Deja atrás el estrés</string>
+    <string name="lidia_estres">Lidia con el estrés</string>
+    <string name="alcanza_tu_potencial">Alcanza tu potencial sin límites</string>
 
 
 </resources>

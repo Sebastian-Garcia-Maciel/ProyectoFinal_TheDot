@@ -92,7 +92,7 @@
         android:backgroundTint="@color/azul"
         android:text="@string/cerrar_sesion"
         android:textColor="@color/white"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="40dp"
         app:cornerRadius="50dp" />
 
     <ImageView

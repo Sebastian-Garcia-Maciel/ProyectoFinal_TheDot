@@ -7,5 +7,6 @@ class ActivityMeditacionAlcanza : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_meditacion_alcanza)
+        supportActionBar?.hide()
     }
 }

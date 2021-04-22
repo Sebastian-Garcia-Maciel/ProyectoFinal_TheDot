@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blanco"
     android:orientation="vertical"
-    tools:context=".ActivityComoEstas">
-
+    android:background="@color/blanco"
+    tools:context=".ActivityEstiramientoActivo">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="20dp"
         android:orientation="horizontal">
 
 
@@ -39,27 +38,32 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
-        android:layout_gravity="center"
-        android:text="*¿Cómo\nestas hoy?"
-        android:textAlignment="center"
-        android:textColor="@color/black"
+        android:text="@string/activo"
+        android:textAlignment="textStart"
+        android:textColor="@color/gris"
         android:textSize="44sp" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="450dp"
+            android:layout_height="490dp"
             android:layout_marginLeft="35dp"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="35dp"
             android:layout_marginRight="35dp"
-            android:background="@drawable/borde_azul">
-        </LinearLayout>
+            android:background="@drawable/borde_naranja"></LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="30dp"
-        android:layout_gravity="end"
-        android:text="-Fecha y hora"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="320dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            app:srcCompat="@drawable/mancha2_xdpi_04" />
+    </RelativeLayout>
+
 
 </LinearLayout>
