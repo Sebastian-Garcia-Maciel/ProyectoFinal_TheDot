@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/blanco"
     android:orientation="vertical"
-    tools:context=".ActivityMeditacionLidia">
+    tools:context=".ActivityComoEstas">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="100dp"
-            android:text="@string/meditacion"
+            android:text="@string/journal"
             android:textAlignment="center"
             android:textColor="@color/gris_oscuro"
             android:textSize="23sp" />
@@ -39,13 +39,11 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
-        android:text="@string/meditacion_lidia_texto"
+        android:layout_gravity="center"
+        android:text="*¿Cómo\nestas hoy?"
         android:textAlignment="center"
-        android:textSize="11sp" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:textColor="@color/black"
+        android:textSize="44sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -53,16 +51,15 @@
             android:layout_marginLeft="35dp"
             android:layout_marginTop="45dp"
             android:layout_marginRight="35dp"
-            android:background="@drawable/layout_redondeado_con_color"
-            android:backgroundTint="@color/verde_azulado"></LinearLayout>
+            android:background="@drawable/borde">
+        </LinearLayout>
 
-        <ImageView
-            android:layout_alignParentRight="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="240dp"
-            android:layout_marginRight="15dp"
-            android:src="@drawable/tres_xdpi_04" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="end"
+        android:text="-Fecha y hora"/>
 
-    </RelativeLayout>
 </LinearLayout>

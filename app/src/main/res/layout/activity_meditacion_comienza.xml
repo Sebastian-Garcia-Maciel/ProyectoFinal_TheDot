@@ -6,7 +6,7 @@
     android:background="@color/blanco"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".meditacion_comienza">
+    tools:context=".ActivityMeditacionComienza">
 
     <LinearLayout
         android:layout_width="match_parent"

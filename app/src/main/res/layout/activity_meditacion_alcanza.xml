@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/blanco"
     android:orientation="vertical"
-    tools:context=".activity_meditacion_alcanza">
+    tools:context=".ActivityMeditacionAlcanza">
 
     <LinearLayout
         android:layout_width="match_parent"

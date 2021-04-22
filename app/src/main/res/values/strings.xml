@@ -12,6 +12,7 @@
     <string name="favoritos">Favoritos</string>
     <string name="configuracion">Configuración</string>
     <string name="cerrar_sesion">Cerror sesión</string>
+    <string name="journal">Mi Journal</string>
 
 
 </resources>
