@@ -20,7 +20,8 @@
     <string name="alternada">Alternada</string>
     <string name="muscular">Muscular</string>
     <string name="metodos_respiracion">Métodos de respiración</string>
-
+    <string name="intenciones_dia">*Intenciones del dia</string>
+    <string name="intenciones_semana">*Intenciones de la semana</string>
 
 
 </resources>
