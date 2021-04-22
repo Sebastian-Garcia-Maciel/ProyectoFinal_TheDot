@@ -9,10 +9,18 @@
     <string name="meditacion_atras_texto">Sacate ese peso de encima. Despreocupate del enojo, la\nfrustación y las nostalgia. Esta sencilla meditación guiada\naborda en forma amena la visualización.</string>
     <string name="meditacion_alcanza_texto">Abre tu mente. La práctica constante del mindfulnes\nhace ilimitadas nuestras posibilidades, y dirige una meditación de consciencia plena.</string>
     <string name="meditacion_lidia_texto">¿Sientes que todo es demasaido y la vida te abruma?\nCambia tu relación con la ansiedad y maneja el estrés\ncon una poderosa pero sencilla técnica de meditación.</string>
+    <string name="metodos_respiracion_texto">A continuación te ofrecemos una serie de ejercicios\nde respiración sencillos que se pueden llevar a cabo\npara relajar tu cuerpo y mente.</string>
     <string name="favoritos">Favoritos</string>
     <string name="configuracion">Configuración</string>
     <string name="cerrar_sesion">Cerror sesión</string>
     <string name="journal">Mi Journal</string>
+    <string name="profunda">Profunda</string>
+    <string name="diafragmatica">Diafragmática</string>
+    <string name="completa">Completa</string>
+    <string name="alternada">Alternada</string>
+    <string name="muscular">Muscular</string>
+    <string name="metodos_respiracion">Métodos de respiración</string>
+
 
 
 </resources>
