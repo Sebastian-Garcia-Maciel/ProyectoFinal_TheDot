@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blanco"
+    tools:context=".Tecnicas">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="52dp"
+            android:background="@drawable/regresar_xxxdpi_06" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="100dp"
+            android:text="@string/tecnicas"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/gris_oscuro"
+            android:textSize="40sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnComoEstas"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/lavanda"
+        android:text="@string/tecnica_dedos"
+        android:textSize="20sp"
+        app:cornerRadius="20dp" />
+
+    <Button
+        android:id="@+id/btnIntencionesSemana"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/azul_claro"
+        android:text="@string/trazos"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnMisDias"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/anaranjado_claro"
+        android:textColor="@color/white"
+        android:text="@string/muevete"
+        android:textSize="20sp"
+        app:cornerRadius="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="302dp"
+            android:layout_weight="1"
+            android:scaleType="fitStart"
+            android:translationX="50dp"
+            android:translationY="-50dp"
+            app:srcCompat="@drawable/icono" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blanco"
+    tools:context=".Metodos">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="52dp"
+            android:background="@drawable/regresar_xxxdpi_06" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="100dp"
+            android:text="@string/metodos"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/gris_oscuro"
+            android:textSize="40sp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="italic"
+        android:text="@string/metodos_description"
+        android:textAlignment="center"
+        android:padding="15dp"
+        android:translationY="-10dp"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:translationY="-10dp">
+
+        <Button
+            android:id="@+id/btnRespiracion"
+            android:layout_width="178dp"
+            android:layout_height="133dp"
+            android:layout_rowSpan="1"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/lavanda"
+            android:text="Respiracion"
+            android:textSize="18sp"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/btnEstiramiento"
+            android:layout_width="wrap_content"
+            android:layout_height="133dp"
+            android:layout_rowSpan="1"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/anaranjado_claro"
+            android:text="Estiramiento"
+            android:textSize="18sp"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/btnMeditacion"
+            android:layout_width="178dp"
+            android:layout_height="133dp"
+            android:layout_rowSpan="1"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/verde_azulado"
+            android:text="Meditacion"
+            android:textSize="18sp"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/btnTecnicas"
+            android:layout_width="200dp"
+            android:layout_height="302dp"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:backgroundTint="@color/azul_claro"
+            android:text="Técnicas"
+            android:textSize="18sp"
+            app:cornerRadius="20dp" />
+
+        <Button
+            android:id="@+id/btnFavoritos"
+            android:layout_width="178dp"
+            android:layout_height="133dp"
+            android:layout_rowSpan="1"
+            android:layout_gravity=""
+            android:layout_margin="10dp"
+            android:backgroundTint="@color/azul"
+            android:text="@string/recordatorios"
+            android:textSize="18sp"
+            app:cornerRadius="20dp" />
+
+    </GridLayout>
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blanco"
+    tools:context=".IniciaSesion">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="52dp"
+            android:background="@drawable/regresar_xxxdpi_06" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="95dp"
+            app:srcCompat="@drawable/simbolo_xxxdpi_06" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/inicia"
+        android:textAlignment="gravity"
+        android:textColor="@color/gris_oscuro"
+        android:textSize="80sp"
+        android:layout_marginBottom="60dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="100dp"
+        android:text="@string/sesión"
+        android:textAlignment="gravity"
+        android:textColor="@color/gris_oscuro"
+        android:textStyle="italic"
+        android:textSize="80sp"
+        android:translationY="-100dp"
+        android:layout_marginBottom="60dp"/>
+
+    <EditText
+        android:id="@+id/etEmailIS"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:translationY="-120dp" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/email"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:translationY="-120dp" />
+    <Button
+        android:id="@+id/boton_inicia_sesion"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/azul"
+        android:text="@string/inicia_sesion"
+        app:cornerRadius="50dp"
+        android:translationY="-90dp"/>
+</LinearLayout>
