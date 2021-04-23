@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 
 class IniciaSesion : AppCompatActivity() {
     @SuppressLint("WrongViewCast")
@@ -14,8 +15,7 @@ class IniciaSesion : AppCompatActivity() {
 
         /*Oculta la action bar*/
         supportActionBar?.hide()
-
-        val botonRegresar = findViewById<Button>(R.id.boton_regresar_inicia_sesion)
+        val botonRegresar:ImageButton = findViewById<ImageButton>(R.id.boton_regresar_inicia_sesion)
         val botonIniciarSesion = findViewById<Button>(R.id.boton_inicia_sesion)
 
         botonRegresar.setOnClickListener() {

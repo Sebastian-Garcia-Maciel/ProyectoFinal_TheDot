@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 
 class Inicio1 : AppCompatActivity() {
     @SuppressLint("WrongViewCast")
@@ -15,10 +16,10 @@ class Inicio1 : AppCompatActivity() {
         /*Oculta la action bar*/
         supportActionBar?.hide()
 
-        val botonMiPerfil = findViewById<Button>(R.id.boton_mi_perfil)
-        val botonMetodos = findViewById<Button>(R.id.boton_metodos)
-        val  botonJournal = findViewById<Button>(R.id.boton_journal)
-        val  botonAbout = findViewById<Button>(R.id. boton_about)
+        val botonMiPerfil:ImageButton = findViewById<ImageButton>(R.id.boton_mi_perfil)
+        val botonMetodos:ImageButton = findViewById<ImageButton>(R.id.boton_metodos)
+        val  botonJournal:ImageButton = findViewById<ImageButton>(R.id.boton_journal)
+        val  botonAbout:ImageButton = findViewById<ImageButton>(R.id. boton_about)
 
 
         botonMiPerfil.setOnClickListener() {

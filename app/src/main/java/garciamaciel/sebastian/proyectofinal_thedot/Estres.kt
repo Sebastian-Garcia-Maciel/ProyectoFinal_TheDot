@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 
 class Estres : AppCompatActivity() {
     @SuppressLint("WrongViewCast")
@@ -15,7 +16,7 @@ class Estres : AppCompatActivity() {
         /*Oculta la action bar*/
         supportActionBar?.hide()
 
-        val botonRegresar = findViewById<Button>(R.id.boton_regresar_estres)
+        val botonRegresar:ImageButton = findViewById<ImageButton>(R.id.boton_regresar_estres)
 
         botonRegresar.setOnClickListener() {
             var intent: Intent = Intent(this, About::class.java)

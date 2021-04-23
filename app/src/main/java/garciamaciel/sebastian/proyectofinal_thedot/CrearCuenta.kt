@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 
 class CrearCuenta : AppCompatActivity() {
     @SuppressLint("WrongViewCast")
@@ -15,8 +16,8 @@ class CrearCuenta : AppCompatActivity() {
         /*Oculta la action bar*/
         supportActionBar?.hide()
 
-        val botonRegresar = findViewById<Button>(R.id.boton_regresar_crear_cuenta)
-        val botonCrearCuenta = findViewById<Button>(R.id.boton_crea_cuenta)
+        val botonRegresar:ImageButton = findViewById<ImageButton>(R.id.boton_regresar_crear_cuenta)
+        val botonCrearCuenta:Button = findViewById<Button>(R.id.boton_crea_cuenta)
 
 
 

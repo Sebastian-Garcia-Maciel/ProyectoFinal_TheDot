@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 
 class Journal : AppCompatActivity() {
     @SuppressLint("WrongViewCast")
@@ -14,7 +15,7 @@ class Journal : AppCompatActivity() {
         /*Oculta la action bar*/
         supportActionBar?.hide()
 
-        val botonRegresar = findViewById<Button>(R.id.boton_regresar_de_journal)
+        val botonRegresar:ImageButton = findViewById<ImageButton>(R.id.boton_regresar_de_journal)
         val botonComoestasHoy = findViewById<Button>(R.id.btnComoEstas)
         val botonIntencionesDia = findViewById<Button>(R.id.btnIntencionesDia)
         val botonIntencionesSemana = findViewById<Button>(R.id.btnIntencionesSemana)

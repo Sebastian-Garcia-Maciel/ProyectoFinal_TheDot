@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 
 class ActivityEstiramiento : AppCompatActivity() {
     @SuppressLint("WrongViewCast")
@@ -15,10 +16,10 @@ class ActivityEstiramiento : AppCompatActivity() {
         /*Oculta la action bar*/
         supportActionBar?.hide()
 
-        val botonRegresar = findViewById<Button>(R.id.boton_regresar_de_estriamiento)
-        val botonEstiramientoPasivo = findViewById<Button>(R.id.boton_estiramiento_pasivo)
-        val botonEstiramientoActivo = findViewById<Button>(R.id.boton_estiramiento_activo)
-        val botonEstiramientoEstatico = findViewById<Button>(R.id. boton_estiramiento_estatico)
+        val botonRegresar:ImageButton = findViewById<ImageButton>(R.id.boton_regresar_de_estriamiento)
+        val botonEstiramientoPasivo:android.widget.Button = findViewById<android.widget.Button>(R.id.boton_estiramiento_pasivo)
+        val botonEstiramientoActivo:android.widget.Button = findViewById<android.widget.Button>(R.id.boton_estiramiento_activo)
+        val botonEstiramientoEstatico:android.widget.Button = findViewById<android.widget.Button>(R.id. boton_estiramiento_estatico)
 
         botonRegresar.setOnClickListener() {
             var intent: Intent = Intent(this, Inicio1::class.java)
