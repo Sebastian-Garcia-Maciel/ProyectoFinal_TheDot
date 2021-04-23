@@ -6,13 +6,12 @@
     android:layout_height="match_parent"
     android:background="@color/blanco"
     android:orientation="vertical"
-    tools:context=".ActivityMeditacionAlcanza">
+    tools:context=".ActivityMuevete">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="8dp"
         android:orientation="horizontal">
 
 
@@ -28,40 +27,39 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginEnd="100dp"
-            android:text="@string/meditacion"
+            android:text="@string/muevete"
             android:textAlignment="center"
             android:textColor="@color/gris_oscuro"
             android:textSize="23sp" />
+
+
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
-        android:layout_marginEnd="50dp"
-        android:text="@string/meditacion_alcanza_texto"
-        android:textAlignment="center"
-        android:textSize="11sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/layout_redondeado_con_color"></LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="500dp"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="45dp"
-            android:layout_marginEnd="35dp"
-            android:background="@drawable/layout_redondeado_con_color"
-            android:backgroundTint="@color/lavanda"></LinearLayout>
-
+        android:layout_height="540dp">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="130dp"
-            android:src="@drawable/cuatro_xdpi_04" />
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/trazado14_xxxdpi_06"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/borde"></LinearLayout>
 
     </RelativeLayout>
+
 </LinearLayout>

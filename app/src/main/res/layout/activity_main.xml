@@ -63,6 +63,7 @@
             android:backgroundTint="@color/azul"
             android:text="@string/inicia_sesion"
             android:textColor="@color/white"
+            
             app:cornerRadius="50dp" />
 
         <Button

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    android:orientation="vertical"
+    tools:context=".ActivityDias">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="52dp"
+            android:background="@drawable/regresar_xxxdpi_06" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="100dp"
+            android:text="@string/journal"
+            android:textAlignment="center"
+            android:textColor="@color/gris_oscuro"
+            android:textSize="23sp" />
+
+    z</LinearLayout>
+
+    <android.widget.Button
+        android:layout_marginBottom="20dp"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/borde_boton"
+        android:text="Abril 11, 2021"
+        android:textColor="@color/gris" />
+    <android.widget.Button
+        android:layout_marginBottom="20dp"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/borde_boton"
+        android:text="Abril 19, 2021"
+        android:textColor="@color/gris" />
+    <android.widget.Button
+        android:layout_marginBottom="20dp"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/borde_boton"
+        android:text="Mayo 02, 2021"
+        android:textColor="@color/gris" />
+    <android.widget.Button
+        android:layout_marginBottom="20dp"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/borde_boton"
+        android:text="Mayo 05, 2021"
+        android:textColor="@color/gris" />
+    <android.widget.Button
+        android:layout_marginBottom="20dp"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/borde_boton"
+        android:text="Mayo 11, 2021"
+        android:textColor="@color/gris" />
+    <android.widget.Button
+        android:layout_marginBottom="20dp"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/borde_boton"
+        android:text="Mayo 17 2021"
+        android:textColor="@color/gris" />
+    <android.widget.Button
+        android:layout_marginBottom="20dp"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/borde_boton"
+        android:text="Mayo 22, 2021"
+        android:textColor="@color/gris" />
+    <android.widget.Button
+        android:layout_marginBottom="20dp"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:textAllCaps="false"
+        android:background="@drawable/borde_boton"
+        android:text="Abril 30, 2021"
+        android:textColor="@color/gris" />
+
+    <ImageButton
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/signo__01" />
+
+</LinearLayout>
