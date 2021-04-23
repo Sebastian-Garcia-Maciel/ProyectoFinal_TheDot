@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blanco"
+    tools:context=".Respiracion">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="52dp"
+            android:background="@drawable/regresar_xxxdpi_06" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="100dp"
+            android:text="Respiracion"
+            android:textAlignment="center"
+            android:textColor="@color/gris_oscuro"
+            android:textSize="30sp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="italic"
+        android:text="@string/respiracion_description"
+        android:textAlignment="center"
+        android:padding="15dp"
+        />
+    <ImageView
+        android:id="@+id/imgPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/simbolo__03"
+        />
+    <ImageButton
+        android:layout_width="55dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:background="@drawable/avanzar_xxxdpi_06" />
+</LinearLayout>

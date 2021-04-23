@@ -4,16 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blanco"
     android:orientation="vertical"
-    tools:context=".ActivityMuevete">
-
+    android:background="@color/blanco"
+    tools:context=".Trazos">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
         android:orientation="horizontal">
-
 
         <ImageButton
             android:layout_width="55dp"
@@ -27,39 +26,27 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginEnd="100dp"
-            android:text="@string/muevete"
+            android:text="@string/trazos"
             android:textAlignment="center"
+            android:textStyle="bold"
             android:textColor="@color/gris_oscuro"
-            android:textSize="23sp" />
-
-
+            android:textSize="40sp" />
     </LinearLayout>
-
+    <Button
+        android:id="@+id/btnComoEstas"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/azul_claro"
+        android:textSize="20sp"
+        app:cornerRadius="20dp" />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="35dp"
-        android:background="@drawable/layout_redondeado_con_color"></LinearLayout>
+        android:layout_height="400dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/borde_naranja">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="540dp">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="fitXY"
-            android:layout_alignParentBottom="true"
-            android:src="@drawable/trazado14_xxxdpi_06"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="600dp"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="35dp"
-            android:background="@drawable/borde"></LinearLayout>
-
-    </RelativeLayout>
-
+    </LinearLayout>
 </LinearLayout>

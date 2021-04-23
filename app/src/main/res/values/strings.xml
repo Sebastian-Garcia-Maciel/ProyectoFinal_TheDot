@@ -22,17 +22,41 @@
     <string name="metodos_respiracion">Métodos de respiración</string>
     <string name="intenciones_dia">*Intenciones del dia</string>
     <string name="intenciones_semana">*Intenciones de la semana</string>
-    <string name="muevete">Muévete</string>
-    <string name="comienza">Comienza</string>
-    <string name="tecnica_japonesa">Técnica \n japonesa</string>
-    <string name="estatico">/ ESTÁTICO</string>
     <string name="activo">/ ACTIVO</string>
+    <string name="about">About</string>
+    <string name="comienza">Comienza</string>
+    <string name="respiracion_description">La respiracion es una de las funciones básicas del organismo que nos permite obtener el oxígeno necesario para la supervivencia. Entrenar esta funcion puede contribuir en gran medida a reducir el nivel de estres.</string>
+    <string name="recordatorio_description">Ayudan a mejorar nuestros habitos y a recordarnos pequeños detalles saludables que cambian y aportan estabilidad a nuestra vida. </string>
+    <string name="estatico">/ ESTÁTICO</string>
     <string name="estiramiento">Estiramiento</string>
     <string name="deja_atras_estres">Deja atrás el estrés</string>
     <string name="lidia_estres">Lidia con el estrés</string>
     <string name="alcanza_tu_potencial">Alcanza tu potencial sin límites</string>
-    <string name="afirmaciones">Mis\nafirmaciones</string>
-    <string name="mis_afirmaciones_texto">Son una herramienta para mejorar nuestro estado emocional\n y para atraer lo que queremos. Tienen por objetivo el hacer\n sentirnos mejor, tener una actitud positiva ante la vida y\n nos ayudan a crear nuestra propia realidad.</string>
+    <string name="inicia">inicia</string>
+    <string name="sesión">sesión</string>
+    <string name="tecnicas">Tecnicas</string>
+    <string name="tecnica_dedos">Técnica de los dedos</string>
+    <string name="trazos">Trazos</string>
+    <string name="muevete">Muevete</string>
+    <string name="metrespiracion">Metodos de Respiracion</string>
+    <string name="email">correo electonico</string>
+    <string name="pasword">contraseña</string>
+    <string name="crea">crea</string>
+    <string name="tu">tu</string>
+    <string name="cuenta">cuenta</string>
+    <string name="pasivo">/ Pasivo</string>
+    <string name="respiracion">/ Respiracion Profunda</string>
+    <string name="hola">¡Hola Fer!</string>
+    <string name="metodos">Métodos</string>
+    <string name="mi_perfil">Mi perfil</string>
+    <string name="recordatorios">Recordatorios</string>
+    <string name="afirmaciones">Afirmaciones</string>
+    <string name="agenda">Agenda</string>
+    <string name="metas">Metas</string>
+    <string name="estres">/ SEGÚN LA RAE EL ESTRPÉS ES UNA TENSIÓN PROVOCADA POR SITUACIONES AGOBIANTES QUE ORIGINAN REACCIONES PSICOSOMÁTICAS O TRANSTORNOS PSICOLÓGICOS QUE EN OCACIONES SON GRAVES. </string>
+    <string name="the_dot">CADA SUCESO EN NUESTRA VIDA ES SOLO UN PUNTO A COMPARACION DE TODO LO QUE NOS QUEDA POR VIVIR</string>
+    <string name="perfil_description">Soy Fer, tengo 18 años y actualmente estoy estudiando la Licenciatura en Fisioterapia. Me gusta mucho tomar cafe , bailar y pintar.</string>
+    <string name="metodos_description">Queremos que lleves una vida mas tranquila. Por eso, te dejamos a continuación una serie de metodosque ayudan a manejar el estrés y lograr la relajación</string>
 
 
 </resources>
