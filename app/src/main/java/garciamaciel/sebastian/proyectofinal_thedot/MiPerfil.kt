@@ -15,7 +15,7 @@ class MiPerfil : AppCompatActivity() {
         val btnRecordatorios: Button = findViewById(R.id.btnRecordatorios) as Button
         val btnAfirmaciones: Button = findViewById(R.id.btnAfirmaciones) as Button
         val btnMetas: Button = findViewById(R.id.btnMetas) as Button
-        val btnTecnicas: Button = findViewById(R.id.btnTecnicas) as Button
+        val btnTecnicas: Button = findViewById(R.id.btnAgenda) as Button
 
 
         buttonRegresar.setOnClickListener{

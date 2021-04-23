@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    android:orientation="vertical"
+    tools:context=".ActivityDedos">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:layout_width="55dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="52dp"
+            android:background="@drawable/regresar_xxxdpi_06" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="100dp"
+            android:text="Técnica \n japonesa"
+            android:textAlignment="center"
+            android:textColor="@color/gris_oscuro"
+            android:textSize="23sp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/layout_redondeado_con_color"
+            android:backgroundTint="@color/lavanda"></LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="38dp"
+            android:layout_marginEnd="38dp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:text="Esta técnica nos ayuda en cinco minutos a armonizar\n la energía de nuestro cuerpo. para ello, es\n importante saber que cada uno de los dedos de\ nuestra mano respresenta un sentimiento o actitud."
+            android:textColor="@color/gris_oscuro"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/borde"></LinearLayout>
+
+
+</LinearLayout>

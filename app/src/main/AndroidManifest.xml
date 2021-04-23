@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinal_TheDot">
-        <activity android:name=".ActivityEstiramiento"></activity>
+        <activity android:name=".ActivityDias"></activity>
+        <activity android:name=".ActivityMuevete" />
+        <activity android:name=".ActivityDedos" />
+        <activity android:name=".ActivityEstiramiento" />
         <activity android:name=".Trazos" />
         <activity android:name=".Respiracion" />
         <activity android:name=".Recordatorios" />

@@ -49,7 +49,7 @@
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_margin="20dp"
-        android:src="@drawable/simbolo__03"
+        android:src="@drawable/simbolo_xxxdpi_06"
         />
     <ImageButton
         android:layout_width="55dp"
