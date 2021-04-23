@@ -19,7 +19,8 @@ class Inicio1 : AppCompatActivity() {
         val botonMiPerfil:ImageButton = findViewById<ImageButton>(R.id.boton_mi_perfil)
         val botonMetodos:ImageButton = findViewById<ImageButton>(R.id.boton_metodos)
         val  botonJournal:ImageButton = findViewById<ImageButton>(R.id.boton_journal)
-        val  botonAbout:ImageButton = findViewById<ImageButton>(R.id. boton_about)
+        val  botonAbout:ImageButton = findViewById<ImageButton>(R.id.boton_about)
+
 
 
         botonMiPerfil.setOnClickListener() {
@@ -40,5 +41,6 @@ class Inicio1 : AppCompatActivity() {
             var intent: Intent = Intent(this, About::class.java)
             startActivity(intent)
         }
+
     }
 }

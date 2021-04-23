@@ -57,12 +57,6 @@
             android:layout_marginRight="35dp"
             android:background="@drawable/borde_naranja"></LinearLayout>
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="130dp"
-            android:layout_marginTop="500dp"
-            android:layout_marginBottom="40dp"
-            app:srcCompat="@drawable/mancha3_xdpi_04" />
+
     </RelativeLayout>
 </LinearLayout>

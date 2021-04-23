@@ -8,11 +8,12 @@
     android:orientation="vertical"
     tools:context=".CrearCuenta">
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         android:orientation="horizontal">
 
         <ImageButton
@@ -31,104 +32,68 @@
     </LinearLayout>
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="100dp"
-        android:layout_marginBottom="60dp"
-        android:text="@string/crea"
-        android:textAlignment="gravity"
+        android:layout_marginStart="60dp"
+        android:text="Crea\ntu\ncuenta"
         android:textColor="@color/gris_oscuro"
+        android:layout_marginBottom="30dp"
         android:textSize="60sp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="100dp"
-        android:layout_marginBottom="60dp"
-        android:text="@string/tu"
-        android:textAlignment="gravity"
-        android:textColor="@color/gris_oscuro"
-        android:textSize="60sp"
-        android:translationY="-90dp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="108dp"
-        android:layout_gravity="right"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="100dp"
-        android:layout_marginBottom="50dp"
-        android:text="@string/cuenta"
-        android:textAlignment="gravity"
-        android:textColor="@color/gris_oscuro"
-        android:textSize="60sp"
-        android:textStyle="italic"
-        android:translationY="-180dp" />
-
-    <EditText
-        android:id="@+id/etName"
-        android:layout_width="match_parent"
-        android:layout_height="74dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginRight="20dp"
-        android:hint="nombre de usuario"
-        android:inputType="textEmailAddress"
-        android:textAlignment="center"
-        android:translationY="-280dp" />
-
-    <EditText
-        android:id="@+id/etEmailCC"
-        android:layout_width="match_parent"
-        android:layout_height="74dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginRight="20dp"
-        android:hint="@string/email"
-        android:inputType="textEmailAddress"
-        android:textAlignment="center"
-        android:translationY="-280dp" />
-
-    <EditText
-        android:id="@+id/etPassword"
-        android:layout_width="match_parent"
-        android:layout_height="74dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginRight="20dp"
-        android:hint="@string/pasword"
-        android:inputType="textEmailAddress"
-        android:textAlignment="center"
-        android:translationY="-280dp" />
-
-    <EditText
-        android:id="@+id/etConfirmation"
-        android:layout_width="match_parent"
-        android:layout_height="74dp"
-        android:layout_gravity="center"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginRight="20dp"
-        android:hint="confirmar contraseña"
-        android:inputType="textEmailAddress"
-        android:textAlignment="center"
-        android:translationY="-280dp" />
-
-    <Button
-        android:id="@+id/boton_crea_cuenta"
+    <LinearLayout
         android:layout_width="250dp"
-        android:layout_height="80dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:backgroundTint="@color/azul_claro"
-        android:text="@string/crea_cuenta"
-        android:translationY="-270dp"
-        app:cornerRadius="50dp" />
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+            android:backgroundTint="@color/azul_claro"
+            android:layout_marginBottom="20dp"
+            android:text="@string/nombre_usuario" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+            android:backgroundTint="@color/azul_claro"
+            android:layout_marginBottom="20dp"
+            android:text="@string/correo" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+            android:backgroundTint="@color/azul_claro"
+            android:layout_marginBottom="20dp"
+            android:text="@string/contrasenia" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textAlignment="center"
+            android:inputType="textPersonName"
+            android:backgroundTint="@color/azul_claro"
+            android:layout_marginBottom="20dp"
+            android:text="@string/confirmar_contrasenia" />
+
+        <Button
+            android:id="@+id/boton_crea_cuenta"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:backgroundTint="@color/azul_claro"
+            android:text="@string/crea_cuenta"
+            app:cornerRadius="50dp" />
+    </LinearLayout>
+
 
 </LinearLayout>

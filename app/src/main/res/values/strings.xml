@@ -53,7 +53,11 @@
     <string name="afirmaciones">Afirmaciones</string>
     <string name="agenda">Agenda</string>
     <string name="metas">Metas</string>
-    <string name="estres">/ SEGÚN LA RAE EL ESTRPÉS ES UNA TENSIÓN PROVOCADA POR SITUACIONES AGOBIANTES QUE ORIGINAN REACCIONES PSICOSOMÁTICAS O TRANSTORNOS PSICOLÓGICOS QUE EN OCACIONES SON GRAVES. </string>
+    <string name="nombre_usuario">nombre de usuario</string>
+    <string name="correo">correo electrónico</string>
+    <string name="contrasenia">contraseña</string>
+    <string name="confirmar_contrasenia">confirmar contraseña</string>
+    <string name="estres">/ SEGÚN LA RAE EL ESTRÉS ES UNA TENSIÓN PROVOCADA POR SITUACIONES AGOBIANTES QUE ORIGINAN REACCIONES PSICOSOMÁTICAS O TRANSTORNOS PSICOLÓGICOS QUE EN OCACIONES SON GRAVES. </string>
     <string name="the_dot">CADA SUCESO EN NUESTRA VIDA ES SOLO UN PUNTO A COMPARACION DE TODO LO QUE NOS QUEDA POR VIVIR</string>
     <string name="perfil_description">Soy Fer, tengo 18 años y actualmente estoy estudiando la Licenciatura en Fisioterapia. Me gusta mucho tomar cafe , bailar y pintar.</string>
     <string name="metodos_description">Queremos que lleves una vida mas tranquila. Por eso, te dejamos a continuación una serie de metodosque ayudan a manejar el estrés y lograr la relajación</string>

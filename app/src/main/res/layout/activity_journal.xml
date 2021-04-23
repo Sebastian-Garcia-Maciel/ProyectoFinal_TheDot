@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="90dp"
         android:orientation="horizontal">
 
 
@@ -21,7 +21,7 @@
             android:layout_width="55dp"
             android:layout_height="52dp"
             android:layout_gravity="center"
-            android:layout_marginLeft="52dp"
+            android:layout_marginStart="52dp"
             android:background="@drawable/regresar_xxxdpi_06" />
 
         <TextView
@@ -35,64 +35,47 @@
             android:textSize="23sp" />
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btnComoEstas"
-        android:layout_width="350dp"
-        android:layout_height="120dp"
-        android:layout_gravity="center"
-        android:backgroundTint="@color/azul"
-        android:text="¿Como estás hoy?"
-        android:textSize="20sp"
-        app:cornerRadius="20dp" />
-
-    <Button
+    <android.widget.Button
         android:id="@+id/btnIntencionesDia"
+        android:textAllCaps="false"
         android:layout_width="350dp"
-        android:layout_height="120dp"
+        android:layout_height="130dp"
         android:layout_gravity="center"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
-        android:text="Intenciones del día"
-        android:textSize="20sp"
-        app:cornerRadius="20dp" />
+        android:background="@drawable/borde_azul"
+        android:text="Intenciones del dia"
+        android:textColor="@color/gris"
+        android:textSize="22sp"
+        android:layout_marginBottom="20dp"/>
 
-    <Button
+    <android.widget.Button
         android:id="@+id/btnIntencionesSemana"
+        android:textAllCaps="false"
         android:layout_width="350dp"
-        android:layout_height="120dp"
+        android:layout_height="130dp"
         android:layout_gravity="center"
+        android:background="@drawable/borde_azul"
         android:backgroundTint="@color/azul"
+        android:textColor="@color/blanco"
         android:text="Intenciones de la semana"
         android:textSize="20sp"
-        app:cornerRadius="20dp"
-        />
+        android:layout_marginBottom="20dp"/>
 
-    <Button
-        android:id="@+id/btnMisDias"
+    <android.widget.Button
+        android:id="@+id/btnComoEstas"
+        android:textAllCaps="false"
         android:layout_width="350dp"
-        android:layout_height="120dp"
+        android:layout_height="130dp"
         android:layout_gravity="center"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
-        android:text="Mis días"
-        android:textSize="20sp"
-        app:cornerRadius="20dp"
-        />
+        android:background="@drawable/borde_azul"
+        android:text="Mis dias"
+        android:textColor="@color/gris"
+        android:layout_marginBottom="25dp"
+        android:textSize="20sp"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:translationY="-50dp"
-        android:orientation="horizontal">
+    <ImageView
+        android:layout_width="216dp"
+        android:layout_height="95dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/simbolo_xxxdpi_06" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="302dp"
-            android:layout_weight="1"
-            android:scaleType="fitStart"
-            android:translationX="50dp"
-            android:translationY="-50dp"
-            app:srcCompat="@drawable/icono" />
-
-    </LinearLayout>
 </LinearLayout>

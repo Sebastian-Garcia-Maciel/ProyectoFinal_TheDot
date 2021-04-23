@@ -22,7 +22,7 @@ class ActivityEstiramiento : AppCompatActivity() {
         val botonEstiramientoEstatico:android.widget.Button = findViewById<android.widget.Button>(R.id. boton_estiramiento_estatico)
 
         botonRegresar.setOnClickListener() {
-            var intent: Intent = Intent(this, Inicio1::class.java)
+            var intent: Intent = Intent(this, Metodos::class.java)
             startActivity(intent)
         }
 

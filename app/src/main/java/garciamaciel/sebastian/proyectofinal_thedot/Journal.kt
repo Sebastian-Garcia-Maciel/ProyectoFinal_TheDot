@@ -31,6 +31,10 @@ class Journal : AppCompatActivity() {
             startActivity(intent)
         }
         botonIntencionesDia.setOnClickListener() {
+            var intent: Intent = Intent(this, ActivityIntencionesDia::class.java)
+            startActivity(intent)
+        }
+        botonIntencionesSemana.setOnClickListener() {
             var intent: Intent = Intent(this, ActivityIntencionesSemana::class.java)
             startActivity(intent)
         }

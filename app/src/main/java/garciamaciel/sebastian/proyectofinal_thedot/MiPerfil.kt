@@ -27,7 +27,7 @@ class MiPerfil : AppCompatActivity() {
             startActivity(intent)
         }
         btnAfirmaciones.setOnClickListener {
-            var intent: Intent = Intent(this, Recordatorios::class.java)
+            var intent: Intent = Intent(this, ActivityAfirmaciones::class.java)
             startActivity(intent)
         }
         btnMetas.setOnClickListener {

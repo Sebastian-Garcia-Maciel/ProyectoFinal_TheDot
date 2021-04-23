@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinal_TheDot">
-        <activity android:name=".ActivityDias"></activity>
+        <activity android:name=".ActivityAfirmaciones"></activity>
+        <activity android:name=".ActivityDias" />
         <activity android:name=".ActivityMuevete" />
         <activity android:name=".ActivityDedos" />
         <activity android:name=".ActivityEstiramiento" />

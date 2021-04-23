@@ -21,7 +21,7 @@ class Tecnicas : AppCompatActivity() {
             startActivity(intent)
         }
         btnDedos.setOnClickListener{
-            var intent: Intent = Intent(this, Trazos::class.java)
+            var intent: Intent = Intent(this, ActivityDedos::class.java)
             startActivity(intent)
         }
         btnTrazos.setOnClickListener{
@@ -29,7 +29,7 @@ class Tecnicas : AppCompatActivity() {
             startActivity(intent)
         }
         btnMuevete.setOnClickListener{
-            var intent: Intent = Intent(this, ActivityEstiramientoActivo::class.java)
+            var intent: Intent = Intent(this, ActivityMuevete::class.java)
             startActivity(intent)
         }
     }

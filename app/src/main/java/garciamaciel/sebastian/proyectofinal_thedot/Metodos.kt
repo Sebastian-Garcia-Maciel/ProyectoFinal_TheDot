@@ -28,7 +28,7 @@ class Metodos : AppCompatActivity() {
             startActivity(intent)
         }
         btnEstiramiento.setOnClickListener {
-            var intent: Intent = Intent(this, ActivityEstiramientoActivo::class.java)
+            var intent: Intent = Intent(this, ActivityEstiramiento::class.java)
             startActivity(intent)
         }
         btnTecnicas.setOnClickListener {
@@ -40,7 +40,7 @@ class Metodos : AppCompatActivity() {
             startActivity(intent)
         }
         btnRecordatorios.setOnClickListener {
-            var intent: Intent = Intent(this, ActivityMetodosFavoritos::class.java)
+            var intent: Intent = Intent(this, Recordatorios::class.java)
             startActivity(intent)
         }
     }
