@@ -15,6 +15,7 @@
         android:orientation="horizontal">
 
         <ImageButton
+            android:id="@+id/btnRegresarMet"
             android:layout_width="55dp"
             android:layout_height="52dp"
             android:layout_gravity="center"
@@ -108,7 +109,7 @@
             android:layout_gravity=""
             android:layout_margin="10dp"
             android:backgroundTint="@color/azul"
-            android:text="@string/recordatorios"
+            android:text="Favoritos"
             android:textSize="18sp"
             app:cornerRadius="20dp" />
 

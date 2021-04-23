@@ -15,6 +15,7 @@
         android:orientation="horizontal">
 
         <ImageButton
+            android:id="@+id/btnRegresarMi"
             android:layout_width="55dp"
             android:layout_height="52dp"
             android:layout_gravity="center"
@@ -67,7 +68,7 @@
         />
 
     <Button
-        android:id="@+id/boton_inicia_sesion"
+        android:id="@+id/btnRecordatorios"
         android:layout_width="350dp"
         android:layout_height="100dp"
         android:layout_gravity="center"
@@ -94,7 +95,7 @@
             android:layout_gravity=""
             android:layout_margin="10dp"
             android:backgroundTint="@color/anaranjado_claro"
-            android:text="@string/recordatorios"
+            android:text="Afrimaciones"
             android:textSize="20sp"
             app:cornerRadius="20dp" />
 
@@ -117,7 +118,7 @@
             android:layout_gravity=""
             android:layout_margin="10dp"
             android:backgroundTint="@color/verde_azulado"
-            android:text="@string/recordatorios"
+            android:text="Metas"
             android:textSize="20sp"
             app:cornerRadius="20dp" />
     </GridLayout>

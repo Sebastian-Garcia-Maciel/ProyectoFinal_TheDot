@@ -26,10 +26,11 @@
             app:srcCompat="@drawable/logo2_xxdpi_05" />
 
         <ImageButton
+            android:id="@+id/btnConfiguracion"
             android:layout_width="120dp"
             android:layout_height="95dp"
             android:layout_weight="1"
-            app:srcCompat="@drawable/info_xxxdpi_06"
+            app:srcCompat="@drawable/ic_baseline_menu_24"
             android:backgroundTint="@color/azul"
              />
     </LinearLayout>

@@ -18,6 +18,7 @@
 
 
         <ImageButton
+            android:id="@+id/btnRegresarMr"
             android:layout_width="55dp"
             android:layout_height="52dp"
             android:layout_gravity="center"
