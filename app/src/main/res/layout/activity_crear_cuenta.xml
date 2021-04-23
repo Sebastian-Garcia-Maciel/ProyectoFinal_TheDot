@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/blanco"
+    android:orientation="vertical"
     tools:context=".CrearCuenta">
 
     <LinearLayout
@@ -16,6 +16,7 @@
         android:orientation="horizontal">
 
         <ImageButton
+            android:id="@+id/boton_regresar_crear_cuenta"
             android:layout_width="55dp"
             android:layout_height="52dp"
             android:layout_gravity="center"
@@ -35,23 +36,24 @@
         android:layout_gravity="right"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="100dp"
+        android:layout_marginBottom="60dp"
         android:text="@string/crea"
         android:textAlignment="gravity"
         android:textColor="@color/gris_oscuro"
-        android:textSize="60sp"
-        android:layout_marginBottom="60dp"/>
+        android:textSize="60sp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="100dp"
+        android:layout_marginBottom="60dp"
         android:text="@string/tu"
         android:textAlignment="gravity"
         android:textColor="@color/gris_oscuro"
         android:textSize="60sp"
-        android:translationY="-90dp"
-        android:layout_marginBottom="60dp"/>
+        android:translationY="-90dp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -92,6 +94,7 @@
         android:inputType="textEmailAddress"
         android:textAlignment="center"
         android:translationY="-280dp" />
+
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
@@ -104,6 +107,7 @@
         android:inputType="textEmailAddress"
         android:textAlignment="center"
         android:translationY="-280dp" />
+
     <EditText
         android:id="@+id/etConfirmation"
         android:layout_width="match_parent"
@@ -116,6 +120,7 @@
         android:inputType="textEmailAddress"
         android:textAlignment="center"
         android:translationY="-280dp" />
+
     <Button
         android:id="@+id/boton_crea_cuenta"
         android:layout_width="250dp"
@@ -123,7 +128,7 @@
         android:layout_gravity="center"
         android:backgroundTint="@color/azul_claro"
         android:text="@string/crea_cuenta"
-        app:cornerRadius="50dp"
-        android:translationY="-270dp"/>
+        android:translationY="-270dp"
+        app:cornerRadius="50dp" />
 
 </LinearLayout>

@@ -37,7 +37,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginleft="60dp"
         android:text="@string/hola"
         android:textAlignment="center"
         android:textStyle="italic"
@@ -52,24 +51,28 @@
         android:orientation="horizontal">
 
         <ImageButton
+            android:id="@+id/boton_mi_perfil"
             android:layout_width="55dp"
             android:layout_height="52dp"
             android:layout_gravity="center"
             android:layout_marginStart="52dp"
             android:background="@drawable/perfil__02" />
         <ImageButton
+            android:id="@+id/boton_metodos"
             android:layout_width="55dp"
             android:layout_height="52dp"
             android:layout_gravity="center"
             android:layout_marginStart="32dp"
             android:background="@drawable/metodos__02" />
         <ImageButton
+            android:id="@+id/boton_journal"
             android:layout_width="55dp"
             android:layout_height="52dp"
             android:layout_gravity="center"
             android:layout_marginStart="32dp"
             android:background="@drawable/journal__02" />
         <ImageButton
+            android:id="@+id/boton_about"
             android:layout_width="55dp"
             android:layout_height="52dp"
             android:layout_gravity="center"
