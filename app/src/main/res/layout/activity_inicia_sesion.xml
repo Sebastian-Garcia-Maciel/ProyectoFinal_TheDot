@@ -59,13 +59,19 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="80dp"
             android:backgroundTint="@color/azul_claro"
             android:ems="10"
             android:inputType="textPersonName"
             android:text="@string/contrasenia"
             android:textAlignment="center" />
 
+
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            />
 
         <Button
             android:id="@+id/boton_inicia_sesion"
