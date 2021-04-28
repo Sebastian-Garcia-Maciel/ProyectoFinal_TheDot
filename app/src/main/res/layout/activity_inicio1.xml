@@ -25,6 +25,7 @@
             android:background="@color/azul"
             app:srcCompat="@drawable/logo2_xxdpi_05" />
         <ImageView
+            android:id="@+id/btnCerarSesion"
             android:layout_width="100dp"
             android:layout_height="95dp"
             android:layout_weight="1"
