@@ -38,6 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         android:text="@string/hola"
         android:textAlignment="center"
         android:textStyle="italic"
@@ -47,6 +48,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
         android:layout_height="100dp"
         android:translationY="-40dp"
         android:orientation="horizontal">
@@ -87,7 +89,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="480dp"
+            android:layout_marginTop="80dp"
+            android:layout_height="400dp"
             android:layout_marginLeft="35dp"
             android:layout_marginRight="35dp"
             android:background="@drawable/frase"

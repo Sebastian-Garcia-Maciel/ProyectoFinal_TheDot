@@ -3,6 +3,7 @@ package garciamaciel.sebastian.proyectofinal_thedot
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -12,9 +13,15 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
+import kotlinx.android.synthetic.main.activity_inicia_sesion.*
 
 
 class IniciaSesion : AppCompatActivity() {
+
+    private lateinit var auth: FirebaseAuth
 
     val RC_SIGN_IN = 123
     val COD_LOGOUT = 323
@@ -23,6 +30,9 @@ class IniciaSesion : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_inicia_sesion)
+
+        auth = Firebase.auth
+
         // Configure sign-in to request the user's ID, email address, and basic
         // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
         // Configure sign-in to request the user's ID, email address, and basic
@@ -36,16 +46,16 @@ class IniciaSesion : AppCompatActivity() {
         val botonRegresar: ImageButton =
             findViewById<ImageButton>(R.id.boton_regresar_inicia_sesion)
         val botonIniciarSesion = findViewById<Button>(R.id.boton_inicia_sesion)
-        val botonIniciaSesionGoogle: com.google.android.gms.common.SignInButton =
-            findViewById<com.google.android.gms.common.SignInButton>(
-                R.id.sign_in_button
-            )
+        //val botonIniciaSesionGoogle: com.google.android.gms.common.SignInButton =
+            //findViewById<com.google.android.gms.common.SignInButton>(
+              //  R.id.sign_in_button
+           // )
 
 
         // Build a GoogleSignInClient with the options specified by gso.
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
-        botonIniciaSesionGoogle.setOnClickListener {
+        sign_in_button.setOnClickListener {
             val signInIntent = mGoogleSignInClient.signInIntent
             startActivityForResult(signInIntent, RC_SIGN_IN)
         }
@@ -56,8 +66,7 @@ class IniciaSesion : AppCompatActivity() {
         }
 
         botonIniciarSesion.setOnClickListener() {
-            var intent: Intent = Intent(this, Inicio1::class.java)
-            startActivity(intent)
+            this.valida_ingreso()
         }
 
 
@@ -121,6 +130,42 @@ class IniciaSesion : AppCompatActivity() {
             startActivityForResult(intent, COD_LOGOUT)
 
         }
+    }
+
+    private fun valida_ingreso(){
+        val et_correo: EditText = findViewById(R.id.etCorreo)
+        val et_contra: EditText = findViewById(R.id.etContra)
+
+        var correo: String = et_correo.text.toString()
+        var contra: String = et_contra.text.toString()
+
+        if(!correo.isNullOrBlank() && !contra.isNullOrBlank()){
+            ingresaFirebase(correo,contra)
+        }else{
+            Toast.makeText(this, "Ingresar datos",
+                Toast.LENGTH_SHORT).show()
+        }
+
+    }
+
+    private fun ingresaFirebase(email: String, password: String){
+        auth.signInWithEmailAndPassword(email, password)
+            .addOnCompleteListener(this) { task ->
+                if (task.isSuccessful) {
+                    // Sign in success, update UI with the signed-in user's information
+                    // Log.d(TAG, "signInWithEmail:success")
+                    val user = auth.currentUser
+                    val intent: Intent = Intent(this, Inicio1::class.java)
+                    startActivity(intent)
+                    //updateUI(user)
+                } else {
+                    // If sign in fails, display a message to the user.
+                    //Log.w(TAG, "signInWithEmail:failure", task.exception)
+                    Toast.makeText(baseContext, "Authentication failed.",
+                        Toast.LENGTH_SHORT).show()
+                    //updateUI(null)
+                }
+            }
     }
 
 

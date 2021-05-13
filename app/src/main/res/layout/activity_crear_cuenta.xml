@@ -47,41 +47,49 @@
         android:layout_gravity="center"
         android:orientation="vertical">
         <EditText
+            android:id="@+id/etNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:textAlignment="center"
-            android:inputType="textPersonName"
+            android:inputType="text"
+            android:hint="nombre de usuario"
             android:backgroundTint="@color/azul_claro"
             android:layout_marginBottom="20dp"
-            android:text="@string/nombre_usuario" />
+            />
         <EditText
+            android:id="@+id/etCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:textAlignment="center"
-            android:inputType="textPersonName"
+            android:inputType="textEmailAddress"
+            android:hint="correo electronico"
             android:backgroundTint="@color/azul_claro"
             android:layout_marginBottom="20dp"
-            android:text="@string/correo" />
+             />
         <EditText
+            android:id="@+id/etContraseña"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:textAlignment="center"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
+            android:hint="contraseña"
             android:backgroundTint="@color/azul_claro"
             android:layout_marginBottom="20dp"
-            android:text="@string/contrasenia" />
+            />
         <EditText
+            android:id="@+id/etConfirmacion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:textAlignment="center"
-            android:inputType="textPersonName"
+            android:inputType="textPassword"
+            android:hint="confirmación"
             android:backgroundTint="@color/azul_claro"
             android:layout_marginBottom="20dp"
-            android:text="@string/confirmar_contrasenia" />
+            />
 
         <Button
             android:id="@+id/boton_crea_cuenta"

@@ -47,22 +47,24 @@
         android:orientation="vertical">
 
         <EditText
+            android:id="@+id/etCorreo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
             android:backgroundTint="@color/azul_claro"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="@string/correo"
+            android:inputType="textEmailAddress"
+            android:hint="correo electronico"
             android:textAlignment="center" />
 
         <EditText
+            android:id="@+id/etContra"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/azul_claro"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="@string/contrasenia"
+            android:inputType="textPassword"
+            android:hint="contraseña"
             android:textAlignment="center" />
 
 
