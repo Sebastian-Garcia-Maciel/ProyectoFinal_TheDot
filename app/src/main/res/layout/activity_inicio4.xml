@@ -32,20 +32,23 @@
             app:srcCompat="@drawable/info_xxxdpi_06"
             android:backgroundTint="@color/azul"
             />
-    </LinearLayout>
+   </LinearLayout>
     <TextView
+        android:id="@+id/tv_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="20dp"
         android:text="@string/hola"
         android:textAlignment="center"
         android:textStyle="italic"
         android:textColor="@color/gris_oscuro"
-        android:textSize="40sp"
+        android:textSize="25sp"
         android:translationY="-30dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
         android:layout_height="100dp"
         android:translationY="-40dp"
         android:orientation="horizontal">
@@ -55,7 +58,7 @@
             android:layout_width="55dp"
             android:layout_height="52dp"
             android:layout_gravity="center"
-            android:layout_marginStart="52dp"
+            android:layout_marginStart="40dp"
             android:background="@drawable/perfil__02" />
         <ImageButton
             android:id="@+id/boton_metodos"
@@ -79,30 +82,99 @@
             android:layout_marginStart="32dp"
             android:background="@drawable/info_xxxdpi_06" />
     </LinearLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:translationY="-40dp"
-        android:layout_height="500dp">
+        android:layout_height="561dp"
+        app:cornerRadius="200dp"
+        android:translationY="-80dp">
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/playlist"
+            app:cornerRadius="200dp"
+            />
+
+
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/regresar_xxxdpi_06" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="340dp"
+            android:layout_marginTop="140dp"
+            android:src="@drawable/avanzar_xxxdpi_06" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="480dp"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:background="@drawable/foto_del_dia"
-            ></LinearLayout>
+            android:layout_height="match_parent"
+            android:layout_marginTop="500dp"
+            android:layout_marginStart="35dp"
+            android:orientation="horizontal"
+            android:translationY="-40dp">
 
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="200dp"
-            android:src="@drawable/regresar_xxxdpi_06" />
-        <ImageView
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="330dp"
-            android:layout_marginTop="200dp"
-            android:src="@drawable/avanzar_xxxdpi_06" />
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="85dp"
+                android:backgroundTint="@color/azul"
+                android:layout_marginLeft="100dp"
+                app:cornerRadius="10dp"
+                />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="@color/azul"
+                android:layout_marginLeft="100dp"
+                app:cornerRadius="10dp"
+                />
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="@color/azul"
+                android:layout_marginLeft="100dp"
+                app:cornerRadius="10dp"
+                />
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="@color/white"
+                android:layout_marginLeft="100dp"
+                app:cornerRadius="10dp"
+                />
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="@color/azul"
+                android:layout_marginLeft="100dp"
+                app:cornerRadius="10dp"
+                />
+
+
+        </LinearLayout>
+
     </RelativeLayout>
 </LinearLayout>

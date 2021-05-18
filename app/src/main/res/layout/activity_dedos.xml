@@ -59,17 +59,82 @@
             android:layout_gravity="center"
             android:text="Esta técnica nos ayuda en cinco minutos a armonizar\n la energía de nuestro cuerpo. para ello, es\n importante saber que cada uno de los dedos de\ nuestra mano respresenta un sentimiento o actitud."
             android:textColor="@color/gris_oscuro"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
     </RelativeLayout>
 
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="420dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="35dp"
-        android:background="@drawable/borde"></LinearLayout>
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="45dp"
+            android:text="@string/pulgar"
+            android:textColor="@color/gris_oscuro"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginEnd="45dp"
+            android:text="@string/indice"
+            android:textColor="@color/gris_oscuro"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="45dp"
+            android:text="@string/medio"
+            android:textColor="@color/gris_oscuro"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginEnd="45dp"
+            android:text="@string/anular"
+            android:textColor="@color/gris_oscuro"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="260dp"
+            android:layout_marginEnd="45dp"
+            android:text="@string/menique"
+            android:textColor="@color/gris_oscuro"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="365dp"
+            android:layout_marginEnd="45dp"
+            android:text="@string/palma"
+            android:textColor="@color/gris_oscuro"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="490dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/borde"></LinearLayout>
+
+    </RelativeLayout>
 
 
 </LinearLayout>

@@ -67,16 +67,19 @@
             android:hint="contraseña"
             android:textAlignment="center" />
 
+        <TextView
+            android:id="@+id/btnOlvidoDeContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Olvidaste tu contraseña?"
+            android:textAlignment="center"
+            android:textStyle="italic">
 
-
-        <com.google.android.gms.common.SignInButton
-            android:id="@+id/sign_in_button"
-            android:layout_width="250dp"
-            android:layout_height="70dp"
-            />
+        </TextView>
 
         <Button
             android:id="@+id/boton_inicia_sesion"
+            android:layout_marginTop="80dp"
             android:layout_width="250dp"
             android:layout_height="70dp"
             android:layout_gravity="center"

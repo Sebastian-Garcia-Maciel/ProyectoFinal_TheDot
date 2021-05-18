@@ -36,10 +36,23 @@
     </LinearLayout>
 
     <android.widget.Button
+        android:id="@+id/btnComoEstasHoy"
+        android:textAllCaps="false"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/borde_azul"
+        android:backgroundTint="@color/azul"
+        android:textColor="@color/blanco"
+        android:text="¿Como estas hoy?"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"/>
+
+    <android.widget.Button
         android:id="@+id/btnIntencionesDia"
         android:textAllCaps="false"
         android:layout_width="350dp"
-        android:layout_height="130dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
         android:background="@drawable/borde_azul"
         android:text="Intenciones del dia"
@@ -51,7 +64,7 @@
         android:id="@+id/btnIntencionesSemana"
         android:textAllCaps="false"
         android:layout_width="350dp"
-        android:layout_height="130dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
         android:background="@drawable/borde_azul"
         android:backgroundTint="@color/azul"
@@ -64,7 +77,7 @@
         android:id="@+id/btnComoEstas"
         android:textAllCaps="false"
         android:layout_width="350dp"
-        android:layout_height="130dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
         android:background="@drawable/borde_azul"
         android:text="Mis dias"

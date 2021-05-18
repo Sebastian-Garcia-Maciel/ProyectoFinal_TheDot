@@ -100,6 +100,7 @@
             android:textSize="20sp"
             android:backgroundTint="@color/azul_claro"
             android:text="@string/crea_cuenta"
+            android:layout_marginTop="20dp"
             app:cornerRadius="50dp" />
     </LinearLayout>
 

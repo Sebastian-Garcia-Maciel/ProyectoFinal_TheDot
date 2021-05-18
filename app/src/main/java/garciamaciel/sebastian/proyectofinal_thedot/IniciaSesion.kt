@@ -55,10 +55,10 @@ class IniciaSesion : AppCompatActivity() {
         // Build a GoogleSignInClient with the options specified by gso.
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
-        sign_in_button.setOnClickListener {
+        /*sign_in_button.setOnClickListener {
             val signInIntent = mGoogleSignInClient.signInIntent
             startActivityForResult(signInIntent, RC_SIGN_IN)
-        }
+        }*/
 
         botonRegresar.setOnClickListener() {
             var intent: Intent = Intent(this, MainActivity::class.java)

@@ -58,6 +58,7 @@ class CrearCuenta : AppCompatActivity() {
             if(contra1 == contra2){
 
                 registrarFirebase(correo,contra1)
+                Thread.sleep(3*1000);
                 this.limpiarFormulario()
 
             }else{
