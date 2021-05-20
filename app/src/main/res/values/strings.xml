@@ -44,7 +44,7 @@
     <string name="crea">crea</string>
     <string name="tu">tu</string>
     <string name="cuenta">cuenta</string>
-    <string name="pasivo">/ Pasivo</string>
+    <string name="pasivo">/ PASIVO</string>
     <string name="respiracion">/ Respiracion Profunda</string>
     <string name="hola">¡Hola Fer!</string>
     <string name="metodos">Métodos</string>
@@ -67,9 +67,10 @@
     <string name="estaticoDesc">Consiste en estirar el músculo concreto hasta el punto maximo de su movilidad y mantenerlo en esa posición durante un tiempo que ira siendo mayor a medida que se tenga más practica. Es el método más seguro y efectivo para desarrollar o mantener la flexibilidad y es el utilizado por los practicantes de hatha yoga.</string>
     <string name="confirmar_contrasenia">confirmar contraseña</string>
     <string name="estres">/ SEGÚN LA RAE EL ESTRÉS ES UNA TENSIÓN PROVOCADA POR SITUACIONES AGOBIANTES QUE ORIGINAN REACCIONES PSICOSOMÁTICAS O TRANSTORNOS PSICOLÓGICOS QUE EN OCACIONES SON GRAVES. </string>
-    <string name="the_dot">CADA SUCESO EN NUESTRA VIDA ES SOLO UN PUNTO A COMPARACION DE TODO LO QUE NOS QUEDA POR VIVIR</string>
     <string name="perfil_description">Soy Fer, tengo 18 años y actualmente estoy estudiando la Licenciatura en Fisioterapia. Me gusta mucho tomar cafe , bailar y pintar.</string>
     <string name="metodos_description">Queremos que lleves una vida mas tranquila. Por eso, te dejamos a continuación una serie de metodosque ayudan a manejar el estrés y lograr la relajación</string>
+    <string name="the_dot_text">THE DOT ES UNA APP\n PARA EL MANEJO DEL\nESTRÉS, LA CUÁL\nAPOYA AL USUARIO\nCON TÉCNICAS DE\nRELAJACIÓN, INFORMACIÓN\nde valor y sobre\nTODO ESTANDO CERCA\nDE EL.</string>
+
 
 
 </resources>

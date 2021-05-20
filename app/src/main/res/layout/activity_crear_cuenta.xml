@@ -6,14 +6,12 @@
     android:layout_height="match_parent"
     android:background="@color/blanco"
     android:orientation="vertical"
-    tools:context=".CrearCuenta">
+    tools:context=".ui.ui.inicioSesion.CrearCuenta">
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="30dp"
+        android:layout_height="120dp"
         android:orientation="horizontal">
 
         <ImageButton
@@ -21,29 +19,33 @@
             android:layout_width="55dp"
             android:layout_height="52dp"
             android:layout_gravity="center"
-            android:layout_marginStart="52dp"
+            android:layout_marginStart="@dimen/btn_regresar_margin_start"
+            android:layout_marginEnd="45dp"
             android:background="@drawable/regresar1_xxxdpi_06" />
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="95dp"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
             app:srcCompat="@drawable/simbolo_xxxdpi_06" />
 
     </LinearLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:text="Crea\ntu\ncuenta"
-        android:textColor="@color/gris_oscuro"
-        android:layout_marginBottom="30dp"
-        android:textSize="60sp" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="10dp"
+        android:text="crea\ntu\ncuenta"
+        android:textColor="@color/gris_oscuro"
+        android:textSize="65sp" />
 
     <LinearLayout
-        android:layout_width="250dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
         android:layout_gravity="center"
         android:orientation="vertical">
         <EditText
@@ -88,7 +90,6 @@
             android:inputType="textPassword"
             android:hint="confirmación"
             android:backgroundTint="@color/azul_claro"
-            android:layout_marginBottom="20dp"
             />
 
         <Button

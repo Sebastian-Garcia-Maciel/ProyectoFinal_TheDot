@@ -6,12 +6,11 @@
     android:layout_height="match_parent"
     android:background="@color/blanco"
     android:orientation="vertical"
-    tools:context=".ActivityMeditacion">
+    tools:context=".ui.ui.metodos.ActivityMeditacion">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="120dp"
         android:orientation="horizontal">
 
 
@@ -20,11 +19,12 @@
             android:layout_width="55dp"
             android:layout_height="52dp"
             android:layout_gravity="center"
-            android:layout_marginLeft="52dp"
+            android:layout_marginStart="@dimen/btn_regresar_margin_start"
+            android:layout_marginEnd="35dp"
             android:background="@drawable/regresar_xxxdpi_06" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="100dp"
@@ -35,57 +35,55 @@
     </LinearLayout>
 
 
-    <Button
-        android:id="@+id/btn_comienza"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
-        android:layout_marginBottom="10dp"
-        android:backgroundTint="@color/anaranjado_claro"
-        android:text="@string/comienza"
-        app:cornerRadius="30dp" />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginStart="25dp"
+      android:layout_marginEnd="25dp"
+      android:orientation="vertical">
+      <Button
+          android:id="@+id/btn_comienza"
+          android:layout_width="match_parent"
+          android:layout_height="110dp"
+          android:layout_marginBottom="10dp"
+          android:backgroundTint="@color/anaranjado_claro"
+          android:text="@string/comienza"
+          app:cornerRadius="30dp" />
 
-    <Button
-        android:id="@+id/btnDejaEstres"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
-        android:layout_marginBottom="10dp"
-        android:backgroundTint="@color/azul"
-        android:text="@string/deja_atras_estres"
-        app:cornerRadius="30dp" />
+      <Button
+          android:id="@+id/btnDejaEstres"
+          android:layout_width="match_parent"
+          android:layout_height="110dp"
+          android:layout_marginBottom="10dp"
+          android:backgroundTint="@color/azul"
+          android:text="@string/deja_atras_estres"
+          app:cornerRadius="30dp" />
 
-    <Button
-        android:id="@+id/btnLidiaEstres"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
-        android:layout_marginBottom="10dp"
-        android:backgroundTint="@color/verde_azulado"
-        android:text="@string/lidia_estres"
-        app:cornerRadius="30dp" />
+      <Button
+          android:id="@+id/btnLidiaEstres"
+          android:layout_width="match_parent"
+          android:layout_height="110dp"
+          android:layout_marginBottom="10dp"
+          android:backgroundTint="@color/verde_azulado"
+          android:text="@string/lidia_estres"
+          app:cornerRadius="30dp" />
 
-    <Button
-        android:id="@+id/btnAlcanzaPotencial"
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:layout_marginLeft="35dp"
-        android:layout_marginRight="35dp"
-        android:backgroundTint="@color/lavanda"
-        android:text="@string/alcanza_tu_potencial"
-        app:cornerRadius="30dp" />
+      <Button
+          android:id="@+id/btnAlcanzaPotencial"
+          android:layout_width="match_parent"
+          android:layout_height="110dp"
+          android:backgroundTint="@color/lavanda"
+          android:text="@string/alcanza_tu_potencial"
+          app:cornerRadius="30dp" />
 
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="15dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        app:srcCompat="@drawable/simbolo2_xdpi_04" />
+      <ImageView
+          android:layout_width="130dp"
+          android:layout_height="match_parent"
+          android:layout_gravity="center_horizontal"
+          app:srcCompat="@drawable/simbolo2_xxdpi_05" />
+
+  </LinearLayout>
 
 
 </LinearLayout>

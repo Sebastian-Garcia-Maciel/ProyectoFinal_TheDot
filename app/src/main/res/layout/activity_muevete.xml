@@ -6,25 +6,25 @@
     android:layout_height="match_parent"
     android:background="@color/blanco"
     android:orientation="vertical"
-    tools:context=".ActivityMuevete">
+    tools:context=".ui.ui.metodos.tecnicas.ActivityMuevete">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="120dp"
         android:orientation="horizontal">
 
 
         <ImageButton
             android:id="@+id/boton_regresar_muevete"
-            android:layout_width="55dp"
-            android:layout_height="52dp"
+            android:layout_width="@dimen/btn_regresar_width"
+            android:layout_height="@dimen/btn_regresar_height"
             android:layout_gravity="center"
-            android:layout_marginStart="52dp"
+            android:layout_marginStart="@dimen/btn_regresar_margin_start"
+            android:layout_marginEnd="35dp"
             android:background="@drawable/regresar_xxxdpi_06" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginEnd="100dp"
@@ -38,7 +38,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_height="120dp"
         android:layout_marginStart="35dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="35dp"
@@ -49,13 +49,13 @@
         android:layout_height="540dp">
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="fitXY"
-            android:layout_marginTop="300dp"
+            android:layout_height="180dp"
+            android:scaleType="fitStart"
+            android:layout_marginTop="263dp"
             android:src="@drawable/trazado14_xxxdpi_06"/>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="450dp"
+            android:layout_height="410dp"
             android:layout_marginStart="35dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="35dp"

@@ -6,24 +6,24 @@
     android:layout_height="match_parent"
     android:background="@color/blanco"
     android:orientation="vertical"
-    tools:context=".ActivityAfirmaciones">
+    tools:context=".ui.ui.miPerfil.afirmaciones.ActivityAfirmaciones">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="120dp"
         android:orientation="horizontal">
 
 
         <ImageButton
-            android:layout_width="55dp"
-            android:layout_height="52dp"
+            android:layout_width="@dimen/btn_regresar_width"
+            android:layout_height="@dimen/btn_regresar_height"
             android:layout_gravity="center"
             android:layout_marginStart="52dp"
             android:layout_weight="0"
             android:background="@drawable/regresar_xxxdpi_06" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
@@ -40,7 +40,7 @@
     </LinearLayout>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="Son una herramienta para mejorar nuestro estado emocional\n y para atraer lo que queremos. Tienen por objetivo el hacer\n sentirnos mejor, tener una actitud positiva ante la vida y\n nos ayudan a crear nuestra propia realidad."
@@ -48,65 +48,39 @@
         android:textSize="11sp" />
 
     <LinearLayout
-        android:layout_width="330dp"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/gridViewAfirmaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="7.2"
+            android:numColumns="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:orientation="vertical">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/azul_claro"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:paddingVertical="25dp"
-            android:text="*Atraigo muchas oportunidades"
-            android:textColor="@color/gris"
-            android:textAlignment="textStart"
-            android:textSize="22sp" />
+        <ImageButton
+            android:id="@+id/btn_afirmaciones"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/signo__01" />
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/azul_claro"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:paddingVertical="25dp"
-            android:text="*Soy segura de mi misma"
-            android:textColor="@color/gris"
-            android:textAlignment="textStart"
-            android:textSize="22sp" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/azul_claro"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:paddingVertical="25dp"
-            android:text="*Recibo en abundancia"
-            android:textColor="@color/gris"
-            android:textAlignment="textStart"
-            android:textSize="22sp" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/azul_claro"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:paddingVertical="25dp"
-            android:text="*Soy suficiente"
-            android:textColor="@color/gris"
-            android:textAlignment="textStart"
-            android:textSize="22sp" />
     </LinearLayout>
 
-    <ImageButton
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/signo__01" />
 </LinearLayout>

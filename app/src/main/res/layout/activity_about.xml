@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/blanco"
-    tools:context=".About">
+    tools:context=".ui.ui.menu.About">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -44,7 +44,7 @@
         android:layout_marginEnd="50dp"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
         <TextView
             android:id="@+id/etTheDot"
             android:layout_width="match_parent"
@@ -89,16 +89,18 @@
             android:layout_marginBottom="50dp"
             />
 
+
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/simbolo_xxxdpi_06" />
     </LinearLayout>
 
 
 
-        <ImageView
-            android:layout_marginTop="100dp"
-            android:layout_width="100dp"
-            android:layout_height="120dp"
-            android:layout_gravity="center"
-            app:srcCompat="@drawable/simbolo_xxxdpi_06" />
+
 
 
 </LinearLayout>
