@@ -15,6 +15,7 @@
 
 
         <ImageButton
+            android:id="@+id/btn_regresar_afirmaciones"
             android:layout_width="@dimen/btn_regresar_width"
             android:layout_height="@dimen/btn_regresar_height"
             android:layout_gravity="center"

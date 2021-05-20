@@ -70,7 +70,8 @@
     <string name="perfil_description">Soy Fer, tengo 18 años y actualmente estoy estudiando la Licenciatura en Fisioterapia. Me gusta mucho tomar cafe , bailar y pintar.</string>
     <string name="metodos_description">Queremos que lleves una vida mas tranquila. Por eso, te dejamos a continuación una serie de metodosque ayudan a manejar el estrés y lograr la relajación</string>
     <string name="the_dot_text">THE DOT ES UNA APP\n PARA EL MANEJO DEL\nESTRÉS, LA CUÁL\nAPOYA AL USUARIO\nCON TÉCNICAS DE\nRELAJACIÓN, INFORMACIÓN\nde valor y sobre\nTODO ESTANDO CERCA\nDE EL.</string>
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
