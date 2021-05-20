@@ -44,7 +44,7 @@
     <string name="crea">crea</string>
     <string name="tu">tu</string>
     <string name="cuenta">cuenta</string>
-    <string name="pasivo">/ Pasivo</string>
+    <string name="pasivo">/ PASIVO</string>
     <string name="respiracion">/ Respiracion Profunda</string>
     <string name="hola">¡Hola Fer!</string>
     <string name="metodos">Métodos</string>
@@ -52,15 +52,26 @@
     <string name="recordatorios">Recordatorios</string>
     <string name="afirmaciones">Afirmaciones</string>
     <string name="agenda">Agenda</string>
+    <string name="pulgar"><b>1. Pulgar:</b> Está relacionado de manera directa con el estomago y el bazo. el dedo pulgar hace alusión a la preocupacion y alestrés tanto a nivel mental como físico.</string>
+    <string name="indice"><b>2. Índice:</b> Representa directamente al miedo que puede incluso paralizar. Nos ayuda a mantenernos firmes y de pie.</string>
+    <string name="medio"><b>3. Medio:</b> Es el dedo del corazón. Encarnala ira, la agresividad y el cansancio. De alli que se vincule fisicamente con la vesicula y el higado.</string>
+    <string name="anular"><b>4. Anular:</b> Conectado con el intestino grueso y el pulmón. Hace alusión a la tristeza. Este dedo es vital para la toma de decisiones.</string>
+    <string name="menique"><b>5. Meñique:</b> Se relaciona con la pretención, es decir, pretender ser algo que no es, la ansiedad, la apatia, la falta de energía. Se conecta directamente con la lucha y el esfuerzo. Sus organos ligados son el intestino delgado y el corazón.</string>
+    <string name="palma"><b>6. Centro de la palma:</b> Reúne a todo lo anteriormente dicho. Sujetando el centro de la palma de la mano se puede llevar a cabo muchas cosas inmediatamente, tiene relacion con el diafragma y la respiracion.</string>
     <string name="metas">Metas</string>
+    <string name="pasivoDesc">Debe estar relajado, sin hacer fuerza alguna que contribuya al rango de movilidad de la articulación que se está trabajando. La uerza  externa necesaria puede ser suministrada por un compañero, por un aparato , o bien utilizando el propio peso del miembro en cuestion cuando éste sea suficiente.</string>
+    <string name="activoDesc">Es necesario para realizar movimientos y mantener posturas utilizando los propios musculos.Em el primer caso solo utilizaremos los musculos y , a lo sumo, la resistencia impuesta por la gravedad en el peso del miembro implicado en la articulacion, en el segundo caso utilizaremos una resistencia externa como puede ser peso, un aparato, una pared, etc.</string>
     <string name="nombre_usuario">nombre de usuario</string>
     <string name="correo">correo electrónico</string>
     <string name="contrasenia">contraseña</string>
+    <string name="estaticoDesc">Consiste en estirar el músculo concreto hasta el punto maximo de su movilidad y mantenerlo en esa posición durante un tiempo que ira siendo mayor a medida que se tenga más practica. Es el método más seguro y efectivo para desarrollar o mantener la flexibilidad y es el utilizado por los practicantes de hatha yoga.</string>
     <string name="confirmar_contrasenia">confirmar contraseña</string>
     <string name="estres">/ SEGÚN LA RAE EL ESTRÉS ES UNA TENSIÓN PROVOCADA POR SITUACIONES AGOBIANTES QUE ORIGINAN REACCIONES PSICOSOMÁTICAS O TRANSTORNOS PSICOLÓGICOS QUE EN OCACIONES SON GRAVES. </string>
-    <string name="the_dot">CADA SUCESO EN NUESTRA VIDA ES SOLO UN PUNTO A COMPARACION DE TODO LO QUE NOS QUEDA POR VIVIR</string>
     <string name="perfil_description">Soy Fer, tengo 18 años y actualmente estoy estudiando la Licenciatura en Fisioterapia. Me gusta mucho tomar cafe , bailar y pintar.</string>
     <string name="metodos_description">Queremos que lleves una vida mas tranquila. Por eso, te dejamos a continuación una serie de metodosque ayudan a manejar el estrés y lograr la relajación</string>
+    <string name="the_dot_text">THE DOT ES UNA APP\n PARA EL MANEJO DEL\nESTRÉS, LA CUÁL\nAPOYA AL USUARIO\nCON TÉCNICAS DE\nRELAJACIÓN, INFORMACIÓN\nde valor y sobre\nTODO ESTANDO CERCA\nDE EL.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

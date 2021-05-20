@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/blanco"
-    tools:context=".Metodos">
+    tools:context=".ui.ui.metodos.Metodos">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -29,9 +29,8 @@
             android:layout_marginEnd="100dp"
             android:text="@string/metodos"
             android:textAlignment="center"
-            android:textStyle="bold"
             android:textColor="@color/gris_oscuro"
-            android:textSize="40sp" />
+            android:textSize="30sp" />
     </LinearLayout>
     <TextView
         android:layout_width="match_parent"
@@ -51,58 +50,58 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:columnCount="2"
+        android:rowCount="4"
         android:orientation="horizontal"
         android:translationY="-10dp">
 
         <Button
             android:id="@+id/btnRespiracion"
             android:layout_width="178dp"
-            android:textAllCaps="false"
             android:layout_height="133dp"
             android:layout_rowSpan="1"
             android:layout_gravity="center"
-            android:layout_margin="10dp"
             android:backgroundTint="@color/lavanda"
             android:text="Respiracion"
+            android:textAllCaps="false"
             android:textSize="18sp"
             app:cornerRadius="20dp" />
 
         <Button
             android:id="@+id/btnEstiramiento"
-            android:layout_width="178dp"
-            android:textAllCaps="false"
+            android:layout_width="167dp"
             android:layout_height="133dp"
             android:layout_rowSpan="1"
             android:layout_gravity="center"
-            android:layout_margin="10dp"
             android:backgroundTint="@color/anaranjado_claro"
             android:text="Estiramiento"
+            android:textAllCaps="false"
             android:textSize="18sp"
             app:cornerRadius="20dp" />
 
         <Button
             android:id="@+id/btnMeditacion"
             android:layout_width="178dp"
-            android:textAllCaps="false"
             android:layout_height="133dp"
-            android:layout_rowSpan="1"
+            android:layout_rowSpan="2"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:backgroundTint="@color/verde_azulado"
             android:text="Meditacion"
+            android:textAllCaps="false"
             android:textSize="18sp"
             app:cornerRadius="20dp" />
 
         <Button
             android:id="@+id/btnTecnicas"
             android:layout_width="178dp"
-            android:textAllCaps="false"
-            android:layout_marginStart="20dp"
             android:layout_height="302dp"
             android:layout_row="0"
-            android:layout_rowSpan="2"
+            android:layout_rowSpan="3"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="10dp"
             android:backgroundTint="@color/azul_claro"
             android:text="Técnicas"
+            android:textAllCaps="false"
             android:textSize="18sp"
             app:cornerRadius="20dp" />
 

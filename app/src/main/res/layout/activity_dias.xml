@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/blanco"
     android:orientation="vertical"
-    tools:context=".ActivityDias">
+    tools:context=".ui.ui.ActivityDias">
 
     <LinearLayout
         android:layout_width="match_parent"

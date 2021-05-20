@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/tv_afirmacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/azul_claro"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingVertical="25dp"
+        android:text="*Atraigo muchas oportunidades"
+        android:textColor="@color/gris"
+        android:textAlignment="textStart"
+        android:textSize="22sp" />
+</LinearLayout>

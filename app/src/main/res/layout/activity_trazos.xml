@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/blanco"
-    tools:context=".Trazos">
+    tools:context=".ui.ui.metodos.tecnicas.Trazos">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ui.miPerfil.afirmaciones.ActivityCrearAfirmacion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/btn_regresar_de_nueva_afirmacion"
+            android:layout_width="55dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/btn_regresar_margin_start"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/regresar_xxxdpi_06" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:text="Nueva afirmación"
+            android:textAlignment="center"
+            android:textColor="@color/gris_oscuro"
+            android:textSize="23sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/et_nueva_afirmacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/azul_claro"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingVertical="25dp"
+                android:hint="Ingresa tu nueva afirmación"
+                android:textColor="@color/gris"
+                android:textAlignment="textStart"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btn_agregar_afirmacion"
+                android:layout_marginTop="30dp"
+                android:layout_width="250dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/azul"
+                android:inputType="textEmailAddress"
+                android:text="Agregar afirmación"
+                android:textSize="15sp"
+                app:cornerRadius="50dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

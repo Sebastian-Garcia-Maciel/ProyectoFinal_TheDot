@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/blanco"
-    tools:context=".EstiramientoPasivo">
+    tools:context=".ui.ui.metodos.estiramiento.EstiramientoPasivo">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -20,11 +20,12 @@
             android:layout_width="55dp"
             android:layout_height="52dp"
             android:layout_gravity="center"
-            android:layout_marginStart="52dp"
+            android:layout_marginStart="@dimen/btn_regresar_margin_start"
+            android:layout_marginEnd="25dp"
             android:background="@drawable/regresar_xxxdpi_06" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginEnd="100dp"
@@ -42,25 +43,35 @@
         android:text="@string/pasivo"
         android:textAlignment="textStart"
         android:textColor="@color/gris"
-        android:textSize="44sp" />
+        android:textSize="40sp" />
 
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="490dp"
-            android:layout_marginLeft="35dp"
+            android:layout_height="440dp"
+            android:layout_marginStart="35dp"
             android:layout_marginTop="35dp"
-            android:layout_marginRight="35dp"
+            android:layout_marginEnd="35dp"
             android:background="@drawable/borde_naranja"></LinearLayout>
-
-        <ImageView
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="330dp"
-            app:srcCompat="@drawable/mancha1_xxxdpi_06" />
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="70dp"
+            android:text="@string/pasivoDesc"
+            android:textAlignment="textStart"
+            android:textColor="@color/gris"
+            android:textSize="17.5sp" />
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="9dp"
+            app:srcCompat="@drawable/mancha1_xxdpi_05" />
     </RelativeLayout>
 </LinearLayout>

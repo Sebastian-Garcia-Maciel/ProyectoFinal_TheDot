@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_regresar_width">55dp</dimen>
+    <dimen name="btn_regresar_height">52dp</dimen>
+    <dimen name="btn_regresar_margin_start">52dp</dimen>
+    <dimen name="tv_titulo">44sp</dimen>
+    <dimen name="margin_bottom">70dp</dimen>
+
+
+
+</resources>

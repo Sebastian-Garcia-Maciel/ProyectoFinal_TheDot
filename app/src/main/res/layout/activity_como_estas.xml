@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/blanco"
     android:orientation="vertical"
-    tools:context=".ActivityComoEstas">
+    tools:context=".ui.ui.ActivityComoEstas">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,17 +18,18 @@
 
         <ImageButton
             android:id="@+id/boton_regresar_como_estas"
-            android:layout_width="55dp"
-            android:layout_height="52dp"
+            android:layout_width="@dimen/btn_regresar_width"
+            android:layout_height="@dimen/btn_regresar_height"
             android:layout_gravity="center"
-            android:layout_marginLeft="52dp"
+            android:layout_marginStart="52dp"
+            android:layout_marginEnd="40dp"
             android:background="@drawable/regresar_xxxdpi_06" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="100dp"
+            android:layout_marginEnd="100dp"
             android:text="@string/journal"
             android:textAlignment="center"
             android:textColor="@color/gris_oscuro"
@@ -44,11 +45,11 @@
         android:text="*¿Cómo\nestas hoy?"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="44sp" />
+        android:textSize="@dimen/tv_titulo" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="450dp"
+            android:layout_height="420dp"
             android:layout_marginLeft="35dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="35dp"
