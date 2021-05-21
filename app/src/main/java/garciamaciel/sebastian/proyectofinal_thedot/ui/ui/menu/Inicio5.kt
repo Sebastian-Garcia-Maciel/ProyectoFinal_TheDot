@@ -2,6 +2,7 @@ package garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
@@ -9,6 +10,7 @@ import garciamaciel.sebastian.proyectofinal_thedot.R
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.Journal
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.Metodos
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.miPerfil.MiPerfil
+import kotlinx.android.synthetic.main.activity_inicio1.*
 
 class Inicio5 : AppCompatActivity() {
     @SuppressLint("WrongViewCast")
@@ -41,6 +43,20 @@ class Inicio5 : AppCompatActivity() {
 
         botonAbout.setOnClickListener() {
             var intent: Intent = Intent(this, About::class.java)
+            startActivity(intent)
+        }
+        btnSiguiente.setOnClickListener() {
+            var intent: Intent = Intent(this, Inicio4::class.java)
+            startActivity(intent)
+        }
+
+        btnAnterior.setOnClickListener() {
+            var intent: Intent = Intent(this, Inicio1::class.java)
+            startActivity(intent)
+        }
+
+        btnCerarSesion.setOnClickListener() {
+            var intent: Intent = Intent(this, Configuration::class.java)
             startActivity(intent)
         }
     }

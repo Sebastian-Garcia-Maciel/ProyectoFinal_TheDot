@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import garciamaciel.sebastian.proyectofinal_thedot.R
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu.Inicio1
+import kotlinx.android.synthetic.main.activity_journal.*
 
 class Journal : AppCompatActivity() {
     @SuppressLint("WrongViewCast")
@@ -38,6 +39,10 @@ class Journal : AppCompatActivity() {
         }
         botonIntencionesSemana.setOnClickListener() {
             var intent: Intent = Intent(this, ActivityIntencionesSemana::class.java)
+            startActivity(intent)
+        }
+        btnMisDias.setOnClickListener() {
+            var intent: Intent = Intent(this, ActivityDias::class.java)
             startActivity(intent)
         }
     }

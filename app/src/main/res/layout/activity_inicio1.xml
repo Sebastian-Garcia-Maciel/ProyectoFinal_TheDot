@@ -7,38 +7,35 @@
     android:orientation="vertical"
     android:background="@color/blanco"
     tools:context=".ui.ui.menu.Inicio1">
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginBottom="20dp"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="95dp"
-            android:layout_weight="1"
-            android:background="@color/azul"
-             />
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="95dp"
-            android:layout_weight="2"
-            android:background="@color/azul"
-            app:srcCompat="@drawable/logo2_xxdpi_05" />
-        <ImageView
-            android:id="@+id/btnCerarSesion"
-            android:layout_width="100dp"
-            android:layout_height="95dp"
-            android:layout_weight="1"
-            android:background="@color/azul"
-            />
+        android:orientation="horizontal"
+        android:background="@color/azul">
 
-    </LinearLayout>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="95dp"
+            android:background="@color/azul"
+            app:srcCompat="@drawable/logo2_xxdpi_05"
+            android:layout_marginStart="130dp"/>
+
+        <ImageButton
+            android:id="@+id/btnCerarSesion"
+            android:layout_width="40dp"
+            android:layout_height="95dp"
+            android:background="@color/azul"
+            app:srcCompat="@drawable/puntitos_ldpi_01"
+            android:layout_marginStart="350dp"/>
+
+    </RelativeLayout>
     <TextView
         android:id="@+id/tv_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="@string/hola"
         android:textAlignment="center"
         android:textStyle="italic"
@@ -48,64 +45,66 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:layout_height="100dp"
         android:translationY="-60dp"
         android:orientation="horizontal">
 
-    <ImageButton
-        android:id="@+id/boton_mi_perfil"
-        android:layout_width="55dp"
-        android:layout_height="52dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="40dp"
-        android:background="@drawable/perfil__02" />
-    <ImageButton
-        android:id="@+id/boton_metodos"
-        android:layout_width="55dp"
-        android:layout_height="52dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="32dp"
-        android:background="@drawable/metodos__02" />
-    <ImageButton
-        android:id="@+id/boton_journal"
-        android:layout_width="55dp"
-        android:layout_height="52dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="32dp"
-        android:background="@drawable/journal__02" />
-    <ImageButton
-        android:id="@+id/boton_about"
-        android:layout_width="55dp"
-        android:layout_height="52dp"
-        android:layout_gravity="center"
-        android:layout_marginStart="32dp"
-        android:background="@drawable/info_xxxdpi_06" />
-</LinearLayout>
+        <ImageButton
+            android:id="@+id/boton_mi_perfil"
+            android:layout_width="55dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/perfil__02" />
+        <ImageButton
+            android:id="@+id/boton_metodos"
+            android:layout_width="55dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/metodos__02" />
+        <ImageButton
+            android:id="@+id/boton_journal"
+            android:layout_width="55dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/journal__02" />
+        <ImageButton
+            android:id="@+id/boton_about"
+            android:layout_width="55dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/info_xxxdpi_06" />
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="581dp"
+        android:layout_height="481dp"
         app:cornerRadius="200dp"
         android:translationY="-80dp">
 
         <ImageButton
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="481dp"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="25dp"
             android:layout_marginRight="10dp"
             android:background="@drawable/frase"
             />
 
         <ImageView
+            android:id="@+id/btnAnterior"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="25dp"
             android:layout_marginTop="140dp"
             android:src="@drawable/regresar_xxxdpi_06" />
 
         <ImageView
+            android:id="@+id/btnSiguiente"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="340dp"
@@ -115,59 +114,55 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="450dp"
             android:layout_marginStart="35dp"
+            android:layout_marginTop="440dp"
             android:orientation="horizontal"
-            android:translationY="-40dp">
+            >
 
             <ImageButton
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center"
-                android:layout_marginStart="85dp"
-                android:backgroundTint="@color/white"
+                android:layout_marginStart="115dp"
                 android:layout_marginLeft="100dp"
-                app:cornerRadius="10dp"
-                />
+                android:background="@drawable/inicio_imagnes"
+                app:cornerRadius="10dp" />
 
             <ImageButton
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="5dp"
-                android:backgroundTint="@color/azul"
                 android:layout_marginLeft="100dp"
-                app:cornerRadius="10dp"
-                />
+                android:background="@drawable/imgbotonblanco"
+                app:cornerRadius="10dp" />
 
             <ImageButton
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="5dp"
-                android:backgroundTint="@color/azul"
                 android:layout_marginLeft="100dp"
-                app:cornerRadius="10dp"
-                />
-            <ImageButton
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="5dp"
-                android:backgroundTint="@color/azul"
-                android:layout_marginLeft="100dp"
-                app:cornerRadius="10dp"
-            />
-            <ImageButton
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="5dp"
-                android:backgroundTint="@color/azul"
-                android:layout_marginLeft="100dp"
-                app:cornerRadius="10dp"
-            />
+                android:background="@drawable/imgbotonblanco"
+                app:cornerRadius="10dp" />
 
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/imgbotonblanco"
+                app:cornerRadius="10dp" />
+
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/imgbotonblanco"
+                app:cornerRadius="10dp" />
         </LinearLayout>
     </RelativeLayout>
 </LinearLayout>

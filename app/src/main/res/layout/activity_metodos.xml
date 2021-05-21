@@ -56,22 +56,24 @@
 
         <Button
             android:id="@+id/btnRespiracion"
-            android:layout_width="178dp"
-            android:layout_height="133dp"
+            android:layout_width="180dp"
+            android:layout_height="140dp"
             android:layout_rowSpan="1"
             android:layout_gravity="center"
             android:backgroundTint="@color/lavanda"
             android:text="Respiracion"
             android:textAllCaps="false"
+            android:layout_margin="10sp"
             android:textSize="18sp"
             app:cornerRadius="20dp" />
 
         <Button
             android:id="@+id/btnEstiramiento"
-            android:layout_width="167dp"
-            android:layout_height="133dp"
+            android:layout_width="180dp"
+            android:layout_height="140dp"
             android:layout_rowSpan="1"
             android:layout_gravity="center"
+            android:layout_margin="10dp"
             android:backgroundTint="@color/anaranjado_claro"
             android:text="Estiramiento"
             android:textAllCaps="false"
@@ -80,8 +82,8 @@
 
         <Button
             android:id="@+id/btnMeditacion"
-            android:layout_width="178dp"
-            android:layout_height="133dp"
+            android:layout_width="180dp"
+            android:layout_height="140dp"
             android:layout_rowSpan="2"
             android:layout_gravity="center"
             android:layout_margin="10dp"
@@ -93,12 +95,10 @@
 
         <Button
             android:id="@+id/btnTecnicas"
-            android:layout_width="178dp"
-            android:layout_height="302dp"
-            android:layout_row="0"
+            android:layout_width="180dp"
+            android:layout_height="300dp"
             android:layout_rowSpan="3"
-            android:layout_marginStart="0dp"
-            android:layout_marginEnd="10dp"
+            android:layout_margin="10dp"
             android:backgroundTint="@color/azul_claro"
             android:text="Técnicas"
             android:textAllCaps="false"
@@ -107,16 +107,14 @@
 
         <Button
             android:id="@+id/btnFavoritos"
-            android:layout_width="178dp"
-            android:layout_height="133dp"
-            android:layout_rowSpan="1"
-            android:layout_gravity=""
+            android:layout_width="180dp"
+            android:layout_height="140dp"
+            android:layout_rowSpan="3"
             android:layout_margin="10dp"
             android:backgroundTint="@color/azul"
             android:text="Favoritos"
             android:textAllCaps="false"
             android:textSize="18sp"
             app:cornerRadius="20dp" />
-
     </GridLayout>
 </LinearLayout>

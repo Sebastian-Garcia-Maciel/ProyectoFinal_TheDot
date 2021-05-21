@@ -26,6 +26,7 @@ class ActivityAfirmaciones : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_afirmaciones)
+        supportActionBar?.hide()
 
         afirmaciones = ArrayList()
         storage = FirebaseFirestore.getInstance()

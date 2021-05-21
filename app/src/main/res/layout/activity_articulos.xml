@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/blanco"
-    tools:context=".ui.ui.menu.TheDot">
+    tools:context=".Articulos"
+    android:orientation="vertical">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="100dp"
@@ -30,37 +29,21 @@
 
     </LinearLayout>
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center"
-        android:layout_marginBottom="40dp"
-        app:srcCompat="@drawable/marca_grafica_principal"
-        />
-
     <TextView
         android:id="@+id/etContacto"
-        android:layout_width="match_parent"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginStart="45dp"
         android:layout_marginEnd="45dp"
-        android:text="THE DOT ES UNA APP\n PARA EL MANEJO DEL\nESTRÉS, LA CUÁL\nAPOYA AL USUARIO\nCON TÉCNICAS DE\nRELAJACIÓN, INFORMACIÓN\nde valor Y SOBRE\nTODO ESTANDO CERCA\nDE EL."
+        android:text="CADA SUCESO EN NUESTRA VIDA ES SOLO UN PUNTO COMPARADO CON TODO LO QUE NOS QUEDA POR VIVIR"
         android:textColor="@color/azul"
         android:textSize="25sp" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical">
-        <ImageView
-            android:scaleType="fitEnd"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/trazado_xxxdpi_06"/>
-    </LinearLayout>
-
-
+    <ImageView
+        android:scaleType="fitEnd"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/grafico_xxxdpi_06"/>
 </LinearLayout>

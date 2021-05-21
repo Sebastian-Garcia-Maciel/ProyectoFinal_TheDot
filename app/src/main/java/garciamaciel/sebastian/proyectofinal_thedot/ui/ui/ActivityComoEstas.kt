@@ -20,7 +20,7 @@ class ActivityComoEstas : AppCompatActivity() {
 
 
         botonRegresar.setOnClickListener() {
-            var intent: Intent = Intent(this, Inicio1::class.java)
+            var intent: Intent = Intent(this, Journal::class.java)
             startActivity(intent)
         }
     }

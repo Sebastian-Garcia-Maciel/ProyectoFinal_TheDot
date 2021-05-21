@@ -38,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_margin="20dp"
-        android:src="@drawable/simbolo__03"
+        android:src="@drawable/perfil__01"
         android:translationY="-60dp"
         />
 
@@ -70,7 +70,7 @@
     <Button
         android:id="@+id/btnRecordatorios"
         android:layout_width="350dp"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:layout_gravity="center"
         android:backgroundTint="@color/lavanda"
         android:text="@string/recordatorios"
@@ -82,7 +82,7 @@
 
     <GridLayout
         android:layout_width="350dp"
-        android:layout_height="292dp"
+        android:layout_height="300dp"
         android:layout_gravity="center"
         android:columnCount="2"
         android:orientation="horizontal"
@@ -90,8 +90,8 @@
 
         <Button
             android:id="@+id/btnAfirmaciones"
-            android:layout_width="164dp"
-            android:layout_height="133dp"
+            android:layout_width="165dp"
+            android:layout_height="160dp"
             android:layout_rowSpan="1"
             android:layout_gravity=""
             android:layout_margin="10dp"
@@ -103,10 +103,9 @@
 
         <Button
             android:id="@+id/btnAgenda"
-            android:layout_width="154dp"
-            android:layout_height="wrap_content"
+            android:layout_width="165dp"
+            android:layout_height="265dp"
             android:layout_rowSpan="2"
-            android:layout_gravity="fill"
             android:textAllCaps="false"
             android:backgroundTint="@color/azul_claro"
             android:text="@string/agenda"
@@ -115,8 +114,8 @@
 
         <Button
             android:id="@+id/btnMetas"
-            android:layout_width="164dp"
-            android:layout_height="132dp"
+            android:layout_width="165dp"
+            android:layout_height="80dp"
             android:layout_rowSpan="1"
             android:layout_gravity=""
             android:textAllCaps="false"
