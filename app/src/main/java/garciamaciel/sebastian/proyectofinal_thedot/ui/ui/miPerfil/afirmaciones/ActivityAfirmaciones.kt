@@ -8,9 +8,8 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import garciamaciel.sebastian.proyectofinal_thedot.R
-import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu.Inicio1
+import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu.ActivityInicio
 import kotlinx.android.synthetic.main.activity_afirmaciones.*
-import kotlinx.android.synthetic.main.activity_crear_afirmacion.*
 
 class ActivityAfirmaciones : AppCompatActivity() {
 
@@ -49,7 +48,7 @@ class ActivityAfirmaciones : AppCompatActivity() {
 
         }
         btn_regresar_afirmaciones.setOnClickListener {
-            var intent: Intent = Intent(this, Inicio1::class.java)
+            var intent: Intent = Intent(this, ActivityInicio::class.java)
             startActivity(intent)
 
         }

@@ -21,7 +21,7 @@ class ActivityConfiguracion : AppCompatActivity() {
 
 
         botonRegresar.setOnClickListener() {
-            var intent: Intent = Intent(this, Inicio1::class.java)
+            var intent: Intent = Intent(this, ActivityInicio::class.java)
             startActivity(intent)
         }
 

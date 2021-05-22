@@ -16,5 +16,7 @@
     <color name="gris">#504F4F</color>
     <color name="gris_oscuro">#343333</color>
     <color name="salmon">#FA8072</color>
+    <color name="fondo_frases">#EEE7D3</color>
+
 
 </resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    android:orientation="vertical"
+    tools:context=".ui.ui.menu.ActivityInicio">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/azul"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="150dp"
+            android:layout_marginEnd="75dp"
+            android:background="@color/azul"
+            app:srcCompat="@drawable/logo2_xxdpi_05" />
+
+        <ImageButton
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/azul"
+            app:srcCompat="@drawable/puntitos_ldpi_01"
+            android:contentDescription="menu" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hola"
+            android:textAlignment="center"
+            android:textColor="@color/gris_oscuro"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/boton_mi_perfil"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/perfil_xxxdpi_06" />
+
+        <ImageButton
+            android:id="@+id/boton_metodos"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/metodos_xxxdpi_06" />
+
+        <ImageButton
+            android:id="@+id/boton_journal"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/journal_xxxdpi_06" />
+
+        <ImageButton
+            android:id="@+id/boton_about"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:background="@drawable/info_xxxdpi_06" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="520dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp">
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/fondoInicio"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent"
+                android:src="@drawable/frase"
+                app:shapeAppearanceOverlay="@style/imagen_redondeada" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnAvanzarMenu"
+            android:layout_width="27dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="33dp"
+            android:background="@drawable/avanzar_xxxdpi_06"
+            app:cornerRadius="10dp" />
+        <ImageButton
+            android:id="@+id/btnRegresarMenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/regresar_xxxdpi_06"
+            app:cornerRadius="10dp" />
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp">
+
+            <ImageButton
+                android:id="@+id/btnPrimeraImagen"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/fondo_boton_carrusel_seleccionado"
+                app:cornerRadius="10dp" />
+            <ImageButton
+                android:id="@+id/btnSegundaImagen"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/fondo_boton_carrusel"
+                app:cornerRadius="10dp" />
+            <ImageButton
+                android:id="@+id/btnTerceraImagen"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/fondo_boton_carrusel"
+                app:cornerRadius="10dp" />
+            <ImageButton
+                android:id="@+id/btnCuartaImagen"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/fondo_boton_carrusel"
+                app:cornerRadius="10dp" />
+            <ImageButton
+                android:id="@+id/btnQuintaImagen"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/fondo_boton_carrusel"
+                app:cornerRadius="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

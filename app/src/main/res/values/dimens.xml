@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="btn_regresar_width">55dp</dimen>
-    <dimen name="btn_regresar_height">52dp</dimen>
+    <dimen name="btn_width">55dp</dimen>
+    <dimen name="btn_height">52dp</dimen>
     <dimen name="btn_regresar_margin_start">52dp</dimen>
+    <dimen name="simbolo_height_width">90dp</dimen>
+    <dimen name="signo_height_width">25dp</dimen>
     <dimen name="tv_titulo">44sp</dimen>
     <dimen name="margin_bottom">70dp</dimen>
 

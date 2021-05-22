@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 import garciamaciel.sebastian.proyectofinal_thedot.R
-import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu.Inicio1
 
 class ActivityComoEstas : AppCompatActivity() {
     @SuppressLint("WrongViewCast")

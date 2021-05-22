@@ -31,7 +31,7 @@
         <activity android:name=".ui.ui.menu.Inicio4" />
         <activity android:name=".ui.ui.menu.Inicio3" />
         <activity android:name=".ui.ui.menu.Inicio2" />
-        <activity android:name=".ui.ui.menu.Inicio1" />
+        <activity android:name=".ui.ui.menu.ActivityInicio" />
         <activity android:name=".ui.ui.inicioSesion.IniciaSesion" />
         <activity android:name=".ui.ui.Estres" />
         <activity android:name=".ui.ui.inicioSesion.CrearCuenta" />
