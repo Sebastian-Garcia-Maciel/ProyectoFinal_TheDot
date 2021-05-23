@@ -5,7 +5,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import garciamaciel.sebastian.proyectofinal_thedot.Articulos
 import garciamaciel.sebastian.proyectofinal_thedot.R
+import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.Estres
+import kotlinx.android.synthetic.main.activity_about.*
 
 class About : AppCompatActivity() {
     @SuppressLint("WrongViewCast")
@@ -20,7 +23,20 @@ class About : AppCompatActivity() {
 
 
         botonRegresar.setOnClickListener() {
-            var intent: Intent = Intent(this, Inicio1::class.java)
+            var intent: Intent = Intent(this, ActivityInicio::class.java)
+            startActivity(intent)
+        }
+
+        etTheDot.setOnClickListener{
+            var intent: Intent = Intent(this, TheDot::class.java)
+            startActivity(intent)
+        }
+        etArticulos.setOnClickListener{
+            var intent: Intent = Intent(this, Articulos::class.java)
+            startActivity(intent)
+        }
+        etEstres.setOnClickListener{
+            var intent: Intent = Intent(this, Estres::class.java)
             startActivity(intent)
         }
     }

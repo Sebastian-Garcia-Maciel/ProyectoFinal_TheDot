@@ -8,7 +8,7 @@ import android.widget.ImageButton
 import garciamaciel.sebastian.proyectofinal_thedot.R
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.estiramiento.ActivityEstiramiento
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.tecnicas.Tecnicas
-import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu.Inicio1
+import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu.ActivityInicio
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.respiracion.Respiracion
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.miPerfil.recordatorios.Recordatorios
 
@@ -26,7 +26,7 @@ class Metodos : AppCompatActivity() {
 
 
         buttonRegresar.setOnClickListener{
-            var intent: Intent = Intent(this, Inicio1::class.java)
+            var intent: Intent = Intent(this, ActivityInicio::class.java)
             startActivity(intent)
         }
         btnRespiracion.setOnClickListener {

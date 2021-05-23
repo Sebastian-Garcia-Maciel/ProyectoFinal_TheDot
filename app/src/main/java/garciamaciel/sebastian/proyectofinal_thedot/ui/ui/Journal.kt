@@ -7,7 +7,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import garciamaciel.sebastian.proyectofinal_thedot.R
-import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu.Inicio1
+import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu.ActivityInicio
+import kotlinx.android.synthetic.main.activity_journal.*
 
 class Journal : AppCompatActivity() {
     @SuppressLint("WrongViewCast")
@@ -24,7 +25,7 @@ class Journal : AppCompatActivity() {
 
 
         botonRegresar.setOnClickListener() {
-            var intent: Intent = Intent(this, Inicio1::class.java)
+            var intent: Intent = Intent(this, ActivityInicio::class.java)
             startActivity(intent)
         }
 
@@ -38,6 +39,10 @@ class Journal : AppCompatActivity() {
         }
         botonIntencionesSemana.setOnClickListener() {
             var intent: Intent = Intent(this, ActivityIntencionesSemana::class.java)
+            startActivity(intent)
+        }
+        btnMisDias.setOnClickListener() {
+            var intent: Intent = Intent(this, ActivityDias::class.java)
             startActivity(intent)
         }
     }

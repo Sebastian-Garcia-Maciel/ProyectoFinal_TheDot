@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="100dp"
-            android:text="Trazos"
+            android:text="Tecnicas"
             android:textAlignment="center"
             android:textColor="@color/gris_oscuro"
             android:textSize="23sp" />

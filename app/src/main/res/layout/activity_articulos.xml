@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Articulos"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnRegresarTD"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginStart="@dimen/btn_regresar_margin_start"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/regresar_xxxdpi_06" />
+
+        <ImageView
+            android:layout_width="@dimen/simbolo_height_width"
+            android:layout_height="@dimen/simbolo_height_width"
+            app:srcCompat="@drawable/simbolo_xxxdpi_06" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/etContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:includeFontPadding="true"
+        android:text="CADA SUCESO EN\nNUESTRA VIDA ES\nSOLO UN PUNTO\nA COMPARACIÓN\nDE TODO LOS QUE\nNOS QUEDA POR\nVIVIR"
+        android:textColor="@color/azul"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:layout_gravity="center|center_horizontal"
+        android:scaleType="fitEnd"
+        android:layout_marginTop="40dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/grafico_xxxdpi_06"/>
+</LinearLayout>

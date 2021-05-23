@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 import garciamaciel.sebastian.proyectofinal_thedot.R
-import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu.Inicio1
 
 class ActivityComoEstas : AppCompatActivity() {
     @SuppressLint("WrongViewCast")
@@ -20,7 +19,7 @@ class ActivityComoEstas : AppCompatActivity() {
 
 
         botonRegresar.setOnClickListener() {
-            var intent: Intent = Intent(this, Inicio1::class.java)
+            var intent: Intent = Intent(this, Journal::class.java)
             startActivity(intent)
         }
     }
