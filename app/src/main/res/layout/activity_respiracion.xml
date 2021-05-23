@@ -9,30 +9,62 @@
     tools:context=".ui.ui.metodos.respiracion.Respiracion">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_height="120dp"
         android:orientation="horizontal">
 
 
-        <ImageButton
-            android:id="@+id/btnRegresarRes"
-            android:layout_width="55dp"
-            android:layout_height="52dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/btnRegresarMI"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/btn_regresar_margin_start"
+                android:layout_marginEnd="35dp"
+                android:background="@drawable/regresar_xxxdpi_06" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="100dp"
+                android:text="Respiración"
+                android:fontFamily="@font/agne_regular"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/gris_oscuro"
+                android:textSize="23sp" />
+
+
+        </LinearLayout>
+
+        android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
             android:layout_gravity="center"
-            android:layout_marginStart="52dp"
+            android:layout_marginStart="@dimen/btn_regresar_margin_start"
+            android:layout_marginEnd="35dp"
             android:background="@drawable/regresar_xxxdpi_06" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginEnd="100dp"
-            android:text="Respiracion"
+            android:text="Mis\nrecordatorios"
+            android:fontFamily="@font/agne_regular"
+            android:textStyle="bold"
             android:textAlignment="center"
             android:textColor="@color/gris_oscuro"
-            android:textSize="30sp" />
+            android:textSize="23sp" />
+
+
     </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,13 +76,18 @@
         android:textAlignment="center"
         android:padding="15dp"
         />
-    <ImageView
-        android:id="@+id/imgPerfil"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_margin="20dp"
-        android:src="@drawable/simbolo_xxxdpi_06"
-        />
+        android:gravity="center"
+        android:layout_height="250dp">
+        <ImageView
+            android:id="@+id/imgPerfil"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/simbolo_xxxdpi_06"
+            />
+    </LinearLayout>
     <ImageButton
         android:layout_width="55dp"
         android:layout_height="52dp"

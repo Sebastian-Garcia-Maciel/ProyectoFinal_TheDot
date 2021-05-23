@@ -17,6 +17,7 @@
         android:paddingVertical="25dp"
         android:text="*Atraigo muchas oportunidades"
         android:textColor="@color/gris"
+        android:fontFamily="@font/gt_america_regular"
         android:textAlignment="textStart"
         android:textSize="22sp" />
 </LinearLayout>
