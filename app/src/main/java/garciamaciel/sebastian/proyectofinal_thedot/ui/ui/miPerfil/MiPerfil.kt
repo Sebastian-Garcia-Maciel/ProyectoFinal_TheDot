@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import garciamaciel.sebastian.proyectofinal_thedot.R
+import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu.ActivityInicio
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.Metodos
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.miPerfil.recordatorios.Recordatorios
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.tecnicas.Tecnicas
@@ -16,15 +17,15 @@ class MiPerfil : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mi_perfil)
         supportActionBar?.hide()
-        val buttonRegresar: ImageButton = findViewById(R.id.btnRegresarMi) as ImageButton
+        val btnRegresar: ImageButton = findViewById(R.id.btnRegresarPerfil) as ImageButton
         val btnRecordatorios: Button = findViewById(R.id.btnRecordatorios) as Button
         val btnAfirmaciones: Button = findViewById(R.id.btnAfirmaciones) as Button
         val btnMetas: Button = findViewById(R.id.btnMetas) as Button
         val btnTecnicas: Button = findViewById(R.id.btnAgenda) as Button
 
 
-        buttonRegresar.setOnClickListener{
-            var intent: Intent = Intent(this, Metodos::class.java)
+        btnRegresar.setOnClickListener{
+            var intent: Intent = Intent(this, ActivityInicio::class.java)
             startActivity(intent)
         }
         btnRecordatorios.setOnClickListener {

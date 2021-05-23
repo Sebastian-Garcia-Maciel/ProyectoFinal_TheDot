@@ -49,9 +49,9 @@ class IniciaSesion : AppCompatActivity() {
             findViewById<ImageButton>(R.id.boton_regresar_inicia_sesion)
         val botonIniciarSesion = findViewById<Button>(R.id.boton_inicia_sesion)
         //val botonIniciaSesionGoogle: com.google.android.gms.common.SignInButton =
-            //findViewById<com.google.android.gms.common.SignInButton>(
-              //  R.id.sign_in_button
-           // )
+        //findViewById<com.google.android.gms.common.SignInButton>(
+        //  R.id.sign_in_button
+        // )
 
 
         // Build a GoogleSignInClient with the options specified by gso.
@@ -72,7 +72,6 @@ class IniciaSesion : AppCompatActivity() {
         }
 
 
-
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -86,7 +85,7 @@ class IniciaSesion : AppCompatActivity() {
             handleSignInResult(task)
         }
 
-        if(requestCode== COD_LOGOUT){
+        if (requestCode == COD_LOGOUT) {
             signOut()
         }
     }
@@ -126,31 +125,33 @@ class IniciaSesion : AppCompatActivity() {
     }
 
     private fun updateUI(account: GoogleSignInAccount?) {
-        if (account != null){
-            val intent:Intent = Intent(this, ActivityInicio::class.java)
+        if (account != null) {
+            val intent: Intent = Intent(this, ActivityInicio::class.java)
             intent.putExtra("name", account.displayName)
             startActivityForResult(intent, COD_LOGOUT)
 
         }
     }
 
-    private fun valida_ingreso(){
+    private fun valida_ingreso() {
         val et_correo: EditText = findViewById(R.id.etCorreo)
         val et_contra: EditText = findViewById(R.id.etContra)
 
         var correo: String = et_correo.text.toString()
         var contra: String = et_contra.text.toString()
 
-        if(!correo.isNullOrBlank() && !contra.isNullOrBlank()){
-            ingresaFirebase(correo,contra)
-        }else{
-            Toast.makeText(this, "Ingresar datos",
-                Toast.LENGTH_SHORT).show()
+        if (!correo.isNullOrBlank() && !contra.isNullOrBlank()) {
+            ingresaFirebase(correo, contra)
+        } else {
+            Toast.makeText(
+                this, "Ingresar datos",
+                Toast.LENGTH_SHORT
+            ).show()
         }
 
     }
 
-    private fun ingresaFirebase(email: String, password: String){
+    private fun ingresaFirebase(email: String, password: String) {
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
@@ -163,8 +164,10 @@ class IniciaSesion : AppCompatActivity() {
                 } else {
                     // If sign in fails, display a message to the user.
                     //Log.w(TAG, "signInWithEmail:failure", task.exception)
-                    Toast.makeText(baseContext, "Authentication failed.",
-                        Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        baseContext, "Authentication failed.",
+                        Toast.LENGTH_SHORT
+                    ).show()
                     //updateUI(null)
                 }
             }

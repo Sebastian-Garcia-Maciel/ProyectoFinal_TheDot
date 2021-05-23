@@ -10,9 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="120dp"
         android:orientation="horizontal">
 
 
@@ -31,6 +29,8 @@
             android:layout_marginRight="100dp"
             android:text="@string/journal"
             android:textAlignment="center"
+            android:fontFamily="@font/agne_regular"
+            android:textStyle="bold"
             android:textColor="@color/gris_oscuro"
             android:textSize="23sp" />
 

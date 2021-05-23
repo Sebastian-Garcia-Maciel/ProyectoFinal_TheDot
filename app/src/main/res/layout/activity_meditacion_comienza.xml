@@ -31,6 +31,8 @@
             android:layout_gravity="center"
             android:layout_marginRight="100dp"
             android:textColor="@color/gris_oscuro"
+            android:fontFamily="@font/agne_regular"
+            android:textStyle="bold"
             android:textSize="23sp" />
     </LinearLayout>
     <TextView

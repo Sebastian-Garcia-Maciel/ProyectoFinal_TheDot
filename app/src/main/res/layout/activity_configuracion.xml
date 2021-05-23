@@ -4,44 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/blanco"
     android:orientation="vertical"
     tools:context=".ui.ui.menu.ActivityConfiguracion">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:layout_marginBottom="10dp"
         android:orientation="horizontal">
 
 
         <ImageButton
-            android:id="@+id/boton_regresar_de_configuracion"
+            android:id="@+id/btnRegresarConfiguracion"
             android:layout_width="55dp"
             android:layout_height="52dp"
             android:layout_gravity="center"
-            android:layout_marginStart="@dimen/btn_regresar_margin_start"
-            android:layout_marginEnd="25dp"
-            android:background="@drawable/regresar_xxxdpi_06"
-            android:contentDescription="Boton regresar" />
+            android:layout_marginLeft="52dp"
+            android:background="@drawable/regresar_xxxdpi_06" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginRight="100dp"
             android:text="@string/configuracion"
             android:textAlignment="center"
             android:textColor="@color/gris_oscuro"
-            android:textSize="23sp" />
+            android:fontFamily="@font/agne_regular"
+            android:textStyle="bold"
+            android:textSize="@dimen/tamanio_titulos" />
 
 
     </LinearLayout>
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="310dp"
         android:orientation="vertical"
-        android:layout_gravity="center|center_horizontal"
-        android:layout_marginStart="45dp"
-        android:layout_marginEnd="45dp"
+        android:layout_gravity="center"
         android:layout_height="wrap_content">
         <EditText
             android:layout_width="match_parent"
@@ -51,8 +49,7 @@
             android:textAlignment="center"
             android:inputType="textPersonName"
             android:layout_marginBottom="30dp"
-            android:hint="/ nombre"
-            android:autofillHints="" />
+            android:text="/ nombre" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -61,7 +58,7 @@
             android:inputType="textPersonName"
             android:layout_marginBottom="30dp"
             android:backgroundTint="@color/azul_claro"
-            android:hint="/ fecha de nacimiento" />
+            android:text="/ fecha de nacimiento" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -70,7 +67,7 @@
             android:inputType="textPersonName"
             android:layout_marginBottom="30dp"
             android:backgroundTint="@color/azul_claro"
-            android:hint="/ ubicación" />
+            android:text="/ ubicación" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -79,8 +76,7 @@
             android:inputType="textPersonName"
             android:backgroundTint="@color/azul_claro"
             android:layout_marginBottom="30dp"
-            android:hint="/ ocupación"
-            android:importantForAutofill="no" />
+            android:text="/ ocupación" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -88,24 +84,26 @@
             android:textAlignment="center"
             android:inputType="textPersonName"
             android:backgroundTint="@color/azul_claro"
-            android:layout_marginBottom="40dp"
-            android:hint="/ cambiar contraseña" />
+            android:layout_marginBottom="30dp"
+            android:text="/ cambiar contraseña" />
     </LinearLayout>
     <Button
-        android:id="@+id/boton_cerrar_sesion"
+        android:id="@+id/btnConfiguracion"
         android:layout_width="220dp"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
         android:layout_gravity="center"
         android:backgroundTint="@color/azul"
         android:text="@string/cerrar_sesion"
+        android:textSize="@dimen/tamanio_texto_botones"
+        android:textAllCaps="false"
         android:textColor="@color/white"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="30dp"
         app:cornerRadius="50dp" />
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center_horizontal|center"
+        android:layout_width="@dimen/simbolo_height_width"
+        android:layout_height="@dimen/simbolo_height_width"
+        android:layout_gravity="center_horizontal"
         app:srcCompat="@drawable/simbolo_xxxdpi_06" />
 
 

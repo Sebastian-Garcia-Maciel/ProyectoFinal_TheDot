@@ -9,24 +9,30 @@
     tools:context=".ui.ui.menu.TheDot">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_height="120dp"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/btnRegresarTD"
-            android:layout_width="55dp"
-            android:layout_height="52dp"
-            android:layout_gravity="center"
-            android:layout_marginStart="45dp"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginStart="@dimen/btn_regresar_margin_start"
+            android:layout_marginEnd="50dp"
             android:background="@drawable/regresar_xxxdpi_06" />
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="95dp"
+            android:layout_width="@dimen/simbolo_height_width"
+            android:layout_height="@dimen/simbolo_height_width"
             app:srcCompat="@drawable/simbolo_xxxdpi_06" />
 
+        <ImageButton
+            android:id="@+id/btnAvanzarTD"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginStart="@dimen/btn_regresar_margin_start"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/avanzar_xxxdpi_06" />
 
     </LinearLayout>
 
@@ -35,7 +41,7 @@
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="30dp"
         app:srcCompat="@drawable/marca_grafica_principal"
         />
 
@@ -48,16 +54,18 @@
         android:layout_marginEnd="45dp"
         android:text="THE DOT ES UNA APP\n PARA EL MANEJO DEL\nESTRÉS, LA CUÁL\nAPOYA AL USUARIO\nCON TÉCNICAS DE\nRELAJACIÓN, INFORMACIÓN\nde valor Y SOBRE\nTODO ESTANDO CERCA\nDE EL."
         android:textColor="@color/azul"
+        android:fontFamily="@font/gt_america_regular"
+        android:textStyle="bold"
         android:textSize="25sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="20dp"
         android:orientation="vertical">
         <ImageView
-            android:scaleType="fitEnd"
-            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_gravity="end"
+            android:layout_width="250dp"
             android:layout_height="match_parent"
             android:src="@drawable/trazado_xxxdpi_06"/>
     </LinearLayout>

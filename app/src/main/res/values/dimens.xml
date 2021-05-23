@@ -7,6 +7,9 @@
     <dimen name="signo_height_width">25dp</dimen>
     <dimen name="tv_titulo">44sp</dimen>
     <dimen name="margin_bottom">70dp</dimen>
+    <dimen name="tamanio_titulos">25sp</dimen>
+    <dimen name="tamanio_texto">14sp</dimen>
+    <dimen name="tamanio_texto_botones">18sp</dimen>
 
 
 

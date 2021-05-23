@@ -12,25 +12,26 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
+        android:gravity="center_vertical"
         android:orientation="horizontal">
 
 
         <ImageButton
             android:id="@+id/btnRegresarMr"
-            android:layout_width="55dp"
-            android:layout_height="52dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="52dp"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_marginStart="@dimen/btn_regresar_margin_start"
+            android:layout_marginEnd="35dp"
             android:background="@drawable/regresar_xxxdpi_06" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginRight="100dp"
-            android:text="@string/metodos_respiracion"
+            android:text="Métodos de\nrespiración"
             android:textAlignment="center"
-            android:textColor="@color/gris_oscuro"
+            android:textColor="@color/gris_oscuro"            android:layout_marginStart="100dp"
+            android:fontFamily="@font/agne_regular"
+            android:textStyle="bold"
             android:textSize="23sp" />
     </LinearLayout>
 

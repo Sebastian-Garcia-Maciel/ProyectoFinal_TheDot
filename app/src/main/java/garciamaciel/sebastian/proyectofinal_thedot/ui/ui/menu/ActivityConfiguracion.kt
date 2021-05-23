@@ -1,6 +1,5 @@
 package garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,14 +9,13 @@ import garciamaciel.sebastian.proyectofinal_thedot.R
 import garciamaciel.sebastian.proyectofinal_thedot.ui.MainActivity
 
 class ActivityConfiguracion : AppCompatActivity() {
-    @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_configuracion)
         supportActionBar?.hide()
 
-        val botonRegresar:ImageButton = findViewById<ImageButton>(R.id.boton_regresar_de_configuracion)
-        val botonCerrarSesion = findViewById<Button>(R.id.boton_cerrar_sesion)
+        val botonRegresar:ImageButton = findViewById<ImageButton>(R.id.btnRegresarConfiguracion)
+        val botonCerrarSesion = findViewById<Button>(R.id.btnConfiguracion)
 
 
         botonRegresar.setOnClickListener() {
@@ -25,7 +23,7 @@ class ActivityConfiguracion : AppCompatActivity() {
             startActivity(intent)
         }
 
-        botonRegresar.setOnClickListener() {
+        botonCerrarSesion.setOnClickListener{
             var intent: Intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
