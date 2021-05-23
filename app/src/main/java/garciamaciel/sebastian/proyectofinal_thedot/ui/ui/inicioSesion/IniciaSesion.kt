@@ -17,7 +17,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 import garciamaciel.sebastian.proyectofinal_thedot.R
-import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu.Inicio1
+import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu.ActivityInicio
 import garciamaciel.sebastian.proyectofinal_thedot.ui.MainActivity
 
 
@@ -127,7 +127,7 @@ class IniciaSesion : AppCompatActivity() {
 
     private fun updateUI(account: GoogleSignInAccount?) {
         if (account != null){
-            val intent:Intent = Intent(this, Inicio1::class.java)
+            val intent:Intent = Intent(this, ActivityInicio::class.java)
             intent.putExtra("name", account.displayName)
             startActivityForResult(intent, COD_LOGOUT)
 
@@ -157,7 +157,7 @@ class IniciaSesion : AppCompatActivity() {
                     // Sign in success, update UI with the signed-in user's information
                     // Log.d(TAG, "signInWithEmail:success")
                     val user = auth.currentUser
-                    val intent: Intent = Intent(this, Inicio1::class.java)
+                    val intent: Intent = Intent(this, ActivityInicio::class.java)
                     startActivity(intent)
                     //updateUI(user)
                 } else {
