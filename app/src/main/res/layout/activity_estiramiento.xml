@@ -33,6 +33,8 @@
             android:text="@string/estiramiento"
             android:textAlignment="center"
             android:textColor="@color/gris_oscuro"
+            android:fontFamily="@font/agne_regular"
+            android:textStyle="bold"
             android:textSize="23sp" />
     </LinearLayout>
 
@@ -92,7 +94,7 @@
                 android:layout_marginTop="50dp"
                 android:layout_marginBottom="20dp"
 
-                android:background="@drawable/borde"
+                android:background="@drawable/borde_redondeado"
                 android:text="Pasivo"
                 android:textAllCaps="false"
                 android:textColor="@color/gris"
@@ -104,7 +106,7 @@
                 android:layout_height="140dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/borde"
+                android:background="@drawable/borde_redondeado"
                 android:text="Activo"
                 android:textAllCaps="false"
                 android:textColor="@color/gris"
@@ -116,7 +118,7 @@
                 android:layout_height="140dp"
                 android:layout_gravity="center"
                 android:layout_marginBottom="20dp"
-                android:background="@drawable/borde"
+                android:background="@drawable/borde_redondeado"
                 android:text="Estatico"
                 android:textAllCaps="false"
                 android:textColor="@color/gris"

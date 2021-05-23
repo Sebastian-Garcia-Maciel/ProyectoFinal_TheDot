@@ -29,7 +29,8 @@
             android:layout_marginRight="100dp"
             android:text="@string/meditacion"
             android:textAlignment="center"
-
+            android:fontFamily="@font/agne_regular"
+            android:textStyle="bold"
             android:textColor="@color/gris_oscuro"
             android:textSize="23sp" />
     </LinearLayout>

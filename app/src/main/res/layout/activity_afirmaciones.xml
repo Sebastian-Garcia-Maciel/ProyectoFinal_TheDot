@@ -32,6 +32,8 @@
             android:text="Mis\nafirmaciones"
             android:textAlignment="center"
             android:textColor="@color/gris_oscuro"
+            android:fontFamily="@font/agne_regular"
+            android:textStyle="bold"
             android:textSize="23sp" />
 
         <ImageView

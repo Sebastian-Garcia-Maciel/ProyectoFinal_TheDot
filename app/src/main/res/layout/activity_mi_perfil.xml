@@ -85,6 +85,7 @@
         android:layout_height="300dp"
         android:layout_gravity="center"
         android:columnCount="2"
+        android:rowCount="2"
         android:orientation="horizontal"
         android:translationY="-160dp">
 
@@ -124,5 +125,7 @@
             android:text="Metas"
             android:textSize="18sp"
             app:cornerRadius="20dp" />
+
     </GridLayout>
+
 </LinearLayout>

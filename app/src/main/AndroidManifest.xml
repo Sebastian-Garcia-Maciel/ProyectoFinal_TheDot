@@ -9,8 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinal_TheDot">
-        <activity android:name=".Articulos"></activity>
-        <activity android:name=".ui.ui.miPerfil.afirmaciones.ActivityCrearAfirmacion"></activity>
+        <activity android:name=".pruebaMiPerfil">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Articulos" />
+        <activity android:name=".ui.ui.miPerfil.afirmaciones.ActivityCrearAfirmacion" />
         <activity android:name=".ui.ui.miPerfil.afirmaciones.AgregarAfirmacion" />
         <activity android:name=".ui.ui.miPerfil.afirmaciones.ActivityAfirmaciones" />
         <activity android:name=".ui.ui.ActivityDias" />

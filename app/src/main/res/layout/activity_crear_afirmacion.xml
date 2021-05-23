@@ -19,14 +19,16 @@
             android:layout_height="52dp"
             android:layout_gravity="center"
             android:layout_marginStart="@dimen/btn_regresar_margin_start"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="35dp"
             android:background="@drawable/regresar_xxxdpi_06" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|center_horizontal"
-            android:text="Nueva afirmación"
+            android:text="Nueva\nafirmación"
+            android:fontFamily="@font/agne_regular"
+            android:textStyle="bold"
             android:textAlignment="center"
             android:textColor="@color/gris_oscuro"
             android:textSize="23sp" />
