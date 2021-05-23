@@ -34,7 +34,7 @@
             android:textColor="@color/gris_oscuro"
             android:fontFamily="@font/agne_regular"
             android:textStyle="bold"
-            android:textSize="23sp" />
+            android:textSize="@dimen/tamanio_titulos" />
 
         <ImageView
             android:layout_width="110dp"
@@ -47,9 +47,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:text="Son una herramienta para mejorar nuestro estado emocional\n y para atraer lo que queremos. Tienen por objetivo el hacer\n sentirnos mejor, tener una actitud positiva ante la vida y\n nos ayudan a crear nuestra propia realidad."
         android:textAlignment="center"
-        android:textSize="12sp" />
+        android:textSize="@dimen/tamanio_texto" />
 
     <LinearLayout
         android:layout_width="match_parent"

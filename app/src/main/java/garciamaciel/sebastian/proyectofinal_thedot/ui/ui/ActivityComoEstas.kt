@@ -8,7 +8,6 @@ import android.widget.ImageButton
 import garciamaciel.sebastian.proyectofinal_thedot.R
 
 class ActivityComoEstas : AppCompatActivity() {
-    @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_como_estas)

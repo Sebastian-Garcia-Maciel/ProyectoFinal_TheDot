@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import garciamaciel.sebastian.proyectofinal_thedot.R
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.Journal
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.Metodos
@@ -31,7 +30,7 @@ class ActivityInicio : AppCompatActivity() {
         val botonJournal: ImageButton = findViewById<ImageButton>(R.id.boton_journal)
         val botonAbout: ImageButton = findViewById<ImageButton>(R.id.boton_about)
         val headerConNombre: TextView = findViewById(R.id.tv_header)
-        val cerrar: ImageView = findViewById(R.id.btnCerrarSesion)
+        val btnConfiguracion: ImageButton = findViewById(R.id.btnConfiguracion)
 
         val bundle = intent.extras
         if (bundle != null) {
@@ -41,8 +40,9 @@ class ActivityInicio : AppCompatActivity() {
 
         }
 
-        cerrar.setOnClickListener {
-            finish()
+        btnConfiguracion.setOnClickListener {
+            var intent: Intent = Intent(this, ActivityConfiguracion::class.java)
+            startActivity(intent)
         }
 
 
@@ -107,7 +107,7 @@ class ActivityInicio : AppCompatActivity() {
         if (contador == 2) {
             fondoInicio.setImageResource(R.drawable.ve_por_helado2)
             btnPrimeraImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_blanco)
-            btnSegundaImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_blanco_seleccionado)
+            btnSegundaImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_seleccionado)
             btnTerceraImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_blanco)
             btnCuartaImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_blanco)
             btnQuintaImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_blanco)
@@ -116,7 +116,7 @@ class ActivityInicio : AppCompatActivity() {
             fondoInicio.setImageResource(R.drawable.playlist3)
             btnPrimeraImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_blanco)
             btnSegundaImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_blanco)
-            btnTerceraImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_blanco_seleccionado)
+            btnTerceraImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_seleccionado)
             btnCuartaImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_blanco)
             btnQuintaImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_blanco)
         }
@@ -125,7 +125,7 @@ class ActivityInicio : AppCompatActivity() {
             btnPrimeraImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_blanco)
             btnSegundaImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_blanco)
             btnTerceraImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_blanco)
-            btnCuartaImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_blanco_seleccionado)
+            btnCuartaImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_seleccionado)
             btnQuintaImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_blanco)
         }
         if (contador == 5) {
@@ -134,7 +134,7 @@ class ActivityInicio : AppCompatActivity() {
             btnSegundaImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_blanco)
             btnTerceraImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_blanco)
             btnCuartaImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_blanco)
-            btnQuintaImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_blanco_seleccionado)
+            btnQuintaImagen.setBackgroundResource(R.drawable.fondo_boton_carrusel_seleccionado)
         }
 
 

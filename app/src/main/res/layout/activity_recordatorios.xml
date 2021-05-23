@@ -15,7 +15,7 @@
 
 
         <ImageButton
-            android:id="@+id/boton_regresar_muevete"
+            android:id="@+id/btnRegresarMI"
             android:layout_width="@dimen/btn_width"
             android:layout_height="@dimen/btn_height"
             android:layout_gravity="center"
@@ -58,14 +58,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="25dp"
             android:background="@drawable/borde"
             android:orientation="horizontal">
 
@@ -106,9 +107,8 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:layout_marginStart="25dp"
-            android:layout_marginEnd="25dp"
+            android:layout_height="90dp"
+
             android:background="@drawable/borde"
             android:gravity="center"
             android:orientation="vertical">
@@ -123,4 +123,161 @@
         </LinearLayout>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:background="@drawable/borde_fondo_blanco"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/gt_america_regular"
+                    android:text="Salud mental"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/borde_fondo_blanco"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gt_america_regular"
+                    android:text="Diario-5:30 P.M"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/borde"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/holly_sharpie"
+                android:text="Sal a tomar el aire"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:background="@drawable/borde_fondo_blanco"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="@font/gt_america_regular"
+                    android:text="Salud mental"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/borde_fondo_blanco"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gt_america_regular"
+                    android:text="Diario-5:30 P.M"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+
+            android:background="@drawable/borde"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/holly_sharpie"
+                android:text="Sal a tomar el aire"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_afirmaciones"
+                android:layout_width="@dimen/signo_height_width"
+                android:layout_height="@dimen/signo_height_width"
+                android:background="@drawable/signo__01" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="75dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            app:srcCompat="@drawable/trazado5_xxxdpi_06" />
+
+    </RelativeLayout>
 </LinearLayout>

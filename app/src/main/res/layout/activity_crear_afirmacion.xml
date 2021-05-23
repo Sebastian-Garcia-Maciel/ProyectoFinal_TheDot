@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/blanco"
     tools:context=".ui.ui.miPerfil.afirmaciones.ActivityCrearAfirmacion">
 
     <LinearLayout
@@ -31,7 +32,7 @@
             android:textStyle="bold"
             android:textAlignment="center"
             android:textColor="@color/gris_oscuro"
-            android:textSize="23sp" />
+            android:textSize="@dimen/tamanio_titulos" />
     </LinearLayout>
 
     <ScrollView
@@ -67,6 +68,8 @@
                 android:layout_gravity="center"
                 android:backgroundTint="@color/azul"
                 android:inputType="textEmailAddress"
+                android:fontFamily="@font/gt_america_regular"
+                android:textStyle="bold"
                 android:text="Agregar afirmación"
                 android:textSize="15sp"
                 app:cornerRadius="50dp" />

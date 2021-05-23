@@ -12,7 +12,7 @@ class Recordatorios : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recordatorios)
         supportActionBar?.hide()
-        val btnRegresar: ImageButton = findViewById(R.id.btnRegresarMIR) as ImageButton
+        val btnRegresar: ImageButton = findViewById(R.id.btnRegresarMI) as ImageButton
 
 
         btnRegresar.setOnClickListener{

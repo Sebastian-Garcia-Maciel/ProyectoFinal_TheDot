@@ -1,131 +1,169 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:background="@color/blanco"
     tools:context=".ui.ui.miPerfil.MiPerfil">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnRegresarPerfil"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="@dimen/btn_height"
+                android:layout_marginStart="@dimen/btn_regresar_margin_start"
+                android:layout_marginEnd="30dp"
+                android:layout_weight="0"
+                android:background="@drawable/regresar_xxxdpi_06" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mi perfil"
+                android:textAlignment="center"
+                android:textColor="@color/gris_oscuro"
+                android:fontFamily="@font/agne_regular"
+                android:textStyle="bold"
+                android:textSize="@dimen/tamanio_titulos" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/trazado4_xxxdpi_06" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/fondoInicio"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/mi_perfil"
+            app:shapeAppearanceOverlay="@style/imagen_circular" />
+        <ImageView
+            android:id="@+id/imgPerfil"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/simbolo_xxxdpi_06" />
+    </RelativeLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-
-        <ImageButton
-            android:id="@+id/btnRegresarMi"
-            android:layout_width="55dp"
-            android:layout_height="52dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="52dp"
-            android:background="@drawable/regresar_xxxdpi_06" />
+        <TextView
+            android:id="@+id/etNamePerfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Marifer López"
+            android:textAlignment="center"
+            android:textColor="@color/gris_oscuro"
+            android:fontFamily="@font/agne_regular"
+            android:textSize="20sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginRight="100dp"
-            android:text="Mi perfil"
+            android:fontFamily="@font/gt_america_regular"
+            android:text="Soy Fer, tengo 18 años y actualmente estoy estudiando\nla Licenciatura en Fisioterapia. Me gusta mucho tomar\ncafe , bailar y pintar."
             android:textAlignment="center"
-            android:textColor="@color/gris_oscuro"
-            android:textSize="23sp" />
+            android:textColor="@color/black"
+            android:textSize="@dimen/tamanio_texto"/>
     </LinearLayout>
-    <ImageView
-        android:id="@+id/imgPerfil"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_margin="20dp"
-        android:src="@drawable/perfil__01"
-        android:translationY="-60dp"
-        />
-
-    <TextView
-        android:id="@+id/etNamePerfil"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginBottom="60dp"
-        android:text="Marifer López"
-        android:textAlignment="center"
-        android:textColor="@color/gris_oscuro"
-        android:textSize="40sp"
-        android:translationY="-80dp"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:textColor="@color/black"
-        android:fontFamily="sans-serif-light"
-        android:textStyle="italic"
-        android:text="@string/perfil_description"
-        android:textAlignment="center"
-        android:padding="15dp"
-        android:translationY="-150dp"
-        />
-
-    <Button
-        android:id="@+id/btnRecordatorios"
-        android:layout_width="350dp"
-        android:layout_height="80dp"
-        android:layout_gravity="center"
-        android:backgroundTint="@color/lavanda"
-        android:text="@string/recordatorios"
-        android:textAllCaps="false"
-        android:textSize="18sp"
-        app:cornerRadius="20dp"
-        android:translationY="-160dp"
-        />
-
-    <GridLayout
-        android:layout_width="350dp"
-        android:layout_height="300dp"
-        android:layout_gravity="center"
-        android:columnCount="2"
-        android:rowCount="2"
-        android:orientation="horizontal"
-        android:translationY="-160dp">
+        android:layout_height="90dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="45dp">
 
         <Button
-            android:id="@+id/btnAfirmaciones"
-            android:layout_width="165dp"
-            android:layout_height="160dp"
-            android:layout_rowSpan="1"
-            android:layout_gravity=""
-            android:layout_margin="10dp"
+            android:id="@+id/btnRecordatorios"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/lavanda"
+            android:text="@string/recordatorios"
+            android:fontFamily="@font/playfair_display_wght"
             android:textAllCaps="false"
-            android:backgroundTint="@color/anaranjado_claro"
-            android:text="Afirmaciones"
-            android:textSize="18sp"
+            android:textSize="@dimen/tamanio_texto_botones"
             app:cornerRadius="20dp" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal">
+        <ImageView
+            android:layout_marginTop="50dp"
+            android:scaleType="fitXY"
+            android:layout_width="160dp"
+            android:layout_height="215dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            app:srcCompat="@drawable/trazado3_xxxdpi_06" />
 
-        <Button
-            android:id="@+id/btnAgenda"
-            android:layout_width="165dp"
-            android:layout_height="265dp"
-            android:layout_rowSpan="2"
-            android:textAllCaps="false"
-            android:backgroundTint="@color/azul_claro"
-            android:text="@string/agenda"
-            android:textSize="18sp"
-            app:cornerRadius="20dp" />
+        <GridLayout
+            android:layout_width="329dp"
+            android:layout_height="205dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:columnCount="2"
+            android:orientation="horizontal"
+            android:rowCount="2">
 
-        <Button
-            android:id="@+id/btnMetas"
-            android:layout_width="165dp"
-            android:layout_height="80dp"
-            android:layout_rowSpan="1"
-            android:layout_gravity=""
-            android:textAllCaps="false"
-            android:layout_margin="10dp"
-            android:backgroundTint="@color/verde_azulado"
-            android:text="Metas"
-            android:textSize="18sp"
-            app:cornerRadius="20dp" />
+            <Button
+                android:id="@+id/btnAfirmaciones"
+                android:layout_width="165dp"
+                android:layout_height="95dp"
+                android:layout_rowSpan="1"
+                android:layout_gravity="start|top"
+                android:backgroundTint="@color/anaranjado_claro"
+                android:text="Afirmaciones"
+                android:textAllCaps="false"
+                android:textSize="@dimen/tamanio_texto_botones"
+                app:cornerRadius="20dp" />
 
-    </GridLayout>
+            <Button
+                android:id="@+id/btnAgenda"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_rowSpan="2"
+                android:backgroundTint="@color/azul_claro"
+                android:text="@string/agenda"
+                android:textAllCaps="false"
+                android:textSize="@dimen/tamanio_texto_botones"
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btnMetas"
+                android:layout_width="165dp"
+                android:layout_height="95dp"
+                android:layout_rowSpan="1"
+                android:layout_gravity="start|bottom"
+                android:backgroundTint="@color/verde_azulado"
+                android:text="Metas"
+                android:textAllCaps="false"
+                android:textSize="@dimen/tamanio_texto_botones"
+                app:cornerRadius="20dp" />
+        </GridLayout>
+    </RelativeLayout>
 
 </LinearLayout>

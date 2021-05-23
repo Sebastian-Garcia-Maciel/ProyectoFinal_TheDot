@@ -33,7 +33,7 @@
             android:text="@string/estiramiento"
             android:textAlignment="center"
             android:textColor="@color/gris_oscuro"
-            android:textSize="23sp" />
+            android:textSize="@dimen/tamanio_titulos" />
     </LinearLayout>
 
     <TextView

@@ -9,16 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinal_TheDot">
-        <activity android:name=".pruebaMiPerfil">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".Articulos" />
         <activity android:name=".ui.ui.miPerfil.afirmaciones.ActivityCrearAfirmacion" />
-        <activity android:name=".ui.ui.miPerfil.afirmaciones.AgregarAfirmacion" />
         <activity android:name=".ui.ui.miPerfil.afirmaciones.ActivityAfirmaciones" />
         <activity android:name=".ui.ui.ActivityDias" />
         <activity android:name=".ui.ui.metodos.tecnicas.ActivityMuevete" />
@@ -34,10 +27,6 @@
         <activity android:name=".ui.ui.miPerfil.MiPerfil" />
         <activity android:name=".ui.ui.metodos.Metodos" />
         <activity android:name=".ui.ui.Journal" />
-        <activity android:name=".ui.ui.menu.Inicio5" />
-        <activity android:name=".ui.ui.menu.Inicio4" />
-        <activity android:name=".ui.ui.menu.Inicio3" />
-        <activity android:name=".ui.ui.menu.Inicio2" />
         <activity android:name=".ui.ui.menu.ActivityInicio" />
         <activity android:name=".ui.ui.inicioSesion.IniciaSesion" />
         <activity android:name=".ui.ui.Estres" />

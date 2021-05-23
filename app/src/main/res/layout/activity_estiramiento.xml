@@ -4,25 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blanco"
     android:orientation="vertical"
     tools:context=".ui.ui.metodos.estiramiento.ActivityEstiramiento">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="120dp"
         android:orientation="horizontal">
 
 
         <ImageButton
             android:id="@+id/boton_regresar_de_estriamiento"
-            android:layout_width="55dp"
-            android:layout_height="52dp"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
             android:layout_gravity="center"
             android:layout_marginStart="@dimen/btn_regresar_margin_start"
-            android:layout_marginEnd="25dp"
+            android:layout_marginEnd="35dp"
             android:background="@drawable/regresar_xxxdpi_06" />
 
         <TextView
@@ -46,85 +43,110 @@
         android:layout_marginEnd="40dp"
         android:text="Te compartimos las siguientes técnicas de estiramiento para\n que puedas aumentar la circulación en tu cuerpo, se llenen\n de oxigeno tus pulmones y puedas estar relajado."
         android:textAlignment="center"
-        android:textSize="11sp" />
+        android:textSize="11sp"
+        android:fontFamily="@font/gt_america_regular"
+        android:layout_marginBottom="20dp"/>
 
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_alignParentRight="true"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="10dp"
-            android:src="@drawable/mancha1_xdpi_04" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="255dp"
-            android:src="@drawable/mancha2_xdpi_04" />
-
-        <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="470dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="40dp"
-            android:src="@drawable/mancha3_xdpi_04" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
+        android:layout_height="170dp">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
             android:layout_centerInParent="true"
-            android:orientation="vertical">
+            android:layout_height="150dp"
+            android:src="@drawable/pasivo_xxxdpi_06"
+            app:shapeAppearanceOverlay="@style/imagen_redondeada" />
+        <Button
+            android:id="@+id/boton_estiramiento_pasivo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@android:color/transparent"
+            android:text="Pasivo"
+            android:fontFamily="@font/playfair_display_wght"
+            android:layout_centerInParent="true"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="55sp" />
 
-            <android.widget.Button
-                android:id="@+id/boton_estiramiento_pasivo"
-                android:layout_width="320dp"
-                android:layout_height="140dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="50dp"
-                android:layout_marginBottom="20dp"
-
-                android:background="@drawable/borde_redondeado"
-                android:text="Pasivo"
-                android:textAllCaps="false"
-                android:textColor="@color/gris"
-                android:textSize="34sp" />
-
-            <android.widget.Button
-                android:id="@+id/boton_estiramiento_activo"
-                android:layout_width="320dp"
-                android:layout_height="140dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/borde_redondeado"
-                android:text="Activo"
-                android:textAllCaps="false"
-                android:textColor="@color/gris"
-                android:textSize="34sp" />
-
-            <android.widget.Button
-                android:id="@+id/boton_estiramiento_estatico"
-                android:layout_width="320dp"
-                android:layout_height="140dp"
-                android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/borde_redondeado"
-                android:text="Estatico"
-                android:textAllCaps="false"
-                android:textColor="@color/gris"
-                android:textSize="34sp" />
-        </LinearLayout>
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="100dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/mancha1_xxxdpi_06" />
     </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_centerInParent="true"
+            android:layout_height="150dp"
+            android:src="@drawable/activo_xxxdpi_06"
+            app:shapeAppearanceOverlay="@style/imagen_redondeada" />
+        <Button
+            android:id="@+id/boton_estiramiento_activo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@android:color/transparent"
+            android:text="Activo"
+            android:fontFamily="@font/playfair_display_wght"
+            android:layout_centerInParent="true"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="55sp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="65dp"
+            android:src="@drawable/mancha2_xxxdpi_06" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_centerInParent="true"
+            android:layout_height="150dp"
+            android:src="@drawable/estatico_xxxdpi_06"
+            app:shapeAppearanceOverlay="@style/imagen_redondeada" />
+        <Button
+            android:id="@+id/boton_estiramiento_estatico"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@android:color/transparent"
+            android:text="Estatico"
+            android:fontFamily="@font/playfair_display_wght"
+            android:layout_centerInParent="true"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="55sp" />
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="125dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/mancha3_xxxdpi_06" />
+    </RelativeLayout>
+
+
 
 
 </LinearLayout>

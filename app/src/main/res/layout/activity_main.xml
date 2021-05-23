@@ -14,23 +14,21 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="95dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="1"
-            android:translationX="135dp"
-            android:translationY="20dp"
+            android:layout_width="@dimen/simbolo_height_width"
+            android:layout_height="@dimen/simbolo_height_width"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="15dp"
             app:srcCompat="@drawable/simbolo_xxxdpi_06" />
 
         <ImageView
-            android:layout_width="330dp"
+            android:layout_width="120dp"
+             android:layout_marginStart="53dp"
             android:layout_height="260dp"
-            android:layout_weight="1"
             android:scaleType="fitEnd"
-            android:translationX="3.5dp"
             app:srcCompat="@drawable/trazado2_xxxdpi_06" />
 
     </LinearLayout>
+
 
     <ImageView
         android:layout_width="200dp"

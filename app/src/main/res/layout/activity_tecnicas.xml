@@ -10,9 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="10dp"
+        android:layout_height="120dp"
         android:orientation="horizontal">
 
 
@@ -33,7 +31,9 @@
             android:text="Tecnicas"
             android:textAlignment="center"
             android:textColor="@color/gris_oscuro"
-            android:textSize="23sp" />
+            android:fontFamily="@font/agne_regular"
+            android:textStyle="bold"
+            android:textSize="@dimen/tamanio_titulos" />
     </LinearLayout>
 
     <LinearLayout
@@ -85,8 +85,8 @@
         android:orientation="vertical">
         <ImageView
             android:layout_gravity="right"
-            android:scaleType="fitEnd"
-            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_width="200dp"
             android:layout_height="match_parent"
             android:src="@drawable/trazado12_xxxdpi_06"/>
     </LinearLayout>

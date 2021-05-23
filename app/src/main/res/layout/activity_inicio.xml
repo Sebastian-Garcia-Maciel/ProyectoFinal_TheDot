@@ -25,9 +25,9 @@
             app:srcCompat="@drawable/logo2_xxdpi_05" />
 
         <ImageButton
-            android:id="@+id/btnCerrarSesion"
+            android:id="@+id/btnConfiguracion"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:background="@color/azul"
             app:srcCompat="@drawable/puntitos_ldpi_01"
             android:contentDescription="menu" />
@@ -35,7 +35,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:gravity="center">
 
         <TextView
@@ -46,7 +46,7 @@
             android:textAlignment="center"
             android:textColor="@color/gris_oscuro"
             android:textSize="20sp"
-            android:textStyle="italic" />
+            android:fontFamily="@font/playfair_display_italic_wght"/>
     </LinearLayout>
 
     <LinearLayout
