@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/blanco"
     android:orientation="vertical"
-    tools:context=".ui.ui.miPerfil.recordatorios.Recordatorios">
+    tools:context=".ui.ui.miPerfil.recordatorios.ActivityRecordatorios">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,10 +17,10 @@
         <ImageButton
             android:id="@+id/btnRegresarMI"
             android:layout_width="@dimen/btn_width"
-            android:layout_height="@dimen/btn_height"
+            android:layout_height="52dp"
             android:layout_gravity="center"
             android:layout_marginStart="@dimen/btn_regresar_margin_start"
-            android:layout_marginEnd="35dp"
+            android:layout_marginEnd="20dp"
             android:background="@drawable/regresar_xxxdpi_06" />
 
         <TextView
@@ -33,7 +33,7 @@
             android:textStyle="bold"
             android:textAlignment="center"
             android:textColor="@color/gris_oscuro"
-            android:textSize="23sp" />
+            android:textSize="@dimen/tamanio_titulos" />
 
 
     </LinearLayout>
@@ -42,8 +42,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="30dp">
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="30dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -55,206 +55,29 @@
             android:textSize="13sp"
             android:textStyle="italic" />
     </LinearLayout>
-
     <LinearLayout
+
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
+        android:layout_height="425dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+
         android:orientation="vertical">
 
-        <LinearLayout
+        <GridView
+            android:id="@+id/grid_view_recordatorios"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/borde"
-            android:orientation="horizontal">
+            android:numColumns="1" />
 
-            <LinearLayout
-                android:layout_width="220dp"
-                android:layout_height="30dp"
-                android:background="@drawable/borde_fondo_blanco"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:fontFamily="@font/gt_america_regular"
-                    android:text="Salud mental"
-                    android:textColor="@color/black"
-                    android:textSize="11sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:background="@drawable/borde_fondo_blanco"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/gt_america_regular"
-                    android:text="Diario-5:30 P.M"
-                    android:textColor="@color/black"
-                    android:textSize="11sp" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-
-            android:background="@drawable/borde"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/holly_sharpie"
-                android:text="Sal a tomar el aire"
-                android:textColor="@color/black"
-                android:textSize="24sp" />
-        </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
-        android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/borde"
-            android:orientation="horizontal">
 
-            <LinearLayout
-                android:layout_width="220dp"
-                android:layout_height="30dp"
-                android:background="@drawable/borde_fondo_blanco"
-                android:gravity="center_vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:fontFamily="@font/gt_america_regular"
-                    android:text="Salud mental"
-                    android:textColor="@color/black"
-                    android:textSize="11sp" />
-            </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:background="@drawable/borde_fondo_blanco"
-                android:gravity="center"
-                android:orientation="vertical">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/gt_america_regular"
-                    android:text="Diario-5:30 P.M"
-                    android:textColor="@color/black"
-                    android:textSize="11sp" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:background="@drawable/borde"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/holly_sharpie"
-                android:text="Sal a tomar el aire"
-                android:textColor="@color/black"
-                android:textSize="24sp" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginEnd="25dp"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/borde"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="220dp"
-                android:layout_height="30dp"
-                android:background="@drawable/borde_fondo_blanco"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:fontFamily="@font/gt_america_regular"
-                    android:text="Salud mental"
-                    android:textColor="@color/black"
-                    android:textSize="11sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:background="@drawable/borde_fondo_blanco"
-                android:gravity="center"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/gt_america_regular"
-                    android:text="Diario-5:30 P.M"
-                    android:textColor="@color/black"
-                    android:textSize="11sp" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="90dp"
-
-            android:background="@drawable/borde"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/holly_sharpie"
-                android:text="Sal a tomar el aire"
-                android:textColor="@color/black"
-                android:textSize="24sp" />
-        </LinearLayout>
-    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -266,7 +89,7 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/btn_afirmaciones"
+                android:id="@+id/btnNuevoRecordatorio"
                 android:layout_width="@dimen/signo_height_width"
                 android:layout_height="@dimen/signo_height_width"
                 android:background="@drawable/signo__01" />

@@ -109,18 +109,7 @@
             android:textSize="18dp"
             app:cornerRadius="55dp" />
 
-        <Button
-            android:id="@+id/boton_inicia_sesion_google"
-            android:layout_width="250dp"
-            android:layout_height="70dp"
-            android:textAllCaps="false"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/azul"
-            android:text="@string/inicia_sesion"
-            android:textColor="@color/white"
-            android:textSize="18dp"
-            android:fontFamily="@font/gt_america_regular"
-            app:cornerRadius="55dp" />
+
     </LinearLayout>
 
 

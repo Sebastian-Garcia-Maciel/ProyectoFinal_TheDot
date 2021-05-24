@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinal_TheDot">
-
+        <activity android:name=".ui.ui.miPerfil.recordatorios.ActivityCrearRecordatorio"></activity>
         <activity android:name=".Articulos" />
         <activity android:name=".ui.ui.miPerfil.afirmaciones.ActivityCrearAfirmacion" />
         <activity android:name=".ui.ui.miPerfil.afirmaciones.ActivityAfirmaciones" />
@@ -19,7 +19,7 @@
         <activity android:name=".ui.ui.metodos.estiramiento.ActivityEstiramiento" />
         <activity android:name=".ui.ui.metodos.tecnicas.Trazos" />
         <activity android:name=".ui.ui.metodos.respiracion.Respiracion" />
-        <activity android:name=".ui.ui.miPerfil.recordatorios.Recordatorios" />
+        <activity android:name=".ui.ui.miPerfil.recordatorios.ActivityRecordatorios" />
         <activity android:name=".ui.ui.metodos.respiracion.RespiracionProfunda" />
         <activity android:name=".ui.ui.metodos.estiramiento.EstiramientoPasivo" />
         <activity android:name=".ui.ui.metodos.tecnicas.Tecnicas" />

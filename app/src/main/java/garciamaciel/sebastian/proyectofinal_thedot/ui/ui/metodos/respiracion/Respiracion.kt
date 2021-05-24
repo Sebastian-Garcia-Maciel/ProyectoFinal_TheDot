@@ -12,7 +12,7 @@ class Respiracion : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_respiracion)
         supportActionBar?.hide()
-        val btnRegresar: ImageButton = findViewById(R.id.btnRegresarRes) as ImageButton
+        val btnRegresar: ImageButton = findViewById(R.id.btnRegresarMI) as ImageButton
 
 
         btnRegresar.setOnClickListener{

@@ -17,7 +17,7 @@ class ActivityEstiramiento : AppCompatActivity() {
         /*Oculta la action bar*/
         supportActionBar?.hide()
 
-        val botonRegresar:ImageButton = findViewById<ImageButton>(R.id.boton_regresar_de_estriamiento)
+        val botonRegresar:ImageButton = findViewById<ImageButton>(R.id.btnRegresarEstiramiento)
         val botonEstiramientoPasivo:android.widget.Button = findViewById<android.widget.Button>(R.id.boton_estiramiento_pasivo)
         val botonEstiramientoActivo:android.widget.Button = findViewById<android.widget.Button>(R.id.boton_estiramiento_activo)
         val botonEstiramientoEstatico:android.widget.Button = findViewById<android.widget.Button>(R.id.boton_estiramiento_estatico)

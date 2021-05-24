@@ -9,17 +9,15 @@
     tools:context=".ui.ui.metodos.Metodos">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_height="120dp"
         android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/btnRegresarMet"
-            android:layout_width="55dp"
-            android:layout_height="52dp"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
             android:layout_gravity="center"
-            android:layout_marginStart="52dp"
+            android:layout_marginStart="@dimen/btn_regresar_margin_start"
             android:background="@drawable/regresar_xxxdpi_06" />
 
         <TextView
@@ -30,91 +28,174 @@
             android:text="@string/metodos"
             android:textAlignment="center"
             android:textColor="@color/gris_oscuro"
-            android:textSize="30sp" />
+            android:fontFamily="@font/agne_regular"
+            android:textStyle="bold"
+            android:textSize="@dimen/tamanio_titulos" />
     </LinearLayout>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:textColor="@color/black"
-        android:fontFamily="sans-serif-light"
-        android:textStyle="italic"
         android:text="@string/metodos_description"
         android:textAlignment="center"
-        android:padding="15dp"
-        android:translationY="-10dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/gt_america_regular"
+        android:textSize="@dimen/tamanio_texto"
+        android:layout_marginBottom="20dp"
         />
 
-    <GridLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:columnCount="2"
-        android:rowCount="4"
-        android:orientation="horizontal"
-        android:translationY="-10dp">
+        android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btnRespiracion"
-            android:layout_width="180dp"
-            android:layout_height="140dp"
-            android:layout_rowSpan="1"
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="540dp"
+            android:translationY="50dp"
+            android:translationX="-20dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"
+            app:srcCompat="@drawable/trazado9" />
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:backgroundTint="@color/lavanda"
-            android:text="Respiracion"
-            android:textAllCaps="false"
-            android:layout_margin="10sp"
-            android:textSize="18sp"
-            app:cornerRadius="20dp" />
+            android:columnCount="2"
+            android:rowCount="4"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btnEstiramiento"
-            android:layout_width="180dp"
-            android:layout_height="140dp"
-            android:layout_rowSpan="1"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:backgroundTint="@color/anaranjado_claro"
-            android:text="Estiramiento"
-            android:textAllCaps="false"
-            android:textSize="18sp"
-            app:cornerRadius="20dp" />
+            <LinearLayout
+                android:id="@+id/btnRespiracion"
+                android:layout_width="180dp"
+                android:layout_height="110dp"
+                android:layout_rowSpan="1"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/lavanda"
+                android:gravity="center"
+                android:background="@drawable/fondo_boton_ovalado">
 
-        <Button
-            android:id="@+id/btnMeditacion"
-            android:layout_width="180dp"
-            android:layout_height="140dp"
-            android:layout_rowSpan="2"
-            android:layout_gravity="center"
-            android:layout_margin="10dp"
-            android:backgroundTint="@color/verde_azulado"
-            android:text="Meditacion"
-            android:textAllCaps="false"
-            android:textSize="18sp"
-            app:cornerRadius="20dp" />
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+                    android:background="@drawable/borde_ovalado">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Respiración"
+                        android:fontFamily="@font/playfair_display_wght"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/tamanio_texto_botones"/>
+                </LinearLayout>
+            </LinearLayout>
 
-        <Button
-            android:id="@+id/btnTecnicas"
-            android:layout_width="180dp"
-            android:layout_height="300dp"
-            android:layout_rowSpan="3"
-            android:layout_margin="10dp"
-            android:backgroundTint="@color/azul_claro"
-            android:text="Técnicas"
-            android:textAllCaps="false"
-            android:textSize="18sp"
-            app:cornerRadius="20dp" />
 
-        <Button
-            android:id="@+id/btnFavoritos"
-            android:layout_width="180dp"
-            android:layout_height="140dp"
-            android:layout_rowSpan="3"
-            android:layout_margin="10dp"
-            android:backgroundTint="@color/azul"
-            android:text="Favoritos"
-            android:textAllCaps="false"
-            android:textSize="18sp"
-            app:cornerRadius="20dp" />
-    </GridLayout>
+            <LinearLayout
+                android:id="@+id/btnEstiramiento"
+                android:layout_width="160dp"
+                android:layout_height="110dp"
+                android:layout_rowSpan="1"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/anaranjado_claro"
+                android:gravity="center"
+                android:background="@drawable/fondo_boton_ovalado">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+                    android:background="@drawable/borde_ovalado">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Estiramiento"
+                        android:fontFamily="@font/playfair_display_wght"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/tamanio_texto_botones"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/btnMeditacion"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_rowSpan="2"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/verde_azulado"
+                android:gravity="center"
+                android:background="@drawable/fondo_boton_ovalado">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+                    android:background="@drawable/borde_ovalado">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meditación"
+                        android:fontFamily="@font/playfair_display_wght"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/tamanio_texto_botones"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/btnTecnicas"
+                android:layout_width="160dp"
+                android:layout_height="300dp"
+                android:layout_rowSpan="3"
+                android:layout_marginStart="15dp"
+                android:backgroundTint="@color/azul_claro"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/fondo_boton_ovalado">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+                    android:background="@drawable/borde_ovalado">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Técnicas"
+                        android:fontFamily="@font/playfair_display_wght"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/tamanio_texto_botones"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/btnFavoritos"
+                android:layout_width="180dp"
+                android:layout_height="100dp"
+                android:layout_rowSpan="3"
+                android:backgroundTint="@color/azul"
+                android:gravity="center"
+                android:background="@drawable/fondo_boton_ovalado">
+
+                <LinearLayout
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:gravity="center"
+                    android:background="@drawable/borde_ovalado">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Favoritos"
+                        android:fontFamily="@font/playfair_display_wght"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/tamanio_texto_botones"/>
+                </LinearLayout>
+            </LinearLayout>
+        </GridLayout>
+    </RelativeLayout>
 </LinearLayout>

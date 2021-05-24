@@ -11,7 +11,7 @@ class ActivityMeditacionLidia : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_meditacion_lidia)
         supportActionBar?.hide()
-        val btnRegresar: ImageButton = findViewById(R.id.btnRegresarL) as ImageButton
+        val btnRegresar: ImageButton = findViewById(R.id.btnRegresarC) as ImageButton
         btnRegresar.setOnClickListener{
             var intent: Intent = Intent(this, ActivityMeditacion::class.java)
             startActivity(intent)

@@ -49,6 +49,7 @@
         android:layout_gravity="center"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
+        android:layout_marginBottom="35dp"
         android:text="Son una herramienta para mejorar nuestro estado emocional\n y para atraer lo que queremos. Tienen por objetivo el hacer\n sentirnos mejor, tener una actitud positiva ante la vida y\n nos ayudan a crear nuestra propia realidad."
         android:textAlignment="center"
         android:textSize="@dimen/tamanio_texto" />
@@ -58,7 +59,6 @@
         android:layout_height="320dp"
         android:layout_gravity="center"
         android:layout_marginStart="30dp"
-        android:layout_marginTop="25dp"
         android:layout_marginEnd="30dp"
         android:orientation="vertical">
 
@@ -66,8 +66,6 @@
             android:id="@+id/gridViewAfirmaciones"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_weight="7.2"
             android:numColumns="1" />
 
     </LinearLayout>

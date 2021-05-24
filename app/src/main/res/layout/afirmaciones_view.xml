@@ -10,14 +10,13 @@
     <EditText
         android:id="@+id/tv_afirmacion"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="65dp"
         android:backgroundTint="@color/azul_claro"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:paddingVertical="25dp"
+        android:inputType="text"
         android:text="*Atraigo muchas oportunidades"
         android:textColor="@color/gris"
+        android:gravity="top"
         android:fontFamily="@font/gt_america_regular"
-        android:textAlignment="textStart"
         android:textSize="22sp" />
+
 </LinearLayout>

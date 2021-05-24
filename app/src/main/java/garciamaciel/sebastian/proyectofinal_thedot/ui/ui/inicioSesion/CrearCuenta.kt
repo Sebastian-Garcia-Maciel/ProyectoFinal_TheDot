@@ -89,7 +89,7 @@ class CrearCuenta : AppCompatActivity() {
                     //Log.d(TAG, "createUserWithEmail:success")
                     val user = auth.currentUser
 
-                    Toast.makeText(baseContext, "Successful Authentication ",
+                    Toast.makeText(baseContext, "El correo " + auth.currentUser?.email.toString() + " ha sido correctamente registrado.",
                         Toast.LENGTH_SHORT).show()
                     //updateUI(user)
                 } else {

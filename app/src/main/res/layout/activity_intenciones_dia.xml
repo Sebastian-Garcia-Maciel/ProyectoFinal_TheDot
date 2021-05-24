@@ -7,20 +7,19 @@
     android:orientation="vertical"
     android:background="@color/blanco"
     tools:context=".ui.ui.ActivityIntencionesDia">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="120dp"
         android:orientation="horizontal">
 
 
         <ImageButton
             android:id="@+id/boton_regresar_intenciones_dia"
-            android:layout_width="55dp"
-            android:layout_height="52dp"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
             android:layout_gravity="center"
-            android:layout_marginLeft="52dp"
+            android:layout_marginStart="@dimen/btn_regresar_margin_start"
             android:background="@drawable/regresar_xxxdpi_06" />
 
         <TextView
@@ -31,15 +30,18 @@
             android:text="@string/journal"
             android:textAlignment="center"
             android:textColor="@color/gris_oscuro"
-            android:textSize="23sp" />
+            android:fontFamily="@font/agne_regular"
+            android:textSize="@dimen/tamanio_titulos" />
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
         android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/playfair_display_wght"
         android:text="@string/intenciones_dia"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -47,18 +49,27 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="430dp"
         android:layout_marginLeft="35dp"
-        android:layout_marginTop="35dp"
         android:layout_marginRight="35dp"
         android:background="@drawable/borde_azul">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/gt_america_regular"
+            android:textColor="@color/black"
+            android:text="/"
+            android:gravity="top"
+            android:textSize="18sp"
+            android:background="@android:color/transparent"
+            android:layout_margin="15dp"/>
     </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
         android:layout_gravity="end"
         android:text="-Fecha y hora"/>
 

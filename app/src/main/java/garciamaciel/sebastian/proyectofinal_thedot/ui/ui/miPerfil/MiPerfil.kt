@@ -3,13 +3,11 @@ package garciamaciel.sebastian.proyectofinal_thedot.ui.ui.miPerfil
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.LinearLayout
 import garciamaciel.sebastian.proyectofinal_thedot.R
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu.ActivityInicio
-import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.Metodos
-import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.miPerfil.recordatorios.Recordatorios
+import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.miPerfil.recordatorios.ActivityRecordatorios
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.tecnicas.Tecnicas
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.miPerfil.afirmaciones.ActivityAfirmaciones
 
@@ -30,7 +28,7 @@ class MiPerfil : AppCompatActivity() {
             startActivity(intent)
         }
         btnRecordatorios.setOnClickListener {
-            var intent: Intent = Intent(this, Recordatorios::class.java)
+            var intent: Intent = Intent(this, ActivityRecordatorios::class.java)
             startActivity(intent)
         }
         btnAfirmaciones.setOnClickListener {
@@ -38,7 +36,7 @@ class MiPerfil : AppCompatActivity() {
             startActivity(intent)
         }
         btnMetas.setOnClickListener {
-            var intent: Intent = Intent(this, Recordatorios::class.java)
+            var intent: Intent = Intent(this, ActivityRecordatorios::class.java)
             startActivity(intent)
         }
         btnTecnicas.setOnClickListener {

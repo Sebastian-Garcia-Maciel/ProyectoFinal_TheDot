@@ -16,11 +16,11 @@
 
         <ImageButton
             android:id="@+id/btn_regresar_de_nueva_afirmacion"
-            android:layout_width="55dp"
-            android:layout_height="52dp"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
             android:layout_gravity="center"
             android:layout_marginStart="@dimen/btn_regresar_margin_start"
-            android:layout_marginEnd="35dp"
+            android:layout_marginEnd="30dp"
             android:background="@drawable/regresar_xxxdpi_06" />
 
         <TextView
@@ -54,10 +54,10 @@
                 android:backgroundTint="@color/azul_claro"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:paddingVertical="25dp"
                 android:hint="Ingresa tu nueva afirmación"
                 android:textColor="@color/gris"
                 android:textAlignment="textStart"
+                android:fontFamily="@font/gt_america_regular"
                 android:textSize="22sp" />
 
             <Button

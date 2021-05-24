@@ -59,7 +59,7 @@ class ActivityAfirmaciones : AppCompatActivity() {
 
     fun fillAfirmaciones() {
         storage.collection("afirmaciones")
-            .whereEqualTo("afirmacion", usuario.currentUser?.email)
+            .whereEqualTo("email", usuario.currentUser?.email)
             .get().addOnSuccessListener {
                 it.forEach {
                     afirmaciones!!.add(Afirmacion(it.getString("afirmacion")!!))
@@ -69,7 +69,7 @@ class ActivityAfirmaciones : AppCompatActivity() {
 
                 Toast.makeText(
                     this,
-                    "Se accedio a la colección",
+                    "Accediste a tus afirmaciones.",
                     Toast.LENGTH_SHORT
                 ).show()
             }.addOnFailureListener {
