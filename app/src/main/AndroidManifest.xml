@@ -21,7 +21,7 @@
         <activity android:name=".ui.ui.metodos.respiracion.Respiracion" />
         <activity android:name=".ui.ui.miPerfil.recordatorios.ActivityRecordatorios" />
         <activity android:name=".ui.ui.metodos.respiracion.RespiracionProfunda" />
-        <activity android:name=".ui.ui.metodos.estiramiento.EstiramientoPasivo" />
+        <activity android:name=".ui.ui.metodos.estiramiento.ActivityEstiramientoPasivo" />
         <activity android:name=".ui.ui.metodos.tecnicas.Tecnicas" />
         <activity android:name=".ui.ui.menu.TheDot" />
         <activity android:name=".ui.ui.miPerfil.MiPerfil" />

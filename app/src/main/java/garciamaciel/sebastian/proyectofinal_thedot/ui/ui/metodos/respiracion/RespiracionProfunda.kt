@@ -8,6 +8,10 @@ import garciamaciel.sebastian.proyectofinal_thedot.R
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.ActivityMeditacion
 
 class RespiracionProfunda : AppCompatActivity() {
+    companion object {
+        var like: Boolean = true
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_respiracion_profunda)
