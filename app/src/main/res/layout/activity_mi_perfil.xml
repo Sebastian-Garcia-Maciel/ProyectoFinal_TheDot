@@ -79,18 +79,23 @@
             android:id="@+id/etNamePerfil"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Marifer López"
+            android:text="Nombre perfil"
             android:textAlignment="center"
             android:textColor="@color/gris_oscuro"
             android:fontFamily="@font/agne_regular"
             android:textSize="20sp" />
 
-        <TextView
+        <EditText
+            android:id="@+id/descripcionPerfil"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/gt_america_regular"
-            android:text="Soy Fer, tengo 18 años y actualmente estoy estudiando\nla Licenciatura en Fisioterapia. Me gusta mucho tomar\ncafe , bailar y pintar."
+            android:text="- Aqui va tu descripción."
+            android:inputType="textMultiLine|textNoSuggestions"
             android:textAlignment="center"
+            android:background="@drawable/background_transparent"
             android:textColor="@color/black"
             android:textSize="@dimen/tamanio_texto"/>
     </LinearLayout>

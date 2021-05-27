@@ -108,13 +108,13 @@ class CrearCuenta : AppCompatActivity() {
     }
 
     fun crearDocumento() {
-
         val  favoritosRef: DocumentReference = storage.collection("usuarios")
-            .document()
+            .document(auth.currentUser?.email.toString())
         val nuevoUsuario = hashMapOf(
             "nombreUsuario" to etNombreUsuario.text.toString(),
             "email" to auth.currentUser?.email.toString(),
-            "descripcion" to ""
+            "descripcion" to "",
+            "perfiURI" to "images/Profile_" + auth.currentUser?.email.toString() +".png"
         )
         favoritosRef.set(nuevoUsuario)
     }

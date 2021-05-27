@@ -21,9 +21,6 @@ import garciamaciel.sebastian.proyectofinal_thedot.databinding.ActivityMiPerfilB
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu.ActivityInicio
 import kotlinx.android.synthetic.main.activity_cambiar_perfil.*
 import kotlinx.android.synthetic.main.activity_mi_perfil.*
-import kotlinx.android.synthetic.main.activity_prueba_imagen.*
-import kotlinx.android.synthetic.main.activity_prueba_imagen.btnChoose2
-import kotlinx.android.synthetic.main.activity_prueba_imagen.btnUpload
 import java.io.File
 import java.io.IOException
 
