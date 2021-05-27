@@ -10,7 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinal_TheDot">
         <activity android:name=".ui.ui.miPerfil.CambiarPerfil"></activity>
-        <activity android:name=".PruebaImagen"/>
         <activity android:name=".ui.ui.miPerfil.Calendario" />
         <activity android:name=".ui.ui.miPerfil.recordatorios.ActivityCrearRecordatorio" />
         <activity android:name=".Articulos" />
