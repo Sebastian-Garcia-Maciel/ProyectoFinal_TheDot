@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blanco"
+    tools:context=".ui.ui.miPerfil.CambiarPerfil">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/btn_regresar_de_nuevo_perfil"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/btn_regresar_margin_start"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/regresar_xxxdpi_06" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:text="Cambiar foto\n de perfil"
+            android:fontFamily="@font/agne_regular"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/gris_oscuro"
+            android:textSize="@dimen/tamanio_titulos" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/imagenPerfilPrueba"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:scaleType="fitXY"
+                        android:src="@color/blanco"
+                        app:shapeAppearanceOverlay="@style/imagen_circular" />
+                    <ImageView
+                        android:id="@+id/imgPerfil"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/simbolo_xxxdpi_06" />
+
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/btnChoose"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/azul"
+                    android:inputType="text"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/gt_america_regular"
+                    android:textStyle="bold"
+                    android:text="Elegir Imagen de galeria"
+                    android:textSize="15sp"
+                    app:cornerRadius="50dp" />
+                <Button
+                    android:id="@+id/btnUpload"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="250dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/anaranjado_claro"
+                    android:inputType="text"
+                    android:fontFamily="@font/gt_america_regular"
+                    android:textStyle="bold"
+                    android:text="Subir imagen"
+                    android:textSize="15sp"
+                    app:cornerRadius="50dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

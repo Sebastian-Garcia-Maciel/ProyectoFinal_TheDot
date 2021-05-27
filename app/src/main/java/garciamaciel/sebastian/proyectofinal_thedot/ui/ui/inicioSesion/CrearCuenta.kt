@@ -10,6 +10,8 @@ import android.widget.ImageButton
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.DocumentReference
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import garciamaciel.sebastian.proyectofinal_thedot.R
 import garciamaciel.sebastian.proyectofinal_thedot.ui.MainActivity
@@ -18,16 +20,18 @@ import kotlinx.android.synthetic.main.activity_crear_cuenta.*
 class CrearCuenta : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
+    private lateinit var storage: FirebaseFirestore
 
-    @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crear_cuenta)
+        supportActionBar?.hide()
         auth = Firebase.auth
 
         /*Oculta la action bar*/
-        supportActionBar?.hide()
 
+
+        storage = FirebaseFirestore.getInstance()
         val botonRegresar:ImageButton = findViewById<ImageButton>(R.id.boton_regresar_crear_cuenta)
         val botonCrearCuenta:Button = findViewById<Button>(R.id.boton_crea_cuenta)
 
@@ -44,7 +48,7 @@ class CrearCuenta : AppCompatActivity() {
     }
 
     private fun valida_registro(){
-        val et_nombre: EditText = findViewById(R.id.etNombre)
+        val et_nombre: EditText = findViewById(R.id.etNombreUsuario)
         val et_correo: EditText = findViewById(R.id.etCorreo)
         val et_contra1: EditText = findViewById(R.id.etContraseña)
         val et_contra2: EditText = findViewById(R.id.etConfirmacion)
@@ -60,8 +64,7 @@ class CrearCuenta : AppCompatActivity() {
             if(contra1 == contra2){
 
                 registrarFirebase(correo,contra1)
-                Thread.sleep(3*1000);
-                this.limpiarFormulario()
+
 
             }else{
                 Toast.makeText(this, "Las contraseña no coinciden",
@@ -75,7 +78,7 @@ class CrearCuenta : AppCompatActivity() {
     }
 
     private fun limpiarFormulario(){
-        etNombre.setText("")
+        etNombreUsuario.setText("")
         etCorreo.setText("")
         etContraseña.setText("")
         etConfirmacion.setText("")
@@ -92,6 +95,8 @@ class CrearCuenta : AppCompatActivity() {
                     Toast.makeText(baseContext, "El correo " + auth.currentUser?.email.toString() + " ha sido correctamente registrado.",
                         Toast.LENGTH_SHORT).show()
                     //updateUI(user)
+                    crearDocumento()
+                    this.limpiarFormulario()
                 } else {
                     // If sign in fails, display a message to the user.
                     //Log.w(TAG, "createUserWithEmail:failure", task.exception)
@@ -100,5 +105,17 @@ class CrearCuenta : AppCompatActivity() {
                     //updateUI(null)
                 }
             }
+    }
+
+    fun crearDocumento() {
+
+        val  favoritosRef: DocumentReference = storage.collection("usuarios")
+            .document()
+        val nuevoUsuario = hashMapOf(
+            "nombreUsuario" to etNombreUsuario.text.toString(),
+            "email" to auth.currentUser?.email.toString(),
+            "descripcion" to ""
+        )
+        favoritosRef.set(nuevoUsuario)
     }
 }
