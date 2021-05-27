@@ -6,18 +6,27 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.LinearLayout
+import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import garciamaciel.sebastian.proyectofinal_thedot.R
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.estiramiento.ActivityEstiramiento
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.tecnicas.Tecnicas
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu.ActivityInicio
+import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.estiramiento.ActivityEstiramientoActivo
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.respiracion.Respiracion
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.miPerfil.recordatorios.ActivityRecordatorios
 
 class Metodos : AppCompatActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_metodos)
         supportActionBar?.hide()
+
+
+
         val buttonRegresar: ImageButton = findViewById(R.id.btnRegresarMet) as ImageButton
         val btnRespiracion: LinearLayout = findViewById(R.id.btnRespiracion) as LinearLayout
         val btnEstiramiento: LinearLayout = findViewById(R.id.btnEstiramiento) as LinearLayout
@@ -26,7 +35,7 @@ class Metodos : AppCompatActivity() {
         val btnRecordatorios: LinearLayout = findViewById(R.id.btnFavoritos) as LinearLayout
 
 
-        buttonRegresar.setOnClickListener{
+        buttonRegresar.setOnClickListener {
             var intent: Intent = Intent(this, ActivityInicio::class.java)
             startActivity(intent)
         }
@@ -50,5 +59,10 @@ class Metodos : AppCompatActivity() {
             var intent: Intent = Intent(this, ActivityRecordatorios::class.java)
             startActivity(intent)
         }
+
+
     }
+
+
 }
+

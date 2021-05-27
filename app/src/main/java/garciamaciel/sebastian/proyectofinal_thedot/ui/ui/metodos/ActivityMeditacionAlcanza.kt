@@ -7,6 +7,10 @@ import android.widget.ImageButton
 import garciamaciel.sebastian.proyectofinal_thedot.R
 
 class ActivityMeditacionAlcanza : AppCompatActivity() {
+    companion object {
+        var like: Boolean = false
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_meditacion_alcanza)

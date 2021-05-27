@@ -5,7 +5,7 @@
     "kind": "Directory"
   },
   "applicationId": "garciamaciel.sebastian.proyectofinal_thedot",
-  "variantName": "processReleaseResources",
+  "variantName": "release",
   "elements": [
     {
       "type": "SINGLE",
