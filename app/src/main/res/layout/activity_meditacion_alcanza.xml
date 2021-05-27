@@ -58,6 +58,16 @@
             android:background="@drawable/layout_redondeado_con_color"
             android:backgroundTint="@color/lavanda"></LinearLayout>
 
+        <ImageButton
+            android:layout_gravity="center"
+            android:id="@+id/btnPlay"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/ic_baseline_play_circle_filled_24" />
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
