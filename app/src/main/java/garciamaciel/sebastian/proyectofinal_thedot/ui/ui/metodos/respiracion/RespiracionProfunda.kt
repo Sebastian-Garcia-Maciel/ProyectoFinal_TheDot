@@ -16,12 +16,13 @@ class RespiracionProfunda : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_respiracion_profunda)
         supportActionBar?.hide()
-        val btnRegresar: ImageButton = findViewById(R.id.btnRegresarResP) as ImageButton
+        val btnRegresar: ImageButton = findViewById(R.id.btnRegresar) as ImageButton
 
 
         btnRegresar.setOnClickListener{
-            var intent: Intent = Intent(this, ActivityMeditacion::class.java)
+            var intent: Intent = Intent(this, ActivityMetodosRespiracion::class.java)
             startActivity(intent)
         }
+
     }
 }

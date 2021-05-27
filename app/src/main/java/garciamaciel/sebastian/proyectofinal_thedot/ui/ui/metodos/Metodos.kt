@@ -14,6 +14,7 @@ import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.estiramiento.Ac
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.tecnicas.Tecnicas
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu.ActivityInicio
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.estiramiento.ActivityEstiramientoActivo
+import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.respiracion.ActivityMetodosRespiracion
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.respiracion.Respiracion
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.miPerfil.recordatorios.ActivityRecordatorios
 
@@ -40,7 +41,7 @@ class Metodos : AppCompatActivity() {
             startActivity(intent)
         }
         btnRespiracion.setOnClickListener {
-            var intent: Intent = Intent(this, Respiracion::class.java)
+            var intent: Intent = Intent(this, ActivityMetodosRespiracion::class.java)
             startActivity(intent)
         }
         btnEstiramiento.setOnClickListener {

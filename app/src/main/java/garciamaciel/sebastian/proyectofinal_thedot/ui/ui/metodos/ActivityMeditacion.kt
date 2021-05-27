@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import garciamaciel.sebastian.proyectofinal_thedot.R
+import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.tecnicas.ActivityMeditacionAlcanza
 
 class ActivityMeditacion : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

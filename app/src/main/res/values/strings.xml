@@ -15,6 +15,9 @@
     <string name="cerrar_sesion">Cerror sesión</string>
     <string name="journal">Mi Journal</string>
     <string name="profunda">Profunda</string>
+    <string name="recuerda">*Recuerda que cada paso dura 4 segundos.</string>
+    <string name="profunda_pasos">1.Toma aire por via nasal \n 2. Mantenlo en los pulmones \n 3.Sueltalo con suavidad por la boca</string>
+    <string name="profundadesc">Este ejercicio es uno de los mas secillos, te ayuda a tranquilizarte despues de una situación de estrés o esfuerzo.</string>
     <string name="diafragmatica">Diafragmática</string>
     <string name="completa">Completa</string>
     <string name="alternada">Alternada</string>
@@ -25,6 +28,14 @@
     <string name="activo">/ ACTIVO</string>
     <string name="about">About</string>
     <string name="comienza">Comienza</string>
+    <string name="respiracion_muscular_desc">Se trata de una tecnica de relajación que incluye control de la respiracion y la tensión de los musculos.</string>
+    <string name="respiracion_muscular_paso1">1. Con los ojos cerrados y una postura comoda se procede  a mantener una respiracion profunda y regular.</string>
+    <string name="respiracion_muscular_paso2">2. Posteriormente se procede a realizar un recorrido por el conjunto de grupos musculares del cuerpo.</string>
+    <string name="respiracion_muscular_paso3">3. Cada grupo muscular sera tensado en periodos de 3-10 segundos para posteriomente descansar entre 10-30 segundos.</string>
+    <string name="respiracion_completa_desc">Este tipo de respiración aúna en una sola técnica de respiración profunda abdominal.</string>
+    <string name="respiracion_completa_paso1">1. Comienza con la expulsión de todo el aire en los pulmones.</string>
+    <string name="respiracion_completa_paso2">2. Se procede inspirano suave y profundamente hasta llenar el primer lugar del abdomen. Para continuar inhalando hasta llenar también los pulmones y el pecho en la misma inhalación..</string>
+    <string name="respiracion_completa_paso3">3. Se mantiene el aire unos segundos y posteriormente se procede a expulsar oralmente.</string>
     <string name="respiracion_description">La respiracion es una de las funciones básicas del organismo que nos permite obtener el oxígeno necesario para la supervivencia. Entrenar esta funcion puede contribuir en gran medida a reducir el nivel de estres.</string>
     <string name="recordatorio_description">Ayudan a mejorar nuestros habitos y a recordarnos pequeños detalles saludables que cambian y aportan estabilidad a nuestra vida. </string>
     <string name="estatico">/ ESTÁTICO</string>

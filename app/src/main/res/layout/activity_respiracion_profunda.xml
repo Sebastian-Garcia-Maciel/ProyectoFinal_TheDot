@@ -14,7 +14,7 @@
 
 
         <ImageButton
-            android:id="@+id/btnRegresarResP"
+            android:id="@+id/btnRegresar"
             android:layout_width="@dimen/btn_width"
             android:layout_height="@dimen/btn_height"
             android:layout_gravity="center"
@@ -30,7 +30,6 @@
             android:textAlignment="center"
             android:textColor="@color/gris_oscuro"
             android:fontFamily="@font/agne_regular"
-            android:textStyle="bold"
             android:textSize="@dimen/tamanio_titulos" />
     </LinearLayout>
 
@@ -45,19 +44,61 @@
         android:fontFamily="@font/gt_america_regular"
         android:textSize="44sp" />
 
-
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="400dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/trazado5_xxxdpi_06" />
 
         <LinearLayout
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
-            android:layout_height="440dp"
+            android:layout_height="200dp"
             android:layout_marginLeft="35dp"
-            android:layout_marginTop="35dp"
             android:layout_marginRight="35dp"
-            android:background="@drawable/borde_naranja"></LinearLayout>
+            android:background="@drawable/layout_redondeado_con_color"
+            android:backgroundTint="@color/lavanda">
 
 
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_marginTop="35dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/profundadesc"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_marginTop="130dp"
+            android:layout_width="300dp"
+            android:layout_marginLeft="80dp"
+            android:layout_height="wrap_content"
+            android:text="1.Toma aire por via nasal \n2. Mantenlo en los pulmones \n 3.Sueltalo con suavidad por la boca"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_marginTop="255dp"
+            android:layout_width="300dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/recuerda"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp" />
     </RelativeLayout>
+
 </LinearLayout>

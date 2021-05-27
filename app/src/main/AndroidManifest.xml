@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="garciamaciel.sebastian.proyectofinal_thedot">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinal_TheDot">
-        <activity android:name=".ui.ui.inicioSesion.RecuperarContrasenia"></activity>
+        <activity android:name=".ui.ui.metodos.respiracion.activity_respiracion_muscular"></activity>
+        <activity android:name=".ui.ui.metodos.respiracion.activity_respiracion_completa" />
+        <activity android:name=".ui.ui.inicioSesion.RecuperarContrasenia" />
         <activity android:name=".ui.ui.miPerfil.recordatorios.ActivityCrearRecordatorio" />
         <activity android:name=".Articulos" />
         <activity android:name=".ui.ui.miPerfil.afirmaciones.ActivityCrearAfirmacion" />
@@ -43,7 +45,7 @@
         <activity android:name=".ui.ui.menu.ActivityConfiguracion" />
         <activity android:name=".ui.ui.metodos.ActivityMeditacionLidia" />
         <activity android:name=".ui.ui.metodos.ActivityMetodosFavoritos" />
-        <activity android:name=".ui.ui.metodos.ActivityMeditacionAlcanza" />
+        <activity android:name=".ui.ui.metodos.tecnicas.ActivityMeditacionAlcanza" />
         <activity android:name=".ui.ui.metodos.ActivityMeditacionAtras" />
         <activity android:name=".ui.ui.metodos.ActivityMeditacionComienza" />
         <activity android:name=".ui.MainActivity">
@@ -54,5 +56,7 @@
             </intent-filter>
         </activity>
     </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>

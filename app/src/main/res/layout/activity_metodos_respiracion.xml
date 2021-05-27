@@ -29,7 +29,8 @@
             android:layout_height="wrap_content"
             android:text="Métodos de\nrespiración"
             android:textAlignment="center"
-            android:textColor="@color/gris_oscuro"            android:layout_marginStart="100dp"
+            android:textColor="@color/gris_oscuro"
+            android:layout_marginStart="0dp"
             android:fontFamily="@font/agne_regular"
             android:textStyle="bold"
             android:textSize="23sp" />
@@ -58,10 +59,10 @@
             android:background="@drawable/layout_redondeado_con_color"
             android:backgroundTint="@color/lavanda">
 
-
         </LinearLayout>
 
         <TextView
+            android:id="@+id/etProfunda"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -72,32 +73,7 @@
             android:textSize="14sp" />
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:background="@drawable/layout_redondeado_con_color"
-            android:backgroundTint="@color/lavanda">
-
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_gravity="center"
-            android:text="@string/diafragmatica"
-            android:textColor="@color/blanco"
-            android:textSize="14sp" />
-    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -116,6 +92,7 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/etCompleta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -126,41 +103,16 @@
             android:textSize="14sp" />
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:background="@drawable/layout_redondeado_con_color"
-            android:backgroundTint="@color/lavanda">
-
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_gravity="center"
-            android:text="@string/alternada"
-            android:textColor="@color/blanco"
-            android:textSize="14sp" />
-    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="170dp">
+        android:layout_height="match_parent">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:scaleType="fitXY"
+            android:layout_marginTop="200dp"
             android:layout_alignParentLeft="true"
             app:srcCompat="@drawable/trazado10_xxxdpi_06" />
 
@@ -178,6 +130,7 @@
 
 
         <TextView
+            android:id="@+id/etMuscular"
             android:layout_marginTop="50dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
