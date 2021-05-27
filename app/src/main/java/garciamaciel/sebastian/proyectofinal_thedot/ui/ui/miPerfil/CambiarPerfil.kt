@@ -1,51 +1,62 @@
-package garciamaciel.sebastian.proyectofinal_thedot
+package garciamaciel.sebastian.proyectofinal_thedot.ui.ui.miPerfil
 
-import android.R.attr.data
 import android.app.Activity
 import android.app.ProgressDialog
 import android.content.Intent
 import android.graphics.BitmapFactory
 import android.net.Uri
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.view.View
-import android.widget.ImageView
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.graphics.drawable.toIcon
-import com.bumptech.glide.Glide
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.google.firebase.storage.ktx.storage
+import garciamaciel.sebastian.proyectofinal_thedot.R
+import garciamaciel.sebastian.proyectofinal_thedot.databinding.ActivityMiPerfilBinding
+import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu.ActivityInicio
+import kotlinx.android.synthetic.main.activity_cambiar_perfil.*
+import kotlinx.android.synthetic.main.activity_mi_perfil.*
 import kotlinx.android.synthetic.main.activity_prueba_imagen.*
+import kotlinx.android.synthetic.main.activity_prueba_imagen.btnChoose2
+import kotlinx.android.synthetic.main.activity_prueba_imagen.btnUpload
 import java.io.File
 import java.io.IOException
-import java.util.*
 
-
-class PruebaImagen : AppCompatActivity(), View.OnClickListener {
+class CambiarPerfil : AppCompatActivity(), View.OnClickListener {
     private var filePath: Uri? = null
 
     internal var storage: FirebaseStorage? = null
     internal var storageReference: StorageReference? = null
     private var PICK_IMAGE_REQUEST = 1234
+    private lateinit var usuario: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_prueba_imagen)
+        setContentView(R.layout.activity_cambiar_perfil)
+        supportActionBar?.hide()
 
         // Init firebase
         storage = FirebaseStorage.getInstance()
         storageReference = storage!!.reference
+        usuario = FirebaseAuth.getInstance()
 
         // Setup Buttons
-        btnChoose2.setOnClickListener(this)
+        btnChoose.setOnClickListener(this)
         btnUpload.setOnClickListener(this)
+
+        btn_regresar_de_nuevo_perfil.setOnClickListener{
+            var intent: Intent = Intent(this, MiPerfil::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onClick(v: View?) {
-        if (v == btnChoose2)
+        if (v == btnChoose)
             showFileChooser()
         else
             uploadFile()
@@ -66,7 +77,7 @@ class PruebaImagen : AppCompatActivity(), View.OnClickListener {
             filePath = data.data
             try {
                 val bitmap = MediaStore.Images.Media.getBitmap(contentResolver, filePath)
-                imageView!!.setImageBitmap(bitmap)
+                imagenPerfilPrueba!!.setImageBitmap(bitmap)
             } catch (e: IOException) {
                 e.printStackTrace()
             }
@@ -78,12 +89,11 @@ class PruebaImagen : AppCompatActivity(), View.OnClickListener {
             val progressDialog = ProgressDialog(this)
             progressDialog.setTitle("Cargando...")
             progressDialog.show()
-            val imageRef = storageReference!!.child("images/Profile.png")
+            val imageRef = storageReference!!.child("images/Profile_" + usuario.currentUser?.email.toString() +".png" )
             imageRef.putFile(filePath!!)
                 .addOnSuccessListener {
                     progressDialog.dismiss()
                     Toast.makeText(applicationContext, "File upload", Toast.LENGTH_SHORT).show()
-                    descargarImagen()
                 }.addOnFailureListener {
                     progressDialog.dismiss()
                     Toast.makeText(applicationContext, "Failed :c", Toast.LENGTH_SHORT).show()
@@ -95,15 +105,5 @@ class PruebaImagen : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    private fun descargarImagen() {
 
-        val storageRef = Firebase.storage.reference.child("images/Profile.png")
-        val localFile = File.createTempFile("Profile", "png")
-        storageRef.getFile(localFile).addOnSuccessListener {
-            val bitmap = BitmapFactory.decodeFile(localFile.absolutePath)
-            imageView2.setImageBitmap(bitmap)
-        }.addOnFailureListener{
-            it.printStackTrace()
-        }
-    }
 }

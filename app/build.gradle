@@ -63,5 +63,7 @@ dependencies {
     implementation 'com.airbnb.android:lottie:3.4.2'
     // Libreria para marcado de calendario
     implementation 'com.applandeo:material-calendar-view:1.7.0'
+    // FirebaseUI Storage only
+    implementation 'com.firebaseui:firebase-ui-storage:6.4.0'
 
 }
