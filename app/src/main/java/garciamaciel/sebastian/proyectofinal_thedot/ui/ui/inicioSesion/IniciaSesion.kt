@@ -19,6 +19,7 @@ import com.google.firebase.ktx.Firebase
 import garciamaciel.sebastian.proyectofinal_thedot.R
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu.ActivityInicio
 import garciamaciel.sebastian.proyectofinal_thedot.ui.MainActivity
+import kotlinx.android.synthetic.main.activity_inicia_sesion.*
 
 
 class IniciaSesion : AppCompatActivity() {
@@ -69,6 +70,12 @@ class IniciaSesion : AppCompatActivity() {
 
         botonIniciarSesion.setOnClickListener() {
             this.valida_ingreso()
+
+        }
+
+        btnOlvidoDeContraseña.setOnClickListener{
+            var intent: Intent = Intent(this, RecuperarContrasenia::class.java)
+            startActivity(intent)
         }
 
 

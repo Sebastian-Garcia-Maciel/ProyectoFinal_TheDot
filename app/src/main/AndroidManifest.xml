@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinal_TheDot">
-        <activity android:name=".ui.ui.miPerfil.recordatorios.ActivityCrearRecordatorio"></activity>
+        <activity android:name=".ui.ui.inicioSesion.RecuperarContrasenia"></activity>
+        <activity android:name=".ui.ui.miPerfil.recordatorios.ActivityCrearRecordatorio" />
         <activity android:name=".Articulos" />
         <activity android:name=".ui.ui.miPerfil.afirmaciones.ActivityCrearAfirmacion" />
         <activity android:name=".ui.ui.miPerfil.afirmaciones.ActivityAfirmaciones" />
