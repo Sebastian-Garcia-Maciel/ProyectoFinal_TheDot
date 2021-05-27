@@ -10,6 +10,7 @@ import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu.ActivityInicio
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.miPerfil.recordatorios.ActivityRecordatorios
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.tecnicas.Tecnicas
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.miPerfil.afirmaciones.ActivityAfirmaciones
+import kotlinx.android.synthetic.main.activity_mi_perfil.*
 
 class MiPerfil : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,6 +42,11 @@ class MiPerfil : AppCompatActivity() {
         }
         btnTecnicas.setOnClickListener {
             var intent: Intent = Intent(this, Tecnicas::class.java)
+            startActivity(intent)
+        }
+
+        btnAgenda.setOnClickListener{
+            var intent: Intent = Intent(this, Calendario::class.java)
             startActivity(intent)
         }
     }

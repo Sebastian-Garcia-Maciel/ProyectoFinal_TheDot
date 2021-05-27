@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blanco"
+    android:orientation="vertical"
+    tools:context=".ui.ui.miPerfil.Calendario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/btnRegresarAgenda"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/btn_regresar_margin_start"
+            android:layout_marginEnd="35dp"
+            android:background="@drawable/regresar_xxxdpi_06" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="100dp"
+            android:fontFamily="@font/agne_regular"
+            android:text="@string/meditacion"
+            android:textAlignment="center"
+            android:textColor="@color/gris_oscuro"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+
+        <com.applandeo.materialcalendarview.CalendarView
+            android:id="@+id/calendarView"
+            app:type="many_days_picker"
+            app:headerColor="@color/blanco"
+            app:previousButtonSrc="@drawable/boton_previo"
+            app:forwardButtonSrc="@drawable/boton_siguiente"
+            app:abbreviationsBarColor="@color/blanco"
+            app:headerLabelColor="@color/azul"
+            app:pagesColor="@color/blanco"
+            app:eventsEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+        <!-- Add CalenderView to display the Calender -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
