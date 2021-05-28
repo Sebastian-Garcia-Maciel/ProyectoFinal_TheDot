@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/blanco"
     android:orientation="vertical"
-    tools:context=".ui.ui.ActivityIntencionesSemana">
+    tools:context=".ui.ui.journal.ActivityIntencionesSemana">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -123,7 +123,7 @@
             android:layout_height="70dp"
             android:layout_gravity="center"
             android:textAllCaps="false"
-            android:textSize="20sp"
+            android:textSize="18sp"
             android:backgroundTint="@color/azul_claro"
             android:text="@string/crea_cuenta"
             android:layout_marginTop="10dp"

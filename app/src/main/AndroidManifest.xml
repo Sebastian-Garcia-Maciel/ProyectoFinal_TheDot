@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinal_TheDot">
-        <activity android:name=".ui.ui.miPerfil.CambiarPerfil"></activity>
+        <activity android:name=".ui.ui.inicioSesion.ReestablecerContrasenia"></activity>
+        <activity android:name=".ui.ui.metodos.respiracion.ActivityRespiracionCompleta" />
+        <activity android:name=".ui.ui.metodos.respiracion.ActivityRespiracionMuscular" />
+        <activity android:name=".pickerexample.PruebaNavegarEntreFechas" />
+        <activity android:name=".ui.ui.miPerfil.CambiarPerfil" />
         <activity android:name=".ui.ui.miPerfil.Calendario" />
         <activity android:name=".ui.ui.miPerfil.recordatorios.ActivityCrearRecordatorio" />
         <activity android:name=".Articulos" />
@@ -17,7 +21,7 @@
         <activity android:name=".ui.ui.miPerfil.afirmaciones.ActivityAfirmaciones" />
         <activity android:name=".ui.ui.ActivityDias" />
         <activity android:name=".ui.ui.metodos.tecnicas.ActivityMuevete" />
-        <activity android:name=".ui.ui.metodos.ActivityDedos" />
+        <activity android:name=".ui.ui.metodos.tecnicas.ActivityDedos" />
         <activity android:name=".ui.ui.metodos.estiramiento.ActivityEstiramiento" />
         <activity android:name=".ui.ui.metodos.tecnicas.Trazos" />
         <activity android:name=".ui.ui.metodos.respiracion.Respiracion" />
@@ -28,25 +32,25 @@
         <activity android:name=".ui.ui.menu.TheDot" />
         <activity android:name=".ui.ui.miPerfil.MiPerfil" />
         <activity android:name=".ui.ui.metodos.Metodos" />
-        <activity android:name=".ui.ui.Journal" />
+        <activity android:name=".ui.ui.journal.Journal" />
         <activity android:name=".ui.ui.menu.ActivityInicio" />
         <activity android:name=".ui.ui.inicioSesion.IniciaSesion" />
         <activity android:name=".ui.ui.Estres" />
         <activity android:name=".ui.ui.inicioSesion.CrearCuenta" />
         <activity android:name=".ui.ui.menu.About" />
         <activity android:name=".ui.ui.metodos.estiramiento.ActivyEstiramientoEstatico" />
-        <activity android:name=".ui.ui.metodos.ActivityMeditacion" />
+        <activity android:name=".ui.ui.metodos.meditacion.ActivityMeditacion" />
         <activity android:name=".ui.ui.metodos.estiramiento.ActivityEstiramientoActivo" />
-        <activity android:name=".ui.ui.ActivityIntencionesSemana" />
-        <activity android:name=".ui.ui.ActivityIntencionesDia" />
+        <activity android:name=".ui.ui.journal.ActivityIntencionesSemana" />
+        <activity android:name=".ui.ui.journal.ActivityIntencionesDia" />
         <activity android:name=".ui.ui.metodos.respiracion.ActivityMetodosRespiracion" />
-        <activity android:name=".ui.ui.ActivityComoEstas" />
+        <activity android:name=".ui.ui.journal.ActivityComoEstas" />
         <activity android:name=".ui.ui.menu.ActivityConfiguracion" />
-        <activity android:name=".ui.ui.metodos.ActivityMeditacionLidia" />
+        <activity android:name=".ui.ui.metodos.meditacion.ActivityMeditacionLidia" />
         <activity android:name=".ui.ui.metodos.ActivityMetodosFavoritos" />
-        <activity android:name=".ui.ui.metodos.ActivityMeditacionAlcanza" />
-        <activity android:name=".ui.ui.metodos.ActivityMeditacionAtras" />
-        <activity android:name=".ui.ui.metodos.ActivityMeditacionComienza" />
+        <activity android:name=".ui.ui.metodos.meditacion.ActivityMeditacionAlcanza" />
+        <activity android:name=".ui.ui.metodos.meditacion.ActivityMeditacionAtras" />
+        <activity android:name=".ui.ui.metodos.meditacion.ActivityMeditacionComienza" />
         <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -55,9 +59,9 @@
             </intent-filter>
         </activity>
     </application>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>

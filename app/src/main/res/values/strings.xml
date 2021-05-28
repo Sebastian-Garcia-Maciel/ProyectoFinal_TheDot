@@ -24,7 +24,7 @@
     <string name="material_calendar_sunday">D</string>
 
     <string name="app_name">ProyectoFinal_TheDot</string>
-    <string name="mensaje_bienvenida">"The art to survive is to believe you can always start over"</string>
+    <string name="mensaje_bienvenida">“The art to survive is to believe you can always start over”</string>
     <string name="inicia_sesion">Inicia sesión</string>
     <string name="crea_cuenta">Crea tu cuenta</string>
     <string name="meditacion">Meditación</string>
@@ -68,8 +68,10 @@
     <string name="tu">tu</string>
     <string name="cuenta">cuenta</string>
     <string name="pasivo">/ PASIVO</string>
-    <string name="respiracion">/ Respiracion Profunda</string>
-    <string name="hola">¡Hola Fer!</string>
+    <string name="respiracion_profunda">/ Respiracion Profunda</string>
+    <string name="respiracion_muscular">/ Respiracion Muscular</string>
+    <string name="respiracion_completa">/ Respiracion Completa</string>
+    <string name="hola">¡Hola usuario!</string>
     <string name="metodos">Métodos</string>
     <string name="mi_perfil">Mi perfil</string>
     <string name="recordatorios">Recordatorios</string>
@@ -95,6 +97,12 @@
     <string name="the_dot_text">THE DOT ES UNA APP\n PARA EL MANEJO DEL\nESTRÉS, LA CUÁL\nAPOYA AL USUARIO\nCON TÉCNICAS DE\nRELAJACIÓN, INFORMACIÓN\nde valor y sobre\nTODO ESTANDO CERCA\nDE EL.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aqui_va_descripcion">- Aqui va tu descripción.</string>
+    <string name="nombre">/ nombre</string>
+    <string name="ubicacion">/ ubicación</string>
+    <string name="ocupacion">/ ocupación</string>
+    <string name="fecha_de_nacimiento">/ fecha de nacimiento</string>
+    <string name="ingresa_tu_nueva_afirmacion">Ingresa tu nueva afirmación</string>
 
 
 </resources>

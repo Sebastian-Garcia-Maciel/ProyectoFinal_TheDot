@@ -6,7 +6,7 @@
     android:background="@color/blanco"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.ui.metodos.ActivityMeditacionComienza">
+    tools:context=".ui.ui.metodos.meditacion.ActivityMeditacionComienza">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,8 +40,8 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:textSize="13sp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
         android:text="@string/descripcion_meditacion"
         />
 
@@ -49,14 +49,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
-            android:layout_marginTop="45dp"
-            android:background="@drawable/layout_redondeado_con_color"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:layout_height="450dp">
-        </LinearLayout>
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="45dp"
+                android:background="@drawable/layout_redondeado_con_color"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_height="450dp">
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/btn_play_meditacion_comienza"
+                android:layout_width="@dimen/btn_play_video_size"
+                android:layout_height="@dimen/btn_play_video_size"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/icono_play_video" />
+        </RelativeLayout>
         <ImageView
             android:layout_marginTop="15dp"
             android:layout_marginRight="15dp"

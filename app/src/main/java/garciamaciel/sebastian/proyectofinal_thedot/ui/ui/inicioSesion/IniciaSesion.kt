@@ -2,10 +2,7 @@ package garciamaciel.sebastian.proyectofinal_thedot.ui.ui.inicioSesion
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageButton
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
@@ -34,6 +31,7 @@ class IniciaSesion : AppCompatActivity() {
         setContentView(R.layout.activity_inicia_sesion)
 
         auth = Firebase.auth
+
 
         // Configure sign-in to request the user's ID, email address, and basic
         // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
@@ -69,6 +67,13 @@ class IniciaSesion : AppCompatActivity() {
 
         botonIniciarSesion.setOnClickListener() {
             this.valida_ingreso()
+        }
+
+        val btnOlvidoDeContraseña: TextView = findViewById(R.id.btnOlvidoDeContraseña)
+
+        btnOlvidoDeContraseña.setOnClickListener {
+            var intent: Intent = Intent(this, ReestablecerContrasenia::class.java)
+            startActivity(intent)
         }
 
 

@@ -78,10 +78,7 @@
             android:layout_marginTop="440dp"
             app:srcCompat="@drawable/mancha3_xdpi_04" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center|end">
+
 
             <RelativeLayout
                 android:layout_width="100dp"
@@ -100,7 +97,6 @@
                     android:layout_centerInParent="true"
                     app:srcCompat="@drawable/icono_like" />
             </RelativeLayout>
-        </LinearLayout>
     </RelativeLayout>
 
 

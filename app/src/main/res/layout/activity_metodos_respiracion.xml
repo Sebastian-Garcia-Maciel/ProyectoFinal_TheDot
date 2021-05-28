@@ -12,7 +12,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:gravity="center_vertical"
         android:orientation="horizontal">
 
 
@@ -20,171 +19,95 @@
             android:id="@+id/btnRegresarMr"
             android:layout_width="@dimen/btn_width"
             android:layout_height="@dimen/btn_height"
+            android:layout_gravity="center"
             android:layout_marginStart="@dimen/btn_regresar_margin_start"
-            android:layout_marginEnd="35dp"
             android:background="@drawable/regresar_xxxdpi_06" />
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Métodos de\nrespiración"
-            android:textAlignment="center"
-            android:textColor="@color/gris_oscuro"            android:layout_marginStart="100dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="100dp"
             android:fontFamily="@font/agne_regular"
-            android:textStyle="bold"
-            android:textSize="23sp" />
+            android:text="@string/metrespiracion"
+            android:textAlignment="center"
+            android:textColor="@color/gris_oscuro"
+            android:textSize="@dimen/tamanio_titulos"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
+        android:fontFamily="@font/gt_america_regular"
         android:text="@string/metodos_respiracion_texto"
         android:textAlignment="center"
-        android:layout_gravity="center"
-        android:textSize="11sp" />
+        android:textColor="@color/black"
+        android:textSize="@dimen/tamanio_texto" />
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp">
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
 
-        <LinearLayout
+        <Button
+            android:id="@+id/btn_respiracion_profunda"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:background="@drawable/layout_redondeado_con_color"
-            android:backgroundTint="@color/lavanda">
-
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_gravity="center"
+            android:layout_height="95dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:backgroundTint="@color/lavanda"
+            android:fontFamily="@font/playfair_display_wght"
             android:text="@string/profunda"
-            android:textColor="@color/blanco"
-            android:textSize="14sp" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
-
-        <LinearLayout
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:cornerRadius="28dp"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/btn_respiracion_completa"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:background="@drawable/layout_redondeado_con_color"
-            android:backgroundTint="@color/lavanda">
-
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_gravity="center"
-            android:text="@string/diafragmatica"
-            android:textColor="@color/blanco"
-            android:textSize="14sp" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:background="@drawable/layout_redondeado_con_color"
-            android:backgroundTint="@color/lavanda">
-
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_gravity="center"
+            android:layout_height="95dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:backgroundTint="@color/lavanda"
+            android:fontFamily="@font/playfair_display_wght"
             android:text="@string/completa"
-            android:textColor="@color/blanco"
-            android:textSize="14sp" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
-
-        <LinearLayout
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:cornerRadius="28dp"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/btn_respiracion_muscular"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:background="@drawable/layout_redondeado_con_color"
-            android:backgroundTint="@color/lavanda">
-
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_gravity="center"
-            android:text="@string/alternada"
-            android:textColor="@color/blanco"
-            android:textSize="14sp" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="170dp">
-
+            android:layout_height="95dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:backgroundTint="@color/lavanda"
+            android:fontFamily="@font/playfair_display_wght"
+            android:text="@string/muscular"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:cornerRadius="28dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:scaleType="fitXY"
-            android:layout_alignParentLeft="true"
+
             app:srcCompat="@drawable/trazado10_xxxdpi_06" />
-
-        <LinearLayout
-            android:layout_marginTop="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:layout_marginLeft="35dp"
-            android:layout_marginRight="35dp"
-            android:background="@drawable/layout_redondeado_con_color"
-            android:backgroundTint="@color/lavanda">
+    </LinearLayout>
 
 
-        </LinearLayout>
 
 
-        <TextView
-            android:layout_marginTop="50dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:text="@string/muscular"
-            android:textColor="@color/blanco"
-            android:textSize="14sp" />
-
-    </RelativeLayout>
 </LinearLayout>

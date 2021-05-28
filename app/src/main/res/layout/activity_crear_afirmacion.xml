@@ -54,7 +54,7 @@
                 android:backgroundTint="@color/azul_claro"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:hint="Ingresa tu nueva afirmación"
+                android:hint="@string/ingresa_tu_nueva_afirmacion"
                 android:textColor="@color/gris"
                 android:textAlignment="textStart"
                 android:fontFamily="@font/gt_america_regular"

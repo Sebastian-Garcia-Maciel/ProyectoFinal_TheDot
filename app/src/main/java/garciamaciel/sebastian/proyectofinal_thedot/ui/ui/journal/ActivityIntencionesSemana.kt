@@ -1,4 +1,4 @@
-package garciamaciel.sebastian.proyectofinal_thedot.ui.ui
+package garciamaciel.sebastian.proyectofinal_thedot.ui.ui.journal
 
 import android.annotation.SuppressLint
 import android.content.Intent

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blanco"
+    tools:context=".ui.ui.metodos.respiracion.ActivityRespiracionMuscular">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/btnRegresarResP"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="@dimen/btn_height"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/btn_regresar_margin_start"
+            android:background="@drawable/regresar_xxxdpi_06" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="100dp"
+            android:text="@string/metrespiracion"
+            android:textAlignment="center"
+            android:textColor="@color/gris_oscuro"
+            android:fontFamily="@font/agne_regular"
+            android:textStyle="bold"
+            android:textSize="@dimen/tamanio_titulos" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/respiracion_muscular"
+        android:textAlignment="textStart"
+        android:textColor="@color/gris"
+        android:textAllCaps="true"
+        android:fontFamily="@font/gt_america_regular"
+        android:layout_marginBottom="35dp"
+        android:textSize="30sp" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:backgroundTint="@color/lavanda"
+            android:orientation="vertical"
+            android:background="@drawable/borde_naranja">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:textSize="12sp"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/gt_america_regular"
+                android:text="Se trata de una técnica de relajación que incluye
+control de la respiración y la tensión de los músculos.\n1. Con los ojos cerrados y una postura cómoda se
+procede a mantener una respiración profunda y
+regular.\n2.  Posteriormente se procede a realizar un recorrido
+por el conjunto de grupos musculares del cuerpo.
+\n3. Cada grupo muscular será tensado en periodos de
+3-10 segundos para posteriormente descansar
+entre 10-30 segundos."/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@mipmap/fondo_like" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/like_respiracion_muscular"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/icono_like" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_gravity="end"
+            android:scaleType="fitXY"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/trazado11_xxxdpi_06"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,4 +1,4 @@
-package garciamaciel.sebastian.proyectofinal_thedot.ui.ui
+package garciamaciel.sebastian.proyectofinal_thedot.ui.ui.journal
 
 import android.annotation.SuppressLint
 import android.content.Intent
@@ -7,14 +7,16 @@ import android.os.Bundle
 import android.widget.ImageButton
 import garciamaciel.sebastian.proyectofinal_thedot.R
 
-class ActivityComoEstas : AppCompatActivity() {
+class ActivityIntencionesDia : AppCompatActivity() {
+    @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_como_estas)
+        setContentView(R.layout.activity_intenciones_dia)
+
         /*Oculta la action bar*/
         supportActionBar?.hide()
 
-        val botonRegresar:ImageButton = findViewById<ImageButton>(R.id.boton_regresar_como_estas)
+        val botonRegresar:ImageButton = findViewById<ImageButton>(R.id.boton_regresar_intenciones_dia)
 
 
         botonRegresar.setOnClickListener() {

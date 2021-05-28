@@ -1,4 +1,4 @@
-package garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos
+package garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.meditacion
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import garciamaciel.sebastian.proyectofinal_thedot.R
+import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.Metodos
 
 class ActivityMeditacion : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

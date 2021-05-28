@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/blanco"
     android:orientation="vertical"
-    tools:context=".ui.ui.metodos.ActivityDedos">
+    tools:context=".ui.ui.metodos.tecnicas.ActivityDedos">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -56,8 +56,9 @@
                 android:layout_marginEnd="10dp"
                 android:text="Esta técnica nos ayuda en cinco minutos a armonizar\n la energía de nuestro cuerpo, basta con\nsujetar nuestros dedos. Es importantes saber que\ncada uno de los dedos de nuestra mano representa\nun sentimiento o actitud."
                 android:textAlignment="center"
+                android:fontFamily="@font/gt_america_regular"
                 android:textColor="@color/gris_oscuro"
-                android:textSize="12sp" />
+                android:textSize="@dimen/tamanio_texto" />
         </LinearLayout>
 
 
@@ -75,7 +76,8 @@
             android:layout_marginEnd="45dp"
             android:text="@string/pulgar"
             android:textColor="@color/gris_oscuro"
-            android:textSize="14sp" />
+            android:fontFamily="@font/gt_america_regular"
+            android:textSize="@dimen/tamanio_texto" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -85,7 +87,8 @@
             android:layout_marginEnd="45dp"
             android:text="@string/indice"
             android:textColor="@color/gris_oscuro"
-            android:textSize="14sp" />
+            android:fontFamily="@font/gt_america_regular"
+            android:textSize="@dimen/tamanio_texto" />
 
         <TextView
             android:layout_width="match_parent"
@@ -95,7 +98,8 @@
             android:layout_marginEnd="45dp"
             android:text="@string/medio"
             android:textColor="@color/gris_oscuro"
-            android:textSize="14sp" />
+            android:fontFamily="@font/gt_america_regular"
+            android:textSize="@dimen/tamanio_texto" />
 
         <TextView
             android:layout_width="match_parent"
@@ -105,7 +109,8 @@
             android:layout_marginEnd="45dp"
             android:text="@string/anular"
             android:textColor="@color/gris_oscuro"
-            android:textSize="14sp" />
+            android:fontFamily="@font/gt_america_regular"
+            android:textSize="@dimen/tamanio_texto" />
 
         <TextView
             android:layout_width="match_parent"
@@ -115,7 +120,8 @@
             android:layout_marginEnd="45dp"
             android:text="@string/menique"
             android:textColor="@color/gris_oscuro"
-            android:textSize="14sp" />
+            android:fontFamily="@font/gt_america_regular"
+            android:textSize="@dimen/tamanio_texto" />
 
         <TextView
             android:layout_width="match_parent"
@@ -124,14 +130,15 @@
             android:layout_marginTop="340dp"
             android:layout_marginEnd="45dp"
             android:text="@string/palma"
+            android:fontFamily="@font/gt_america_regular"
             android:textColor="@color/gris_oscuro"
-            android:textSize="14sp" />
+            android:textSize="@dimen/tamanio_texto" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="420dp"
-            android:layout_marginTop="20dp"
             android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
             android:background="@drawable/borde_redondeado"></LinearLayout>
 
@@ -153,7 +160,7 @@
                 app:srcCompat="@mipmap/fondo_like" />
 
             <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/like_meditacion_comienza"
+                android:id="@+id/like_dedos"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:layout_centerInParent="true"

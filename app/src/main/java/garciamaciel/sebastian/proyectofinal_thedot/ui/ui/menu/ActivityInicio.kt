@@ -4,18 +4,27 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
-import android.widget.ImageView
 import android.widget.TextView
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.DocumentReference
+import com.google.firebase.firestore.FirebaseFirestore
 import garciamaciel.sebastian.proyectofinal_thedot.R
-import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.Journal
+import garciamaciel.sebastian.proyectofinal_thedot.ui.Favorito
+import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.journal.Journal
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.Metodos
+import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.estiramiento.ActivityEstiramientoActivo
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.miPerfil.MiPerfil
+import kotlinx.android.synthetic.main.activity_estiramiento_activo.*
 import kotlinx.android.synthetic.main.activity_inicio.*
+import kotlinx.android.synthetic.main.activity_mi_perfil.*
 
 class ActivityInicio : AppCompatActivity() {
     var contador: Int = 1
     var previo: Int = 1
     var siguiente: Int = 2
+
+    lateinit var storage: FirebaseFirestore
+    private lateinit var usuario: FirebaseAuth
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,12 +33,16 @@ class ActivityInicio : AppCompatActivity() {
 
         /*Oculta la action bar*/
         supportActionBar?.hide()
+        usuario = FirebaseAuth.getInstance()
+        storage = FirebaseFirestore.getInstance()
+        obtenerUsuario()
+
 
         val botonMiPerfil: ImageButton = findViewById<ImageButton>(R.id.boton_mi_perfil)
         val botonMetodos: ImageButton = findViewById<ImageButton>(R.id.boton_metodos)
         val botonJournal: ImageButton = findViewById<ImageButton>(R.id.boton_journal)
         val botonAbout: ImageButton = findViewById<ImageButton>(R.id.boton_about)
-        val headerConNombre: TextView = findViewById(R.id.tv_header)
+        val headerConNombre: TextView = findViewById(R.id.tv_header_nombre)
         val btnConfiguracion: ImageButton = findViewById(R.id.btnConfiguracion)
 
         val bundle = intent.extras
@@ -74,6 +87,22 @@ class ActivityInicio : AppCompatActivity() {
             retrocederImagen()
         }
 
+    }
+
+    fun obtenerUsuario() {
+        val  favoritosRef: DocumentReference = storage.collection("usuarios")
+            .document(usuario.currentUser?.email.toString())
+        favoritosRef.get().addOnSuccessListener {
+            if (it.get("nombreUsuario")!= null){
+                tv_header_nombre.setText("¡Hola " + it.get("nombreUsuario") as String +"!")
+
+                if (ActivityEstiramientoActivo.like) {
+                    Favorito.devolverAnimacion(like_estiramiento_activo, R.raw.apple_event,
+                        ActivityEstiramientoActivo.like
+                    )
+                }
+            }
+        }
     }
 
     /**
