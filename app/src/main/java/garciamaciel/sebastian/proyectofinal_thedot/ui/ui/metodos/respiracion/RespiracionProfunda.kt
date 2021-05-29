@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 import garciamaciel.sebastian.proyectofinal_thedot.R
-import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.ActivityMeditacion
+import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.meditacion.ActivityMeditacion
 
 class RespiracionProfunda : AppCompatActivity() {
     companion object {

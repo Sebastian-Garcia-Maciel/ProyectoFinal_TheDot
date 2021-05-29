@@ -19,14 +19,14 @@
             android:layout_width="55dp"
             android:layout_height="52dp"
             android:layout_gravity="center"
-            android:layout_marginLeft="52dp"
+            android:layout_marginStart="52dp"
             android:background="@drawable/regresar_xxxdpi_06" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginRight="100dp"
+            android:layout_marginEnd="100dp"
             android:text="@string/configuracion"
             android:textAlignment="center"
             android:textColor="@color/gris_oscuro"
@@ -46,43 +46,53 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:backgroundTint="@color/azul_claro"
+            android:fontFamily="@font/gt_america_regular"
+            android:textSize="20sp"
             android:textAlignment="center"
             android:inputType="textPersonName"
             android:layout_marginBottom="30dp"
-            android:text="/ nombre" />
+            android:text="@string/nombre" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:textAlignment="center"
-            android:inputType="textPersonName"
-            android:layout_marginBottom="30dp"
-            android:backgroundTint="@color/azul_claro"
-            android:text="/ fecha de nacimiento" />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
+            android:fontFamily="@font/gt_america_regular"
+            android:textSize="20sp"
             android:textAlignment="center"
             android:inputType="textPersonName"
             android:layout_marginBottom="30dp"
             android:backgroundTint="@color/azul_claro"
-            android:text="/ ubicación" />
+            android:text="@string/fecha_de_nacimiento" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textAlignment="center"
+            android:fontFamily="@font/gt_america_regular"
+            android:textSize="20sp"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/azul_claro"
+            android:text="@string/ubicacion" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:textAlignment="center"
             android:inputType="textPersonName"
+            android:fontFamily="@font/gt_america_regular"
+            android:textSize="20sp"
             android:backgroundTint="@color/azul_claro"
             android:layout_marginBottom="30dp"
-            android:text="/ ocupación" />
+            android:text="@string/ocupacion" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:textAlignment="center"
             android:inputType="textPersonName"
+            android:fontFamily="@font/gt_america_regular"
+            android:textSize="20sp"
             android:backgroundTint="@color/azul_claro"
             android:layout_marginBottom="30dp"
             android:text="/ cambiar contraseña" />
@@ -95,6 +105,8 @@
         android:backgroundTint="@color/azul"
         android:text="@string/cerrar_sesion"
         android:textSize="@dimen/tamanio_texto_botones"
+        android:fontFamily="@font/gt_america_regular"
+        android:textStyle="bold"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:layout_marginBottom="30dp"

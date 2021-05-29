@@ -10,6 +10,7 @@
     <dimen name="tamanio_titulos">25sp</dimen>
     <dimen name="tamanio_texto">13sp</dimen>
     <dimen name="tamanio_texto_botones">18sp</dimen>
+    <dimen name="btn_play_video_size">90dp</dimen>
 
 
 

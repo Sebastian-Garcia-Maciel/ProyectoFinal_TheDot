@@ -47,11 +47,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
         android:layout_marginBottom="35dp"
         android:text="Son una herramienta para mejorar nuestro estado emocional\n y para atraer lo que queremos. Tienen por objetivo el hacer\n sentirnos mejor, tener una actitud positiva ante la vida y\n nos ayudan a crear nuestra propia realidad."
         android:textAlignment="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/gt_america_regular"
         android:textSize="@dimen/tamanio_texto" />
 
     <LinearLayout

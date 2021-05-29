@@ -44,7 +44,17 @@
         android:layout_marginStart="35dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="35dp"
-        android:background="@drawable/layout_redondeado_con_color"></LinearLayout>
+        android:gravity="center"
+        android:background="@drawable/layout_redondeado_con_color">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gt_america_regular"
+            android:textSize="@dimen/tamanio_texto"
+            android:textAlignment="center"
+            android:text="Una buena forma de estimular tu cuerpo\n es moviendolo."/>
+    </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -55,6 +65,7 @@
             android:scaleType="fitStart"
             android:layout_marginTop="263dp"
             android:src="@drawable/trazado14_xxxdpi_06"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="410dp"
@@ -63,6 +74,13 @@
             android:layout_marginEnd="35dp"
             android:background="@drawable/borde_redondeado"></LinearLayout>
 
+        <TextView
+            android:layout_margin="70dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gt_america_regular"
+            android:textSize="25sp"
+            android:text="1. Salta\n2. Haz Jumping Jacks\n3. Baila\n4. Mueve tus brazos\n5. Corre"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

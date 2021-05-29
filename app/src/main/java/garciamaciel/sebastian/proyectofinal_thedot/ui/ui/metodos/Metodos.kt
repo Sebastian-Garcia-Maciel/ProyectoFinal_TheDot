@@ -3,17 +3,13 @@ package garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import android.widget.ImageButton
 import android.widget.LinearLayout
-import android.widget.Toast
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.firestore.FirebaseFirestore
 import garciamaciel.sebastian.proyectofinal_thedot.R
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.estiramiento.ActivityEstiramiento
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.tecnicas.Tecnicas
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.menu.ActivityInicio
-import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.estiramiento.ActivityEstiramientoActivo
+import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.meditacion.ActivityMeditacion
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.respiracion.Respiracion
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.miPerfil.recordatorios.ActivityRecordatorios
 

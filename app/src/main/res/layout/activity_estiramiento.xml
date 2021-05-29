@@ -39,11 +39,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
         android:text="Te compartimos las siguientes técnicas de estiramiento para\n que puedas aumentar la circulación en tu cuerpo, se llenen\n de oxigeno tus pulmones y puedas estar relajado."
         android:textAlignment="center"
-        android:textSize="11sp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tamanio_texto"
         android:fontFamily="@font/gt_america_regular"
         android:layout_marginBottom="20dp"/>
 

@@ -35,12 +35,34 @@ class ActivityCrearRecordatorio : AppCompatActivity() {
         storage = FirebaseFirestore.getInstance()
         usuario = FirebaseAuth.getInstance()
 
-        btnAgregarRecordatorio.setOnClickListener{
+        btnAgregarRecordatorio.setOnClickListener {
+            var dias: String = ""
+            if (checkMonday.isChecked)
+                dias += "Lu"
+            if (checkTuesday.isChecked)
+                dias += "Ma"
+            if (checkWednesday.isChecked)
+                dias += "Mie"
+            if (checkThursday.isChecked)
+                dias += "Jue"
+            if (checkFriday.isChecked)
+                dias += "Vie"
+            if (checkSaturday.isChecked)
+                dias += "Sa"
+            if (checkSunday.isChecked)
+                dias += "Do"
+            if (checkMonday.isChecked && checkTuesday.isChecked && checkWednesday.isChecked
+                && checkThursday.isChecked && checkFriday.isChecked && checkSaturday.isChecked
+                && checkSunday.isChecked
+            )
+                dias = "Diario -"
+
             val recordatorio = hashMapOf(
                 "titulo" to etTituloRecordatorio.text.toString(),
                 "descripcion" to etDescripcionRecordatorio.text.toString(),
                 "email" to usuario.currentUser?.email.toString(),
-                "horario" to "Diario - " + btn_time.text.toString())
+                "horario" to dias + btn_time.text.toString()
+            )
 
             storage.collection("recordatorios")
                 .add(recordatorio)
@@ -53,7 +75,7 @@ class ActivityCrearRecordatorio : AppCompatActivity() {
                 }
                 .addOnFailureListener {
                     Toast.makeText(
-                        this.btnAgregarRecordatorio.context ,
+                        this.btnAgregarRecordatorio.context,
                         "Intente agregar de nuevo por favor",
                         Toast.LENGTH_SHORT
                     ).show()
@@ -61,7 +83,7 @@ class ActivityCrearRecordatorio : AppCompatActivity() {
         }
 
 
-        btnRegresarNuevoRecordatorio.setOnClickListener{
+        btnRegresarNuevoRecordatorio.setOnClickListener {
             var intent: Intent = Intent(this, ActivityRecordatorios::class.java)
             startActivity(intent)
         }

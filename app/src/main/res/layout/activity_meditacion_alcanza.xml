@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/blanco"
     android:orientation="vertical"
-    tools:context=".ui.ui.metodos.ActivityMeditacionAlcanza">
+    tools:context=".ui.ui.metodos.meditacion.ActivityMeditacionAlcanza">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -39,8 +39,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:fontFamily="@font/gt_america_regular"
         android:text="@string/meditacion_alcanza_texto"
         android:textAlignment="center"
         android:textSize="13sp" />
@@ -49,14 +50,26 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="450dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginTop="45dp"
-            android:layout_marginEnd="30dp"
-            android:background="@drawable/layout_redondeado_con_color"
-            android:backgroundTint="@color/lavanda"></LinearLayout>
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/layout_redondeado_con_color"
+                android:backgroundTint="@color/lavanda"></LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_play_meditacion_alcanza"
+                android:layout_width="@dimen/btn_play_video_size"
+                android:layout_height="@dimen/btn_play_video_size"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/icono_play_video" />
+        </RelativeLayout>
 
         <ImageView
             android:layout_width="wrap_content"

@@ -51,8 +51,9 @@
             android:layout_gravity="center"
             android:backgroundTint="@color/lavanda"
             android:text="@string/tecnica_dedos"
+            android:fontFamily="@font/playfair_display_wght"
             android:textAllCaps="false"
-            android:textSize="20sp"
+            android:textSize="18sp"
             app:cornerRadius="20dp" />
 
         <Button
@@ -64,7 +65,8 @@
             android:backgroundTint="@color/azul_claro"
             android:text="@string/trazos"
             android:textAllCaps="false"
-            android:textSize="20sp"
+            android:textSize="18sp"
+            android:fontFamily="@font/playfair_display_wght"
             app:cornerRadius="20dp" />
 
         <Button
@@ -76,7 +78,8 @@
             android:text="@string/muevete"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="18sp"
+            android:fontFamily="@font/playfair_display_wght"
             app:cornerRadius="20dp" />
     </LinearLayout>
     <LinearLayout

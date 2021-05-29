@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import garciamaciel.sebastian.proyectofinal_thedot.R
-import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.ActivityDedos
 import garciamaciel.sebastian.proyectofinal_thedot.ui.ui.metodos.Metodos
 
 class Tecnicas : AppCompatActivity() {
